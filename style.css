@@ -42,6 +42,18 @@ body {
   flex-direction: column;
 }
 
+.jumbotron-greeting {
+  text-align: left;
+  margin-left: 3rem;
+  font-size: 2rem;
+}
+
+.jumbotron-thankyou {
+  text-align: right;
+  margin-right: 3rem;
+  font-size: 2rem;
+}
+
 .jumbotron-text {
   /*TAGLINE UNDER NAME*/
   font-weight: 400;
@@ -272,4 +284,11 @@ h4 {
 
 .white-text {
   color: white;
+}
+
+
+/*CUSTOM*/
+
+#codewars {
+  width: 32px;
 }

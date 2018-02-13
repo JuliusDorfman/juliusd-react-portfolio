@@ -26,7 +26,7 @@ body {
 .navbar a {
     font-weight: 200;
     color: white;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
 
     transition: .3s;
@@ -34,7 +34,7 @@ body {
 
 .navbar a:hover {
     font-weight: 400;
-    padding: 28px 32px;
+    padding: 35px 48px;
     text-decoration: none;
 }
 
@@ -61,7 +61,7 @@ body {
 
 .jumbotron-greeting {
     text-align: left;
-    margin-left: 3rem;
+    margin-left: 12rem;
     font-size: 2rem;
     font-weight: 400;
     color: whitesmoke;
@@ -406,10 +406,31 @@ h4 {
     color: white;
 }
 
+::placeholder {
+    color: whitesmoke;
+    opacity: 1; /* Firefox */
+}
 
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: whitesmoke;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: whitesmoke;
+}
 
 /*CUSTOM*/
 
 #codewars {
     width: 32px;
 }
+
+.zoom-top a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #31b0d5;
+  display: block;
+  background-color: white;
+  text-align: center;
+}
+

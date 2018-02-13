@@ -241,14 +241,38 @@ h4 {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
+@media (max-width: 1064px){
+  }
+  .project-card {
+  flex-direction: column; 
+  margin: auto;
+  margin-bottom: 30px;
+  width: 500px;
+  }
+  .split-image-container{
+  margin: auto;
+  }
+  
+}
+
 .project-image {
     flex: 1 0 auto;
 }
 
-.project-image img {
+.project-image-split {
+    width: 250px;
+}
+
+.project-image img {  
     display: block;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    width: 250px;
+    height: 198px;
+}
+
+.image-container {
+  margin: auto;
 }
 
 .project-content {
@@ -260,6 +284,34 @@ h4 {
     flex-direction: column;
 }
 
+.project-content a{
+    margin: auto;
+}
+
+.project-content button{
+    width: 150px;
+    background-color: #31b0d5; /*Kind Of Blue*/
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    transition: 0.3s;
+    -o-transition: 0.3s;
+    -moz-transition: 0.3s;
+}
+
+.project-content .btn-philosophy{
+  height: 66px;
+}
+
+.project-content button:hover {
+  width: 200px;
+    padding: 15px 55px 15px 55px;
+}
 
 /*SKILLS*/
 

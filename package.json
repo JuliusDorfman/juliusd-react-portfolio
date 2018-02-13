@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-template",
+  "version": "1.0.0",
+  "description": "Built with HTML, Flexbox, JS and soon to be more",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuliusDorfman/temp-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuliusDorfman/temp-portfolio/issues"
+  },
+  "homepage": "https://github.com/JuliusDorfman/temp-portfolio#readme"
+}

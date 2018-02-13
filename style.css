@@ -84,6 +84,18 @@ body {
     padding-top: 150px;
 }
 
+@media (max-width: 650px) {
+    .jumbotron-text{
+    font-size: 1.5rem;
+}
+    .jumbotron-greeting {
+    font-size: 1.5rem;
+}
+    .jumbotron-thankyou {
+    font-size: 1.5rem;
+  }
+}
+
 .jumbotron-text h1 {
     /*YOUR NAME*/
     text-transform: uppercase;
@@ -241,8 +253,9 @@ h4 {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
+
+
 @media (max-width: 1064px){
-  }
   .project-card {
   flex-direction: column; 
   margin: auto;
@@ -252,11 +265,12 @@ h4 {
   .split-image-container{
   margin: auto;
   }
-  
 }
+
 
 .project-image {
     flex: 1 0 auto;
+    height: inherit;
 }
 
 .project-image-split {
@@ -270,6 +284,17 @@ h4 {
     width: 250px;
     height: 198px;
 }
+
+@media (max-width: 700px){
+  .project-card {
+  width: 300px;
+  }
+  .project-image img {  
+  width: 100%;
+  }
+}
+
+
 
 .image-container {
   margin: auto;

@@ -47,7 +47,7 @@ export class Homepage extends Component {
         <h4 class="jumbotron-thankyou">Thanks for visiting!</h4>
 
         <div id="down-arrow">
-          <span><a href="#about"><i class="fa fa-chevron-down" aria-hidden="true"></i></a></span>
+          <span><a href="#about"><i class="fa fa-chevron-down" aria-hidden="true" alt="downar"></i></a></span>
         </div>
       </div>
 
@@ -125,7 +125,7 @@ export class Homepage extends Component {
             <div class="project-card" id="cardFour">
               <div class="image-container">
                 <div class="project-image">
-                  <img src="./assets/images/clicky_game.png" alt="clicky_game screenshot"/>
+                  <img src="./assets/images/clicky_game.png" alt="clicky_game_screenshot"/>
                 </div>
               </div>
               <div class="project-content">
@@ -195,7 +195,7 @@ export class Homepage extends Component {
             <p>&copy; 2018 Julius G. Dorfman</p>
           </div>
           <div class="content-body">
-            <p>This site was built utilizing: HTML5, CSS3, Javascript</p>
+            <p>This site was built utilizing: HTML5, CSS3, Javascript, and ReactJS</p>
           </div>
         </div>
         <div class="side-content"></div>

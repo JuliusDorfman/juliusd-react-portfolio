@@ -33,13 +33,13 @@ export class Homepage extends Component {
         <div class="jumbotron-social">
           <ul class="ul-social">
             <li class="li-social-links">
-              <a class="social" href="https://github.com/JuliusDorfman" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+              <a class="social" href="https://github.com/JuliusDorfman" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a>
             </li>
             <li class="li-social-links">
-              <a class="social" href="https://www.linkedin.com/in/juliusgdorfman" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a class="social" href="https://www.linkedin.com/in/juliusgdorfman" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
             </li>
             <li class="li-social-links">
-              <a class="social" href="https://www.codewars.com/users/JuliusDorfman" target="_blank"><img id="codewars" src="./assets/codewars.png" alt="codewars icon"/></a>
+              <a class="social" href="https://www.codewars.com/users/JuliusDorfman" target="_blank" rel="noopener noreferrer"><img id="codewars" src="./assets/images/codewars.png" alt="codewars icon"/></a>
             </li>
           </ul>
         </div>
@@ -80,10 +80,10 @@ export class Homepage extends Component {
             <div class="project-card" id="cardOne">
                 <div class="image-container">
                   	<div>
-                  		<img class="project-image-split" src="./assets/crystal.png" alt="crystal"/>
+                  		<img class="project-image-split" src="./assets/images/crystal.png" alt="crystal"/>
                   	</div>
 	                <div>
-	                	<img class="project-image-split" src="./assets/crystal_zoom.png" alt="crystal-zoom"/>
+	                	<img class="project-image-split" src="./assets/images/crystal_zoom.png" alt="crystal-zoom"/>
 	                </div>
                 </div>
               	<div class="project-content">
@@ -97,7 +97,7 @@ export class Homepage extends Component {
             <div class="project-card" id="cardTwo">
 	            <div class="image-container">
 	              <div class="project-image">
-	                <img src="./assets/liri-node-bot.png"/>
+	                <img src="./assets/images/liri-node-bot.png" alt="liri-node-bot screenshot"/>
 	              </div>
 	            </div>
               	<div class="project-content">
@@ -111,7 +111,7 @@ export class Homepage extends Component {
             <div class="project-card" id="cardThree">
               <div class="image-container">
                 <div class="project-image">
-                  <img src="./assets/philosophy-trivia.png" alt="philosophy-trivia"/>
+                  <img src="./assets/images/philosophy-trivia.png" alt="philosophy-trivia"/>
                 </div>
               </div>
               <div class="project-content">
@@ -125,7 +125,7 @@ export class Homepage extends Component {
             <div class="project-card" id="cardFour">
               <div class="image-container">
                 <div class="project-image">
-                  <img src="./assets/clicky_game.png"/>
+                  <img src="./assets/images/clicky_game.png" alt="clicky_game screenshot"/>
                 </div>
               </div>
               <div class="project-content">

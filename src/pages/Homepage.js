@@ -60,7 +60,23 @@ onMouseLeaveHandler = (event) => {
 
         <div className="jumbotron-text">
         <StyleRoot>
-          <h4 className="jumbotron-greeting" style={this.styles.fadeInRightBig}>Hey, I'm</h4>
+          <h4 className="jumbotron-greeting" style={this.styles.fadeInRightBig}>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>H</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>e</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>y</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>,</span>
+            <span>{`\n`}</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>I</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>'</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>m</span>
+           </h4>
         </StyleRoot>
           <h1 
             className="hover-change-color" 
@@ -98,7 +114,55 @@ onMouseLeaveHandler = (event) => {
           <span className="hover" onMouseEnter={this.onMouseEnterHandler}
             onMouseLeave={this.onMouseLeaveHandler}>n</span>
           </h1>
-          <p>Full-Stack Web Developer</p>
+          <p>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>F</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>u</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>l</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>l</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>-</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>S</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>t</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>a</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>c</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>k</span>
+<span>{`\n`}</span>
+           <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>W</span>
+           <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>e</span>
+           <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>b</span>
+<span>{`\n`}</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>D</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>e</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>v</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>e</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>l</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>o</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>p</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>e</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>r</span>
+
+          </p>
         </div>
 
         <div className="jumbotron-social">
@@ -115,7 +179,46 @@ onMouseLeaveHandler = (event) => {
           </ul>
         </div>
         <StyleRoot>
-          <h4 className="jumbotron-thankyou" style={this.styles.fadeInLeftBig}>Thanks for visiting!</h4>
+          <h4 className="jumbotron-thankyou" style={this.styles.fadeInLeftBig}>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>T</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>h</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>a</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>n</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>k</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>s</span>
+          <span>{`\n`}</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>f</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>o</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>r</span>
+          <span>{`\n`}</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>v</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>i</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>s</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>i</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>t</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>i</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>n</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>g</span>
+          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}>!</span>
+          </h4>
         </StyleRoot>
         <div id="down-arrow">
           <span><a href="#about"><i className="fa fa-chevron-down" aria-hidden="true" alt="downar"></i></a></span>
@@ -266,7 +369,7 @@ onMouseLeaveHandler = (event) => {
             <p>&copy; 2018 Julius G. Dorfman</p>
           </div>
           <div className="content-body">
-            <p>This site was built utilizing: HTML5, CSS3, Javascript, and ReactJS</p>
+            <p>This site was built utilizing: HTML5, CSS3, Javascript, ReactJS, and various other packages</p>
           </div>
         </div>
         <div className="side-content"></div>

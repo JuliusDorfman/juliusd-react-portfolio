@@ -114,6 +114,8 @@ body {
     }
 }
 
+
+
 .jumbotron-text h1 {
     /*YOUR NAME*/
     text-transform: uppercase;
@@ -126,6 +128,17 @@ body {
     margin: 0;
 }
 
+.fa-chevron-down {
+    font-size: 30px;
+    transition: 0.3s;
+    -o-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+
+.fa-chevron-down:hover {
+    font-size: 100px;
+}
 
 
 /*SOCIAL LINKS*/
@@ -160,10 +173,10 @@ body {
 #down-arrow a {
     color: white;
 
-    transition: 0.3s;
-    -o-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -webkit-transition: 0.3s;
+    transition: 0.1s;
+    -o-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -webkit-transition: 0.1s;
 }
 
 #down-arrow a:hover {
@@ -362,6 +375,7 @@ h4 {
 .project-content button:hover {
     width: 200px;
     padding: 15px 55px 15px 55px;
+    color: red;
 }
 
 
@@ -460,6 +474,7 @@ h4 {
 #codewars {
     width: 32px;
 }
+
 
 .zoom-top a {
     text-decoration: none;

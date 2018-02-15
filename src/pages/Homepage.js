@@ -22,8 +22,6 @@ export class Homepage extends Component {
   };
 
 
-
-
 getInitialState = () => {
     return {
         hover: false
@@ -81,68 +79,68 @@ onMouseLeaveHandler = (event) => {
           <h1 
             className="hover-change-color" 
             id="my-name" >
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>J</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>u</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>l</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>i</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>u</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>s</span>
-          <span>{`\n`}</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>G</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>.</span>
-          <span>{`\n`}</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>D</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>o</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>r</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>f</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>m</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>a</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>n</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>J</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>u</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>l</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>i</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>u</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>s</span>
+            <span>{`\n`}</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>G</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>.</span>
+            <span>{`\n`}</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>D</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>o</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>r</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>f</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>m</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>a</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>n</span>
           </h1>
           <p>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>F</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>u</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>l</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>l</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>-</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>S</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>t</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>a</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>c</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>k</span>
-<span>{`\n`}</span>
-           <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>W</span>
-           <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>e</span>
-           <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>b</span>
-<span>{`\n`}</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>F</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>u</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>l</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>l</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>-</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>S</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>t</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>a</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>c</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>k</span>
+            <span>{`\n`}</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>W</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>e</span>
+            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
+              onMouseLeave={this.onMouseLeaveHandler}>b</span>
+            <span>{`\n`}</span>
             <span className="hover" onMouseEnter={this.onMouseEnterHandler}
             onMouseLeave={this.onMouseLeaveHandler}>D</span>
             <span className="hover" onMouseEnter={this.onMouseEnterHandler}
@@ -253,9 +251,9 @@ onMouseLeaveHandler = (event) => {
 
             <div className="project-card" id="cardOne">
                 <div className="image-container">
-                  	<div>
-                  		<img className="project-image-split" src="./assets/images/crystal.png" alt="crystal"/>
-                  	</div>
+                	<div>
+                		<img className="project-image-split" src="./assets/images/crystal.png" alt="crystal"/>
+                	</div>
 	                <div>
 	                	<img className="project-image-split" src="./assets/images/crystal_zoom.png" alt="crystal-zoom"/>
 	                </div>
@@ -266,6 +264,8 @@ onMouseLeaveHandler = (event) => {
                 	<a href="https://crystal-game-juliusd.herokuapp.com/index.html"><button className="btn btn-primary">Play!</button></a>
               	</div>
           	</div>
+
+            <div className="spacer"></div>
 
 
             <div className="project-card" id="cardTwo">
@@ -281,6 +281,7 @@ onMouseLeaveHandler = (event) => {
                 </div>
             </div>
 
+            <div className="spacer"></div>
 
             <div className="project-card" id="cardThree">
               <div className="image-container">
@@ -295,16 +296,17 @@ onMouseLeaveHandler = (event) => {
               </div>
             </div>
 
+            <div className="spacer"></div>
 
             <div className="project-card" id="cardFour">
               <div className="image-container">
                 <div className="project-image">
-                  <img src="./assets/images/clicky_game.png" alt="clicky_game_screenshot"/>
+                  <img src="./assets/images/clicky_clicky.jpg" alt="clicky_game_screenshot"/>
                 </div>
               </div>
               <div className="project-content">
                 <h4>Memory-Click Game</h4>
-                <p>A single page application built with React.</p>
+                <p>A single page application built with React. Don't click the same iconic character twice in a row!</p>
                 <a href="https://clicky-clicky-game.herokuapp.com/"><button className="btn-philosophy">Play!</button></a>
               </div>
             </div>

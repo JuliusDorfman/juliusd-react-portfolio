@@ -261,7 +261,7 @@ onMouseLeaveHandler = (event) => {
               	<div className="project-content">
                 	<h4>Crystal Numbers</h4>
                 	<p>Novelty-based static web-app. This is a ...fun-ish numbers game. Click each crystal to decipher its value. Match your number, without grabbing too many crystals.</p>
-                	<a href="https://crystal-game-juliusd.herokuapp.com/index.html"><button className="btn btn-primary">Play!</button></a>
+                	<a href="https://crystal-game-juliusd.herokuapp.com/index.html" target="_blank"><button className="btn btn-primary">Play!</button></a>
               	</div>
           	</div>
 
@@ -277,7 +277,7 @@ onMouseLeaveHandler = (event) => {
               	<div className="project-content">
                 	<h4>Liri-Bot</h4>
                 	<p>A personal Node-app used to aggregate my last handful of tweets.</p>
-                	<a href="https://philosophy-quiz.herokuapp.com/"><button className="btn-philosophy">Check out the Repo!</button></a>
+                	<a href="https://github.com/JuliusDorfman/liri-node-app" target="_blank"><button className="btn-philosophy">Check out the Repo!</button></a>
                 </div>
             </div>
 
@@ -292,7 +292,7 @@ onMouseLeaveHandler = (event) => {
               <div className="project-content">
                 <h4>Philosophy Trivia</h4>
                 <p>Think you've studied philosophy? I bet you "Kant" name these philosophers.</p>
-                <a href="https://philosophy-quiz.herokuapp.com/"><button className="btn btn-primary">Play!</button></a>
+                <a href="https://philosophy-quiz.herokuapp.com/" target="_blank"><button className="btn btn-primary">Play!</button></a>
               </div>
             </div>
 
@@ -307,7 +307,7 @@ onMouseLeaveHandler = (event) => {
               <div className="project-content">
                 <h4>Memory-Click Game</h4>
                 <p>A single page application built with React. Don't click the same iconic character twice in a row!</p>
-                <a href="https://clicky-clicky-game.herokuapp.com/"><button className="btn-philosophy">Play!</button></a>
+                <a href="https://clicky-clicky-game.herokuapp.com/" target="_blank"><button className="btn-philosophy">Play!</button></a>
               </div>
             </div>
       	  </div>

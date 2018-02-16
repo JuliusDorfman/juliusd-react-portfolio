@@ -50,6 +50,7 @@ onMouseLeaveHandler = (event) => {
 	      <a href="#projects" className="hover">Projects</a>
 	      <a href="#skills" className="hover">Skills</a>
 	      <a href="#contact" className="hover">Contact</a>
+        <a href="#wips" className="hover">WIPs</a>
 	    </div>
 
 	    <div className="container" id="top"> 
@@ -238,7 +239,40 @@ onMouseLeaveHandler = (event) => {
         <div className="side-content"></div>
       </div>
 
- 	<div className="row">
+  <div className="row whitesmoke">
+    <div className="side-content-sm"></div>
+    <div className="main-content-lg ">
+      <div className="content-header">
+        <a className="anchor" name="wips"></a>
+        <h2>What I'm Working on Now</h2>
+      </div>
+      <div className="project-card">
+          <div className="image-container">
+            <div className="project-image">
+              <img src="../assets/images/portfolio_screen.jpg" alt="portoflio screenshot"/>
+            </div>
+          </div>
+        <div className="project-content">
+        <h4>This Portfolio</h4>
+        <p>This Portfolio is in perpetual growth; 
+        I look forward to incorporating new libraries and techniques as I move forward in my 
+        programming career.
+        </p>
+        <a href="#"><button className="btn btn-primary">Take me to the top</button></a>
+        </div>
+      </div>
+
+
+
+      </div>
+    <div className="side-content-sm"></div>
+
+
+
+  </div>
+
+
+ 	<div className="row gainsboro">
         <div className="side-content-sm"></div>
         <div className="main-content-lg">
           <div className="content-header">
@@ -266,7 +300,6 @@ onMouseLeaveHandler = (event) => {
           	</div>
 
             <div className="spacer"></div>
-
 
             <div className="project-card" id="cardTwo">
 	            <div className="image-container">

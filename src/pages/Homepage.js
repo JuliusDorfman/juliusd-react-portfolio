@@ -48,9 +48,9 @@ onMouseLeaveHandler = (event) => {
 		<div className="navbar">
 	      <a href="#about" className="hover">About</a>
 	      <a href="#projects" className="hover">Projects</a>
+        <a href="#wips" className="hover">WIPs</a>
 	      <a href="#skills" className="hover">Skills</a>
 	      <a href="#contact" className="hover">Contact</a>
-        <a href="#wips" className="hover">WIPs</a>
 	    </div>
 
 	    <div className="container" id="top"> 
@@ -232,8 +232,15 @@ onMouseLeaveHandler = (event) => {
             <h2>The Person</h2>
           </div>
           <div className="content-body">
-            <p>I am a recent graduate of UCSD Extension's Full-Stack Bootcamp. Here, I learned how to engineer solutions while maintaining good coding practices. DRY code is good code!</p>
-            <p>I first became interested in programming whilst still an accountant working on a joint project with our IT department. I eventually decided to leave my previous field behind and pursue a career in programming. I'm happy to have finally found my passion.</p>
+            <p>While working as an accountant for a company in Downtown, San Diego,
+            I had been afforded the responsibility on several occasions to work closely the IT department 
+            on various projects. I had come to realize that the programming portion of these projects 
+            were MUCH more interesting to me than the financial component.
+            I began to put real thought into the agency I strive to maintain over my own life. 
+            After a cumulative of two years of professional experience in Accounting,
+            I had enrolled into a Bootcamp at UCSD ext. and am unable to overstate just how 
+            thrilled I am to be a member of a field I am passionate about.
+            </p>
           </div>
         </div>
         <div className="side-content"></div>
@@ -262,13 +269,26 @@ onMouseLeaveHandler = (event) => {
         </div>
       </div>
 
+      <div className="spacer"></div>
+
+        <div className="project-card">
+          <div className="image-container">
+            <div className="project-image">
+              <img src="../assets/images/portfolio_screen.jpg" alt="portoflio screenshot"/>
+            </div>
+          </div>
+        <div className="project-content">
+        <h4>JoJo Fansite</h4>
+        <p>Helping individuals with this niche of an interest find each other.</p>
+        <a href="#"><button className="btn btn-primary">Take me to the site.</button></a>
+        </div>
+      </div>
 
 
       </div>
+
+
     <div className="side-content-sm"></div>
-
-
-
   </div>
 
 
@@ -404,7 +424,7 @@ onMouseLeaveHandler = (event) => {
             <p>&copy; 2018 Julius G. Dorfman</p>
           </div>
           <div className="content-body">
-            <p>This site was built utilizing: HTML5, CSS3, Javascript, ReactJS, and various other packages</p>
+            <p>This site was built utilizing: HTML5, CSS3, Javascript, ReactJS, Radium and various other packages</p>
           </div>
         </div>
         <div className="side-content"></div>

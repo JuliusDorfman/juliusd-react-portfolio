@@ -210,7 +210,7 @@ body {
 
 .main-content {
     flex: 0 0 66.6%;
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-bottom: 3rem;
 }
 
@@ -227,6 +227,7 @@ body {
 .box-shadow {
     -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+    -o-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -394,6 +395,10 @@ h4 {
     text-align: left;
 }
 
+small {
+    color: grey;
+}
+
 .spacer {
     height: 45px;
 }
@@ -490,10 +495,17 @@ h4 {
 
 /*CUSTOM*/
 
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
 #codewars {
     width: 32px;
 }
-
 
 .zoom-top a {
     text-decoration: none;
@@ -550,3 +562,42 @@ h4 {
     background: red;
 }
 */
+
+/*Slider functions*/
+
+.content-slider {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide-right {
+    position: static;
+    border-radius: 10px 50px 50px 10px;
+}
+
+.slide-left {
+    position: static;
+    border-radius: 50px 10px 10px 50px;
+}
+
+.btn-slide {
+    color: white;
+    background-color: #31b0d5;
+    font-size: 1.5rem;
+
+    transition: 0.3s;     
+    -o-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+
+.btn-slide:hover {
+    box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.75);
+    -o-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+}
+
+.btn-slide:focus {
+    outline: none;
+}

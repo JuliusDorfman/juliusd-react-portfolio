@@ -3,11 +3,16 @@ import Radium, { StyleRoot } from 'radium';
 import { fadeInRightBig, fadeInLeftBig } from 'react-animations';
 import "./Homepage.css";
 
+
+
+
+
 export class Homepage extends Component {
 	constructor(props){
 		super(props);
 		this.state = {
-      hover: false
+      hover: false,
+      shown: false
     };
     this.styles = {
       fadeInRightBig: {
@@ -21,6 +26,13 @@ export class Homepage extends Component {
     }
   };
 
+componentDidMount() {
+  var allAnchors = document.getElementsByTagName('a');
+  console.log('AllAnchors', allAnchors);
+  // allAnchors.addEventListener('click', function(event) {
+  //   console.log("added click events")
+  // });
+}
 
 getInitialState = () => {
     return {
@@ -40,13 +52,21 @@ onMouseLeaveHandler = (event) => {
     });
 };
 
+goToPerson = (event) => {
+console.log("hello");
+};
+
+goToProgrammer = (event) => {
+console.log("goodbye");
+};
 
 	render() {
 		return (
 
 <div className="pages-homepage">
 		<div className="navbar">
-	      <a href="#about" className="hover">About</a>
+	      <a href="#person" className="hover">The Person</a>
+        <a href="#programmer" className="hover>">The Programmer</a>
 	      <a href="#projects" className="hover">Projects</a>
         <a href="#wips" className="hover">WIPs</a>
 	      <a href="#skills" className="hover">Skills</a>
@@ -225,25 +245,61 @@ onMouseLeaveHandler = (event) => {
       </div>
 
       <div className="row white box-shadow">
-        <div className="side-content"></div>
-        <div className="main-content">
-          <div className="content-header">
-            <a className="anchor" name="about"></a>
-            <h2>The Person</h2>
+        <div className="content-slider">
+
+          <div className="side-content" id="person"></div>
+          <div className="main-content" >
+            <a 
+              href="#programmer" 
+              className="float-right"
+              onClick={this.goToPerson}
+            >
+              <button className="slide-right btn btn-slide">The Programmer</button>
+            </a>
+            <div className="content-header">
+              <a className="anchor" name="about"></a>
+              <h2>The Person</h2>
+              <small>Subject to Sudden Updates</small>
+            </div>
+            <div className="content-body">
+              <p> 
+                  I enjoy cooking sous vide with various types of proteins.
+                  I make a consistent effort to hit the gym, almost always listening to history themed podcasts.
+                  I regularly attend programming themed Meetup events in Downtown, San Diego.
+                  Before my dog left to Florida with my parents (sad!), I would also enjoy going to the Dog Beach in Mission Bay.
+              </p>
+            </div>
           </div>
-          <div className="content-body">
-            <p>While working as an accountant for a company in Downtown, San Diego,
-            I had been afforded the responsibility on several occasions to work closely the IT department 
-            on various projects. I had come to realize that the programming portion of these projects 
-            were MUCH more interesting to me than the financial component.
-            I began to put real thought into the agency I strive to maintain over my own life. 
-            After a cumulative of two years of professional experience in Accounting,
-            I had enrolled into a Bootcamp at UCSD ext. and am unable to overstate just how 
-            thrilled I am to be a member of a field I am passionate about.
-            </p>
+          <div className="side-content"></div>
+          
+          <div className="side-content"></div>
+          <div className="main-content">
+            <a 
+              href="#person" 
+              className="float-left"
+              onClick={this.goToProgrammer}
+            >
+              <button className="slide-left btn btn-slide">The Person</button></a>
+            <div className="content-header">
+              <a className="anchor" name="about"></a>
+              
+              <h2>The Programmer</h2>
+            </div>
+            <div className="content-body">
+              <p>While working as an accountant for a company in Downtown, San Diego,
+              I had been afforded the responsibility on several occasions to work closely the IT department 
+              on various projects. I had come to realize that the programming portion of these projects 
+              were MUCH more interesting to me than the financial component.
+              I began to put real thought into the agency I strive to maintain over my own life. 
+              After a cumulative of two years of professional experience in Accounting,
+              I had enrolled into a Bootcamp at UCSD ext. and am unable to overstate just how 
+              thrilled I am to be a member of a field I am passionate about.
+              </p>
+            </div>
           </div>
+          <div className="side-content" id="programmer"></div>
+
         </div>
-        <div className="side-content"></div>
       </div>
 
   <div className="row whitesmoke">

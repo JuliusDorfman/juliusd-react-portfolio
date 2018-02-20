@@ -10,7 +10,6 @@ class person extends React.Component {
 	}
 }
 
-
 switchPersonHandler = (event) => {
 	if (this.state.personMode === false) {
 		this.setState({personMode: "programmer"})

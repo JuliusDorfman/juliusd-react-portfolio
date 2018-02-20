@@ -60,13 +60,13 @@ goToProgrammer = (event) => {
 console.log("goodbye");
 };
 
+
 	render() {
 		return (
 
 <div className="pages-homepage">
 		<div className="navbar">
-	      <a href="#person" className="hover">The Person</a>
-        <a href="#programmer" className="hover">The Programmer</a>
+	      <a href="#aboutme" className="hover">About Me</a>
 	      <a href="#projects" className="hover">Projects</a>
         <a href="#wips" className="hover">WIPs</a>
 	      <a href="#skills" className="hover">Skills</a>
@@ -244,46 +244,28 @@ console.log("goodbye");
         </div>
       </div>
 
-      <div className="row white box-shadow">
+      <div className="row white box-shadow" id="aboutme">
         <div className="content-slider">
 
-          <div className="side-content" id="person"></div>
-          <div className="main-content" >
-            <a 
-              href="#programmer" 
-              className="float-right"
-              onClick={this.goToPerson}
-            >
-              <button className="slide-right btn btn-slide">The Programmer</button>
-            </a>
+        
+          <div className="side-content"></div>
+          <div className="main-content the-person" >
             <div className="content-header">
               <a className="anchor" name="about"></a>
-              <h2>The Person</h2>
-              <small>Subject to Sudden Updates</small>
+              <h2>A Few Things About Me</h2>
             </div>
             <div className="content-body">
               <p> 
                   I enjoy cooking sous vide with various types of proteins.
-                  I make a consistent effort to hit the gym, almost always listening to history themed podcasts.
-                  I regularly attend programming themed Meetup events in Downtown, San Diego.
-                  Before my dog left to Florida with my parents (sad!), I would also enjoy going to the Dog Beach in Mission Bay.
+                  I make a consistent effort to hit the gym, almost always listening to history themed podcasts. 
+                  Before my dog left to Florida with my parents (sad!), I would also enjoy going to the Dog Beach in Mission Bay. 
+                  I have spent extended amounts of time overseas for both pleasure and business.
               </p>
             </div>
-          </div>
-          <div className="side-content"></div>
           
-          <div className="side-content"></div>
-          <div className="main-content">
-            <a 
-              href="#person" 
-              className="float-left"
-              onClick={this.goToProgrammer}
-            >
-              <button className="slide-left btn btn-slide">The Person</button></a>
             <div className="content-header">
               <a className="anchor" name="about"></a>
-              
-              <h2>The Programmer</h2>
+              <h2>My Path as a Programmer</h2>
             </div>
             <div className="content-body">
               <p>While working as an accountant for a company in Downtown, San Diego,
@@ -293,12 +275,13 @@ console.log("goodbye");
               I began to put real thought into the agency I strive to maintain over my own life. 
               After a cumulative of two years of professional experience in Accounting,
               I had enrolled into a Bootcamp at UCSD ext. and am unable to overstate just how 
-              thrilled I am to be a member of a field I am passionate about.
+              thrilled I am to be a member of a field I am passionate about. To continue my growth, 
+              I regularly attend programming Meetup events in Downtown, San Diego.
               </p>
             </div>
           </div>
-          <div className="side-content" id="programmer"></div>
 
+          <div className="side-content"></div>
         </div>
       </div>
 
@@ -330,13 +313,13 @@ console.log("goodbye");
         <div className="project-card">
           <div className="image-container">
             <div className="project-image">
-              <img src="../assets/images/portfolio_screen.jpg" alt="portoflio screenshot"/>
+              <img src="../assets/images/heirophant_green.jpg" alt="portoflio screenshot"/>
             </div>
           </div>
         <div className="project-content">
         <h4>JoJo Fansite</h4>
         <p>Helping individuals with this niche of an interest find each other.</p>
-        <a href="#"><button className="btn btn-primary">Take me to the site.</button></a>
+        <a href="/#"><button className="btn btn-primary">DEMO TBA</button></a>
         </div>
       </div>
 

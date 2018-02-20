@@ -247,9 +247,8 @@ console.log("goodbye");
       <div className="row white box-shadow" id="aboutme">
         <div className="content-slider">
 
-        
           <div className="side-content"></div>
-          <div className="main-content the-person" >
+          <div className="main-content the-person">
             <div className="content-header">
               <a className="anchor" name="about"></a>
               <h2>A Few Things About Me</h2>
@@ -398,7 +397,7 @@ console.log("goodbye");
               </div>
               <div className="project-content">
                 <h4>Memory-Click Game</h4>
-                <p>A single page application built with React. Don't click the same iconic character twice in a row!</p>
+                <p>A single page application built with React. Don't click the same iconic character twice in a round!</p>
                 <a href="https://clicky-clicky-game.herokuapp.com/" target="_blank"><button className="btn-philosophy">Play!</button></a>
               </div>
             </div>

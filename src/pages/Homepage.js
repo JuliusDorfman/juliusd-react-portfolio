@@ -66,7 +66,7 @@ console.log("goodbye");
 <div className="pages-homepage">
 		<div className="navbar">
 	      <a href="#person" className="hover">The Person</a>
-        <a href="#programmer" className="hover>">The Programmer</a>
+        <a href="#programmer" className="hover">The Programmer</a>
 	      <a href="#projects" className="hover">Projects</a>
         <a href="#wips" className="hover">WIPs</a>
 	      <a href="#skills" className="hover">Skills</a>

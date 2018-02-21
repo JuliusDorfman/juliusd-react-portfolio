@@ -293,6 +293,7 @@ h4 {
 .project-card {
     display: flex;
     flex-direction: row;
+    max-height: 216px;
     background-color: white;
     border: 1px solid rgba(0, 0, 0, .125);
     border-radius: 5px;
@@ -315,6 +316,7 @@ h4 {
         margin: auto;
         margin-bottom: 30px;
         width: 500px;
+        max-height: none;
     }
     .split-image-container {
         margin: auto;

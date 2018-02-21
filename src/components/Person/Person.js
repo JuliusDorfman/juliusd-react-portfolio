@@ -38,11 +38,9 @@ switchPersonHandler = (event) => {
               <small>Subject to Sudden Updates</small>
             </div>
             <div className="content-body">
-              <p> 
-                  I enjoy cooking sous vide with various types of proteins.
-                  I make a consistent effort to hit the gym, almost always listening to history themed podcasts.
-                  I regularly attend programming themed Meetup events in Downtown, San Diego.
-                  I also enjoy going to the Dog Beach in Mission Bay ... before my dog left to Florida with my parents (sad!).
+              <p>I enjoy cooking sous vide with various types of proteins, whilst almost always listening to history themed podcasts.
+                  I've probably spent an extended amount of time coding in every boba/coffee/tea spot in Clairemont and Balboa, San Diego.
+                  Up until recently, I also enjoyed going to the Dog Beach in Mission Bay ... before my dog left to Orlando, Florida with my parents (sad!).
               </p>
             </div>
           </div>

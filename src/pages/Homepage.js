@@ -254,11 +254,9 @@ console.log("goodbye");
               <h2>A Few Things About Me</h2>
             </div>
             <div className="content-body">
-              <p> 
-                  I enjoy cooking sous vide with various types of proteins.
-                  I make a consistent effort to hit the gym, almost always listening to history themed podcasts. 
-                  Before my dog left to Florida with my parents (sad!), I would also enjoy going to the Dog Beach in Mission Bay. 
-                  I have spent extended amounts of time overseas for both pleasure and business.
+              <p>I enjoy cooking sous vide with various types of proteins, whilst almost always listening to history themed podcasts.
+                I've probably spent an extended amount of time coding in every boba/coffee/tea spot in Clairemont and Balboa, San Diego.
+                Up until recently, I also enjoyed going to the Dog Beach in Mission Bay ... before my dog left to Orlando, Florida with my parents (sad!).
               </p>
             </div>
           
@@ -268,14 +266,14 @@ console.log("goodbye");
             </div>
             <div className="content-body">
               <p>While working as an accountant for a company in Downtown, San Diego,
-              I had been afforded the responsibility on several occasions to work closely the IT department 
+              I had been afforded the responsibility on several occasions to work closely with the IT department 
               on various projects. I had come to realize that the programming portion of these projects 
               were MUCH more interesting to me than the financial component.
               I began to put real thought into the agency I strive to maintain over my own life. 
-              After a cumulative of two years of professional experience in Accounting,
+              After a cumulative of two years professional experience in Accounting,
               I had enrolled into a Bootcamp at UCSD ext. and am unable to overstate just how 
-              thrilled I am to be a member of a field I am passionate about. To continue my growth, 
-              I regularly attend programming Meetup events in Downtown, San Diego.
+              thrilled I am to be a member of a field I am passionate about. 
+              I have begun regularly attending programming themed Meetup events in Downtown, San Diego to suppliment my newfound passion.
               </p>
             </div>
           </div>

@@ -24,13 +24,14 @@ class programmer extends React.Component {
             </div>
             <div className="content-body">
               <p>While working as an accountant for a company in Downtown, San Diego,
-              I had been afforded the responsibility on several occasions to work closely the IT department 
+              I had been afforded the responsibility on several occasions to work closely with the IT department 
               on various projects. I had come to realize that the programming portion of these projects 
               were MUCH more interesting to me than the financial component.
               I began to put real thought into the agency I strive to maintain over my own life. 
-              After a cumulative of two years of professional experience in Accounting,
+              After a cumulative of two years professional experience in Accounting,
               I had enrolled into a Bootcamp at UCSD ext. and am unable to overstate just how 
-              thrilled I am to be a member of a field I am passionate about.
+              thrilled I am to be a member of a field I am passionate about. 
+              I have begun regularly attending programming themed Meetup events in Downtown, San Diego to suppliment my newfound passion.
               </p>
             </div>
           </div>

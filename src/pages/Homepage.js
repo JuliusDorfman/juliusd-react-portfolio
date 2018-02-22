@@ -316,7 +316,7 @@ console.log("goodbye");
         <div className="project-content">
         <h4>JoJo Fansite</h4>
         <p>Helping individuals with this niche of an interest find each other.</p>
-        <a href="/#"><button className="btn btn-primary">DEMO TBA</button></a>
+        <a href="/#/"><button className="btn btn-primary">DEMO TBA</button></a>
         </div>
       </div>
 

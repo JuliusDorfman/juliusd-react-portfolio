@@ -94,6 +94,20 @@ body {
     color: whitesmoke;
 }
 
+@media (max-width: 650px){
+    .jumbotron-greeting {
+        margin-left: 2rem;
+    }
+    .jumbotron-thankyou{
+        margin-right: 1rem;
+    }
+    .navbar a {
+        font-size: .75rem;
+    }
+}
+
+
+
 .jumbotron-text {
     /*TAGLINE UNDER NAME*/
     font-weight: 400;

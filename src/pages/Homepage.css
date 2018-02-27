@@ -13,7 +13,7 @@ body {
 /*NAVBAR*/
 
 .navbar {
-    background: linear-gradient(to right, #1d697f, #31b0d5, #1d697f);
+    background-image: url("../assets/images/electro-bg.jpg");
     position: fixed;
     /* Set the navbar to fixed position */
     top: 0;
@@ -38,7 +38,6 @@ body {
 }
 
 .navbar a:hover {
-    font-weight: 400;
     padding: 35px 48px;
     text-decoration: none;
 }
@@ -55,14 +54,22 @@ body {
 /*JUMBOTRON*/
 
 .jumbotron {
+    background-image: url("../assets/images/electro-bg.jpg");
     height: 100vh;
     /*height to 100% of view height*/
-    background: linear-gradient(to right, #1d697f, #31b0d5, #1d697f);
     /*background color to blue*/
     margin-bottom: 0;
     /*no bottom margin*/
     display: flex;
     flex-direction: column;
+}
+
+.bg-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    background-color: darkblue;
 }
 
 .hover {
@@ -94,6 +101,10 @@ body {
     color: whitesmoke;
 }
 
+.jumbotron-social {
+    z-index: 100;
+}
+
 @media (max-width: 650px){
     .jumbotron-greeting {
         margin-left: 2rem;
@@ -106,15 +117,53 @@ body {
     }
 }
 
+.trait-flavor {
+    color: #1d697f;
+    opacity: 0.5;
+    font-weight: 700;
+    font-size: 32px;
+    font-family: monospace;
+}
 
+#trait-flavor-1 {
+    position: absolute;
+    top: 85px;
+    left: 350px;
+}
+
+#trait-flavor-2 {
+    position: absolute;
+    top: 605px;
+    left: 100px;
+}
+
+#trait-flavor-3 {
+    position: absolute;
+    top: 200px;
+    left: 800px;
+}
+
+#trait-flavor-4 {
+    position: absolute;
+    top: 500px;
+    left: 250px;
+}
+
+#trait-flavor-5 {
+    position: absolute;
+    top: 605px;
+    left: 900px;
+}
 
 .jumbotron-text {
     /*TAGLINE UNDER NAME*/
+    z-index: 1;
     font-weight: 400;
     font-size: 2em;
     color: white;
     text-align: center;
     padding-top: 150px;
+    height: 100%
 }
 
 @media (max-width: 650px) {
@@ -262,6 +311,8 @@ h2 {
 }
 
 .content-body {
+    display: flex;
+    flex-wrap: wrap;
     line-height: 1.5;
     color: rgba(0, 0, 0, .75);
 }
@@ -306,14 +357,15 @@ h4 {
 
 .project-card {
     display: flex;
-    flex-direction: row;
-    max-height: 216px;
-    background-color: white;
+    position: relative;
+    flex-direction: column;
+    /*max-height: 216px;*/
     border: 1px solid rgba(0, 0, 0, .125);
     border-radius: 5px;
     box-shadow: 0 5px 20px 10px rgba(0, 0, 0, 0.5);
-    width: 75%;
-    margin: auto;
+    max-width: min-content;
+    margin: 20px auto;
+    height: 500px;
 
     transition: 0.3s;
     -o-transition: 0.3s;
@@ -372,7 +424,7 @@ h4 {
 }
 
 .image-container {
-    position: relative;
+    height: 35%;
 }
 
 .project-content {
@@ -382,7 +434,6 @@ h4 {
     background: -o-linear-gradient(left, gainsboro, whitesmoke);
     background: linear-gradient(to right, gainsboro, whitesmoke);
     display: flex;
-    justify-content: center;
     flex-direction: column;
 }
 
@@ -460,6 +511,10 @@ small {
 .contact {
     max-width: 500px;
     margin: 0 auto;
+}
+
+.contact form {
+    width: 100%;
 }
 
 .contact input,
@@ -595,6 +650,7 @@ small {
 .content-slider {
     display: flex;
     overflow: hidden;
+    background-color: gainsboro;
 }
 
 .slide-right {

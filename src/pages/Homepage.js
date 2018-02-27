@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Radium, { StyleRoot } from 'radium';
-import { fadeInRightBig, fadeInLeftBig } from 'react-animations';
+import Fade from 'react-reveal/Fade';
+import { flipInX, fadeInRightBig, fadeInLeftBig } from 'react-animations';
 import "./Homepage.css";
 
 
@@ -16,15 +17,20 @@ export class Homepage extends Component {
     };
     this.styles = {
       fadeInRightBig: {
-        animation: '2.5s',
+        animation: '3.5s',
         animationName: Radium.keyframes(fadeInRightBig, 'fadeInRightBig')
     }, 
       fadeInLeftBig: {
         animation: '3.5s',
         animationName: Radium.keyframes(fadeInLeftBig, 'fadeInLeftBig')
-      }
+    },
+        flipInX: {
+        animation: '3.5s',
+        animationName: Radium.keyframes(flipInX, 'flipInX')
+    }
     }
   };
+
 
 componentDidMount() {
   var allAnchors = document.getElementsByTagName('a');
@@ -32,6 +38,7 @@ componentDidMount() {
   // allAnchors.addEventListener('click', function(event) {
   //   console.log("added click events")
   // });
+
 }
 
 getInitialState = () => {
@@ -62,21 +69,23 @@ console.log("goodbye");
 
 
 	render() {
+
+
 		return (
 
 <div className="pages-homepage">
 		<div className="navbar">
-	      <a href="#aboutme" className="hover">About Me</a>
-	      <a href="#projects" className="hover">Projects</a>
-        <a href="#wips" className="hover">WIPs</a>
-	      <a href="#skills" className="hover">Skills</a>
-	      <a href="#contact" className="hover">Contact</a>
+	      <a href="#aboutme">About Me</a>
+	      <a href="#projects">Projects</a>
+        <a href="#wips">WIPs</a>
+	      <a href="#skills">Skills</a>
+	      <a href="#contact">Contact</a>
 	    </div>
 
 	    <div className="container" id="top"> 
 
       <div className="jumbotron">
-
+      <div className="bg-overlay" />
         <div className="jumbotron-text">
         <StyleRoot>
           <h4 className="jumbotron-greeting" style={this.styles.fadeInRightBig}>
@@ -97,9 +106,11 @@ console.log("goodbye");
             onMouseLeave={this.onMouseLeaveHandler}>m</span>
            </h4>
         </StyleRoot>
+        <StyleRoot>
           <h1 
             className="hover-change-color" 
-            id="my-name" >
+            id="my-name"
+            style={this.styles.flipInX} >
             <span className="hover" onMouseEnter={this.onMouseEnterHandler}
               onMouseLeave={this.onMouseLeaveHandler}>J</span>
             <span className="hover" onMouseEnter={this.onMouseEnterHandler}
@@ -133,6 +144,8 @@ console.log("goodbye");
             <span className="hover" onMouseEnter={this.onMouseEnterHandler}
               onMouseLeave={this.onMouseLeaveHandler}>n</span>
           </h1>
+        </StyleRoot>
+        <StyleRoot>
           <p>
             <span className="hover" onMouseEnter={this.onMouseEnterHandler}
               onMouseLeave={this.onMouseLeaveHandler}>F</span>
@@ -180,9 +193,8 @@ console.log("goodbye");
             onMouseLeave={this.onMouseLeaveHandler}>e</span>
             <span className="hover" onMouseEnter={this.onMouseEnterHandler}
             onMouseLeave={this.onMouseLeaveHandler}>r</span>
-
           </p>
-        </div>
+          </StyleRoot>
 
         <div className="jumbotron-social">
           <ul className="ul-social">
@@ -192,13 +204,10 @@ console.log("goodbye");
             <li className="li-social-links">
               <a className="social" href="https://www.linkedin.com/in/juliusgdorfman" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin" aria-hidden="true"></i></a>
             </li>
-            <li className="li-social-links">
-              <a className="social" href="https://www.codewars.com/users/JuliusDorfman" target="_blank" rel="noopener noreferrer"><img id="codewars" src="./assets/images/codewars.png" alt="codewars icon"/></a>
-            </li>
           </ul>
         </div>
         <StyleRoot>
-          <h4 className="jumbotron-thankyou" style={this.styles.fadeInLeftBig}>
+          <h4 className="jumbotron-thankyou" style={this.styles.fadeInLeftBig} >
           <span className="hover" onMouseEnter={this.onMouseEnterHandler}
             onMouseLeave={this.onMouseLeaveHandler}>T</span>
           <span className="hover" onMouseEnter={this.onMouseEnterHandler}
@@ -238,21 +247,29 @@ console.log("goodbye");
           <span className="hover" onMouseEnter={this.onMouseEnterHandler}
             onMouseLeave={this.onMouseLeaveHandler}>!</span>
           </h4>
+
         </StyleRoot>
+
         <div id="down-arrow">
           <span><a href="#about"><i className="fa fa-chevron-down" aria-hidden="true" alt="downar"></i></a></span>
         </div>
+
+        </div>
       </div>
 
-      <div className="row white box-shadow" id="aboutme">
-        <div className="content-slider">
 
+      <div className="row white box-shadow reveal-me" id="aboutme">
+        <div className="content-slider">
           <div className="side-content"></div>
           <div className="main-content the-person">
+        <Fade big left cascade>
             <div className="content-header">
               <a className="anchor" name="about"></a>
               <h2>A Few Things About Me</h2>
             </div>
+        </Fade>
+        <Fade big left cascade>
+
             <div className="content-body">
               <p>I enjoy cooking sous vide with various types of proteins, whilst almost always listening to history themed podcasts.
                 I've probably spent an extended amount of time coding in every boba/coffee/tea spot in Clairemont and Balboa, San Diego.
@@ -276,8 +293,8 @@ console.log("goodbye");
               I have begun regularly attending programming themed Meetup events in Downtown, San Diego to suppliment my newfound passion.
               </p>
             </div>
+          </Fade>
           </div>
-
           <div className="side-content"></div>
         </div>
       </div>
@@ -285,10 +302,14 @@ console.log("goodbye");
   <div className="row whitesmoke">
     <div className="side-content-sm"></div>
     <div className="main-content-lg ">
+        <Fade big left cascade>
       <div className="content-header">
         <a className="anchor" name="wips"></a>
         <h2>What I'm Working on Now</h2>
       </div>
+        </Fade>
+        <Fade big left cascade>
+      <div className="content-body">
       <div className="project-card">
           <div className="image-container">
             <div className="project-image">
@@ -320,9 +341,10 @@ console.log("goodbye");
         </div>
       </div>
 
+      </div>
+      </Fade>
 
       </div>
-
 
     <div className="side-content-sm"></div>
   </div>
@@ -331,11 +353,11 @@ console.log("goodbye");
  	<div className="row gainsboro">
         <div className="side-content-sm"></div>
         <div className="main-content-lg">
+        <Fade big left cascade>
           <div className="content-header">
             <a className="anchor" name="projects"></a>
             <h2>Projects</h2>
           </div>
-
 
           <div className="content-body">
 
@@ -400,6 +422,7 @@ console.log("goodbye");
               </div>
             </div>
       	  </div>
+        </Fade>
       	</div>
         <div className="side-content-sm"></div>
       </div>
@@ -408,11 +431,14 @@ console.log("goodbye");
 	<div className="row white box-shadow">
         <div className="side-content"></div>
         <div className="main-content">
+            <Fade big left cascade>
           <div className="content-header">
             <a className="anchor" name="skills"></a>
             <h2>Skills</h2>
           </div>
+            </Fade>
           <div className="content-body">
+            <Fade big left cascade>
             <ul className="ul-skills">
               <li className="li-skills">Javascript</li>
               <li className="li-skills highlight-skill">MongoDB</li>
@@ -427,6 +453,7 @@ console.log("goodbye");
               <li className="li-skills highlight-skill">NodeJS</li>
               <li className="li-skills">RESTful Applications</li>
             </ul>
+        </Fade>
           </div>
         </div>
         <div className="side-content"></div>
@@ -434,6 +461,7 @@ console.log("goodbye");
 
     <div className="row blue">
         <div className="side-content"></div>
+            <Fade big left cascade>
         <div className="main-content">
           <div className="content-header">
             <a className="anchor" name="contact"></a>
@@ -448,11 +476,13 @@ console.log("goodbye");
             </form>
           </div>
         </div>
+        </Fade>
         <div className="side-content"></div>
       </div>
 
 	<div className="row">
         <div className="side-content"></div>
+            <Fade big left cascade>
         <div className="main-content">
           <div className="content-header">
           </div>
@@ -463,6 +493,7 @@ console.log("goodbye");
             <p>This site was built utilizing: HTML5, CSS3, Javascript, ReactJS, Radium and various other packages</p>
           </div>
         </div>
+        </Fade>
         <div className="side-content"></div>
     </div>
 

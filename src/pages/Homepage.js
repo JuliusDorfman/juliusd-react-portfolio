@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import Radium, { StyleRoot } from 'radium';
 import Fade from 'react-reveal/Fade';
-import { flipInX, fadeInRightBig, fadeInLeftBig } from 'react-animations';
+import $ from "jquery";
+import { headShake, flipInX, fadeInDown, fadeInLeftBig } from 'react-animations';
 import "./Homepage.css";
-
-
-
 
 
 export class Homepage extends Component {
@@ -13,12 +11,13 @@ export class Homepage extends Component {
 		super(props);
 		this.state = {
       hover: false,
-      shown: false
+      shown: false,
+      myName: null
     };
     this.styles = {
-      fadeInRightBig: {
+      fadeInDown: {
         animation: '3.5s',
-        animationName: Radium.keyframes(fadeInRightBig, 'fadeInRightBig')
+        animationName: Radium.keyframes(fadeInDown, 'fadeInDown')
     }, 
       fadeInLeftBig: {
         animation: '3.5s',
@@ -27,30 +26,19 @@ export class Homepage extends Component {
         flipInX: {
         animation: '3.5s',
         animationName: Radium.keyframes(flipInX, 'flipInX')
+    },
+        headShake: {
+        animation: 'x 0.5s',
+        animationName: Radium.keyframes(headShake, 'headShake')
     }
     }
   };
 
-
-componentDidMount() {
-  var allAnchors = document.getElementsByTagName('a');
-  console.log('AllAnchors', allAnchors);
-  // allAnchors.addEventListener('click', function(event) {
-  //   console.log("added click events")
-  // });
-
-}
-
-getInitialState = () => {
-    return {
-        hover: false
-    };
+componentWillMount() {
 };
 
 onMouseEnterHandler = (event) => {
-    this.setState({
-        hover: true
-    });
+    this.styles.headShake
 };
 
 onMouseLeaveHandler = (event) => {
@@ -68,236 +56,109 @@ console.log("goodbye");
 };
 
 
-	render() {
 
+	render() {
 
 		return (
 
 <div className="pages-homepage">
-		<div className="navbar">
+    <StyleRoot>
+		<div className="navbar" style={this.styles.fadeInDown}>
 	      <a href="#aboutme">About Me</a>
 	      <a href="#projects">Projects</a>
         <a href="#wips">WIPs</a>
 	      <a href="#skills">Skills</a>
 	      <a href="#contact">Contact</a>
 	    </div>
-
+    </StyleRoot>
 	    <div className="container" id="top"> 
 
       <div className="jumbotron">
       <div className="bg-overlay" />
         <div className="jumbotron-text">
         <StyleRoot>
-          <h4 className="jumbotron-greeting" style={this.styles.fadeInRightBig}>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>H</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>e</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>y</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>,</span>
-            <span>{`\n`}</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>I</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>'</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>m</span>
-           </h4>
-        </StyleRoot>
-        <StyleRoot>
           <h1 
-            className="hover-change-color" 
             id="my-name"
             style={this.styles.flipInX} >
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>J</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>u</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>l</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>i</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>u</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>s</span>
-            <span>{`\n`}</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>G</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>.</span>
-            <span>{`\n`}</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>D</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>o</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>r</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>f</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>m</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>a</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>n</span>
+              Julius G. Dorfman
           </h1>
-        </StyleRoot>
-        <StyleRoot>
-          <p>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>F</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>u</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>l</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>l</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>-</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>S</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>t</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>a</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>c</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>k</span>
-            <span>{`\n`}</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>W</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>e</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}>b</span>
-            <span>{`\n`}</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>D</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>e</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>v</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>e</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>l</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>o</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>p</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>e</span>
-            <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>r</span>
+
+          <p
+          style={this.styles.flipInX} >
+            Full-Stack Web Developer
           </p>
-          </StyleRoot>
 
         <div className="jumbotron-social">
           <ul className="ul-social">
-            <li className="li-social-links">
+            <li className="li-social-links" style={this.styles.flipInX}>
               <a className="social" href="https://github.com/JuliusDorfman" target="_blank" rel="noopener noreferrer"><i className="fa fa-github" aria-hidden="true"></i></a>
             </li>
-            <li className="li-social-links">
+            <li className="li-social-links" style={this.styles.flipInX}>
               <a className="social" href="https://www.linkedin.com/in/juliusgdorfman" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin" aria-hidden="true"></i></a>
             </li>
           </ul>
         </div>
-        <StyleRoot>
-          <h4 className="jumbotron-thankyou" style={this.styles.fadeInLeftBig} >
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>T</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>h</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>a</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>n</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>k</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>s</span>
-          <span>{`\n`}</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>f</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>o</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>r</span>
-          <span>{`\n`}</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>v</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>i</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>s</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>i</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>t</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>i</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>n</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>g</span>
-          <span className="hover" onMouseEnter={this.onMouseEnterHandler}
-            onMouseLeave={this.onMouseLeaveHandler}>!</span>
-          </h4>
-
         </StyleRoot>
-
-        <div id="down-arrow">
-          <span><a href="#about"><i className="fa fa-chevron-down" aria-hidden="true" alt="downar"></i></a></span>
-        </div>
-
+       
         </div>
       </div>
 
 
       <div className="row white box-shadow reveal-me" id="aboutme">
-        <div className="content-slider">
-          <div className="side-content"></div>
+        <div className="bg-overlay-reveal-1" />
+
           <div className="main-content the-person">
         <Fade big left cascade>
             <div className="content-header">
               <a className="anchor" name="about"></a>
-              <h2>A Few Things About Me</h2>
             </div>
         </Fade>
-        <Fade big left cascade>
-
-            <div className="content-body">
-              <p>I enjoy cooking sous vide with various types of proteins, whilst almost always listening to history themed podcasts.
-                I've probably spent an extended amount of time coding in every boba/coffee/tea spot in Clairemont and Balboa, San Diego.
-                Up until recently, I also enjoyed going to the Dog Beach in Mission Bay ... before my dog left to Orlando, Florida with my parents (sad!).
-              </p>
-            </div>
-          
-            <div className="content-header">
-              <a className="anchor" name="about"></a>
-              <h2>My Path as a Programmer</h2>
-            </div>
-            <div className="content-body">
-              <p>While working as an accountant for a company in Downtown, San Diego,
-              I had been afforded the responsibility on several occasions to work closely with the IT department 
-              on various projects. I had come to realize that the programming portion of these projects 
-              were MUCH more interesting to me than the financial component.
-              I began to put real thought into the agency I strive to maintain over my own life. 
-              After a cumulative of two years professional experience in Accounting,
-              I had enrolled into a Bootcamp at UCSD ext. and am unable to overstate just how 
-              thrilled I am to be a member of a field I am passionate about. 
-              I have begun regularly attending programming themed Meetup events in Downtown, San Diego to suppliment my newfound passion.
-              </p>
-            </div>
+            <div className="content-body welcome-panel">
+          <Fade big left cascade>
+                <span><p className="welcome-intro"><span className="flavor-text-big">Hi, </span> I'm Julius. I enjoy making web apps that are <span className="flavor-text-big">intuitive</span> and <span className="flavor-text-big">aesthetic</span>.</p></span>
           </Fade>
+            </div>
           </div>
-          <div className="side-content"></div>
+  <div className="row white box-shadow">
+
+        <div className="side-content" />
+        <div className="main-content">
+            <Fade big left cascade>
+          <div className="content-header">
+            <a className="anchor" name="skills"></a>
+            <h2>Skills</h2>
+          </div>
+            </Fade>
+          <div className="content-body">
+            <StyleRoot>
+            <Fade big left cascade>
+            <ul className="ul-skills">
+              <li className="li-skills">Javascript</li>
+              <li className="li-skills highlight-skill">MongoDB</li>
+              <li className="li-skills">HTML5</li>
+              <li className="li-skills">CSS3</li>
+              <li className="li-skills">Bootstrap</li>
+              <li className="li-skills highlight-skill">Express</li>
+              <li className="li-skills">jQuery</li>
+              <li className="li-skills highlight-skill">ReactJS</li>
+              <li className="li-skills">MySQL</li>
+              <li className="li-skills">API Integration</li>
+              <li className="li-skills highlight-skill">NodeJS</li>
+              <li className="li-skills">RESTful Applications</li>
+            </ul>
+            </Fade>
+            </StyleRoot>
+
+          </div>
         </div>
+        <div className="side-content" />
       </div>
+
+
+
+       
+    </div>
+
 
   <div className="row whitesmoke">
     <div className="side-content-sm"></div>
@@ -308,6 +169,7 @@ console.log("goodbye");
         <h2>What I'm Working on Now</h2>
       </div>
         </Fade>
+
         <Fade big left cascade>
       <div className="content-body">
       <div className="project-card">
@@ -428,41 +290,10 @@ console.log("goodbye");
       </div>
 
 
-	<div className="row white box-shadow">
-        <div className="side-content"></div>
-        <div className="main-content">
-            <Fade big left cascade>
-          <div className="content-header">
-            <a className="anchor" name="skills"></a>
-            <h2>Skills</h2>
-          </div>
-            </Fade>
-          <div className="content-body">
-            <Fade big left cascade>
-            <ul className="ul-skills">
-              <li className="li-skills">Javascript</li>
-              <li className="li-skills highlight-skill">MongoDB</li>
-              <li className="li-skills">HTML5</li>
-              <li className="li-skills">CSS3</li>
-              <li className="li-skills">Bootstrap</li>
-              <li className="li-skills highlight-skill">Express</li>
-              <li className="li-skills">jQuery</li>
-              <li className="li-skills highlight-skill">ReactJS</li>
-              <li className="li-skills">MySQL</li>
-              <li className="li-skills">API Integration</li>
-              <li className="li-skills highlight-skill">NodeJS</li>
-              <li className="li-skills">RESTful Applications</li>
-            </ul>
-        </Fade>
-          </div>
-        </div>
-        <div className="side-content"></div>
-    </div>
 
     <div className="row blue">
         <div className="side-content"></div>
-            <Fade big left cascade>
-        <div className="main-content">
+        <div className="main-content" id="contact-form">
           <div className="content-header">
             <a className="anchor" name="contact"></a>
             <h2 className="white-text">Contact Me</h2>
@@ -476,13 +307,11 @@ console.log("goodbye");
             </form>
           </div>
         </div>
-        </Fade>
         <div className="side-content"></div>
       </div>
 
 	<div className="row">
         <div className="side-content"></div>
-            <Fade big left cascade>
         <div className="main-content">
           <div className="content-header">
           </div>
@@ -493,7 +322,6 @@ console.log("goodbye");
             <p>This site was built utilizing: HTML5, CSS3, Javascript, ReactJS, Radium and various other packages</p>
           </div>
         </div>
-        </Fade>
         <div className="side-content"></div>
     </div>
 

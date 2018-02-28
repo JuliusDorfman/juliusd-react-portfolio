@@ -34,13 +34,13 @@ switchPersonHandler = (event) => {
             </a>
             <div className="content-header">
               <a className="anchor" name="about"></a>
-              <h2>The Person</h2>
+              <h2>A Few Things About Me</h2>
               <small>Subject to Sudden Updates</small>
             </div>
             <div className="content-body">
               <p>I enjoy cooking sous vide with various types of proteins, whilst almost always listening to history themed podcasts.
-                  I've probably spent an extended amount of time coding in every boba/coffee/tea spot in Clairemont and Balboa, San Diego.
-                  Up until recently, I also enjoyed going to the Dog Beach in Mission Bay ... before my dog left to Orlando, Florida with my parents (sad!).
+                I've probably spent an extended amount of time coding in every boba/coffee/tea spot in Clairemont and Balboa, San Diego.
+                Up until recently, I also enjoyed going to the Dog Beach in Mission Bay ... before my dog left to Orlando, Florida with my parents (sad!).
               </p>
             </div>
           </div>

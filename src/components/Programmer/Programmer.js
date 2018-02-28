@@ -17,10 +17,9 @@ class programmer extends React.Component {
               onClick={this.switchPersonHandler}
             >
               <button className="slide-left btn btn-slide">The Person</button></a>
-            <div className="content-header">
+          <div className="content-header">
               <a className="anchor" name="about"></a>
-              
-              <h2>The Programmer</h2>
+              <h2>My Path as a Programmer</h2>
             </div>
             <div className="content-body">
               <p>While working as an accountant for a company in Downtown, San Diego,
@@ -43,3 +42,4 @@ class programmer extends React.Component {
 }
 
 export default programmer;
+

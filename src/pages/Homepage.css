@@ -9,9 +9,6 @@ body {
 }
 
 
-
-
-
 /*NAVBAR*/
 
 .navbar {
@@ -60,7 +57,7 @@ body {
 .jumbotron {
     background-image: url("../assets/images/electro-bg.jpg");
     background-attachment: fixed;
-    height: 95vh;
+    height: 100vh;
     margin-bottom: 0;
     /*no bottom margin*/
     display: flex;
@@ -71,17 +68,17 @@ body {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 105%;
+    height: 105vh;
     opacity: 0.5;
-    background: linear-gradient(white, black);
+    background: linear-gradient(to right, black, white, black);
 }
 
 .bg-overlay-rows {
     position: absolute;
     width: 100%;
-    height: 100%;
-    opacity: 0.8;
-    background: whitesmoke;
+    height: inherit;
+    background: white;
+    box-shadow: 0 0 15px 15px white;
 }
 
 
@@ -115,6 +112,15 @@ body {
 
 .jumbotron-social {
     z-index: 100;
+}
+
+.jumbotron-fadeInUp {
+    position: absolute;
+    width: 100%;
+    top: 90vh;
+    background-color: black;
+    height: 100px;
+    box-shadow: 0 0 10px 10px black;
 }
 
 @media (max-width: 650px) {
@@ -224,20 +230,28 @@ body {
 
 /*SKILLS*/
 
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
 .ul-skills {
-    text-align: center;
-    padding-left: 0;
+padding: initial;
 }
 
 .li-skills {
-    display: inline-block;
-    margin: 7px;
-    padding: 5px 10px;
-    color: black;
-    background: steelblue;
-    list-style: none;
-    cursor: default;
-    font-size: 1.2em;
+    list-style-type: none;
+    align-content: center;
+    margin: 3rem auto;
+}
+
+li img {
+    height: 90px;
+    width: 90px;
 }
 
 /*CONTENT*/
@@ -249,34 +263,29 @@ body {
 }
 
 .row {
-    /*background-image: url("../assets/images/electro-bg.jpg");*/
-    background-attachment: fixed;
+    background: white;
     display: flex;
 }
 
-.side-content {
-    flex: 0 0 16.6%;
-}
-
-.main-content {
-    margin: 20px;
-    margin-left: 3rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+.content-row {
+    min-height: 125vh;
 }
 
 .bg-overlay-reveal-1 {
     position: relative;
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background-color: black;
-    box-shadow: 0px 0px 15px 20px;
+    background: linear-gradient(black, black);
 }
+
+.skills-header {
+    color: white;
+}
+
 
 #skills-row {
     display: flex;
-    flex-direction: row;
-    margin: auto 15rem;
+    flex-direction: column;
 }
 
 @media (max-width: 1200px) {
@@ -286,6 +295,7 @@ body {
     }
 }
 
+
 .welcome-intro {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
@@ -293,13 +303,17 @@ body {
 }
 
 .flavor-text-big {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: white;
 }
 
 .side-content-sm {
     flex: 0 0 10%;
+}
+
+.main-content {
+    margin-top: 3rem;
 }
 
 .main-content-lg {
@@ -312,19 +326,16 @@ h2 {
     font-weight: 200;
     font-family: "Krona One", sans-serif;
     font-size: 2rem;
-    color: steelblue;
+    color: black;
     text-transform: uppercase;
     text-align: center;
 }
 
 .content-body {
-    margin: auto;
-    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     line-height: 1.5;
-    color: rgba(0, 0, 0, .75);
 }
 
 h4 {
@@ -346,6 +357,8 @@ h4 {
     margin: 20px;
     height: 350px;
     width: 350px;
+    box-shadow: 0px 0px 10px 1px black;
+    flex: auto;
 
     transition: 0.3s;
     -o-transition: 0.3s;
@@ -374,7 +387,7 @@ h4 {
 
 .bg-card-overlay:hover {
     flex-direction: column;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 .bg-card-overlay h3, p {
@@ -478,6 +491,7 @@ h4 {
     position: relative;
     background: steelblue;
     text-align: center;
+    box-shadow: 0 0 15px 15px steelblue;
 }
 
 .contact form {
@@ -526,7 +540,14 @@ h4 {
     margin: auto auto 3rem auto;
 }
 
+#page-footer {
+    height: 50px;
+    width: 100%;
+    background: white;
+}
+
 #page-footer p {
+    margin: auto;
     font-size: 1rem;
     color: black;
 }
@@ -553,19 +574,3 @@ h4 {
 
 
 /*CUSTOM*/
-
-.whitesmoke {
-    background-color: whitesmoke;
-    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
-    -o-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
-}
-
-.white {
-    background-color: white;
-    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
-    -o-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
-}

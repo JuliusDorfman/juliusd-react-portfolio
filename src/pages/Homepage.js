@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Radium, { StyleRoot } from 'radium';
 import Fade from 'react-reveal/Fade';
-import $ from "jquery";
-import { headShake, flipInX, fadeInDown, fadeInLeftBig } from 'react-animations';
+import { zoomIn, fadeIn, fadeInDown, fadeInUp } from 'react-animations';
 import "./Homepage.css";
 
 
@@ -19,17 +18,17 @@ export class Homepage extends Component {
         animation: '3.5s',
         animationName: Radium.keyframes(fadeInDown, 'fadeInDown')
     }, 
-      fadeInLeftBig: {
+      fadeInUp: {
         animation: '3.5s',
-        animationName: Radium.keyframes(fadeInLeftBig, 'fadeInLeftBig')
+        animationName: Radium.keyframes(fadeInUp, 'fadeInUp')
     },
-        flipInX: {
-        animation: '2.75s',
-        animationName: Radium.keyframes(flipInX, 'flipInX')
+        fadeIn: {
+        animation: '6.0s',
+        animationName: Radium.keyframes(fadeIn, 'fadeIn')
     },
-        headShake: {
-        animation: 'x 0.5s',
-        animationName: Radium.keyframes(headShake, 'headShake')
+        zoomIn: {
+        animation: '3.5s',
+        animationName: Radium.keyframes(zoomIn, 'zoomIn')
     }
     }
   };
@@ -38,7 +37,7 @@ componentWillMount() {
 };
 
 onMouseEnterHandler = (event) => {
-    this.styles.headShake
+    this.styles.zoomIn
 };
 
 onMouseLeaveHandler = (event) => {
@@ -79,70 +78,81 @@ console.log("goodbye");
               <StyleRoot>
                 <h1 
                   id="my-name"
-                  style={this.styles.flipInX} >
+                  style={this.styles.zoomIn} >
                     Julius G. Dorfman
                 </h1>
-                <p style={this.styles.flipInX}>
+                <p style={this.styles.fadeIn}>
                   Full-Stack Web Developer
                 </p>
               <div className="jumbotron-social">
                 <ul className="ul-social">
-                  <li className="li-social-links" style={this.styles.flipInX}>
+                  <li className="li-social-links" style={this.styles.fadeIn}>
                     <a className="social" href="https://github.com/JuliusDorfman" target="_blank" rel="noopener noreferrer"><i className="fa fa-github" aria-hidden="true"></i></a>
                   </li>
-                  <li className="li-social-links" style={this.styles.flipInX}>
+                  <li className="li-social-links" style={this.styles.fadeIn}>
                     <a className="social" href="https://www.linkedin.com/in/juliusgdorfman" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin" aria-hidden="true"></i></a>
                   </li>
                 </ul>
               </div>
               </StyleRoot>
-       
             </div>
           </div>
 
-        <div className="row white box-shadow" id="aboutme">
+      <StyleRoot>
+      <div className="jumbotron-fadeInUp" style={this.styles.fadeInUp} />
+        <div className="row content-row" id="aboutme" >
           <div className="bg-overlay-reveal-1">
 
             <div className="main-content" id="skills-row">
-              <div className="content-body">
-                <Fade big left cascade>
-                  <span><p className="welcome-intro"><span className="flavor-text-big">Hi, </span> I'm Julius. I enjoy making web apps that are <span className="flavor-text-big">intuitive</span> and <span className="flavor-text-big">aesthetic</span>.</p></span>
-                </Fade>
-              </div>
 
-              <div className="main-content">
-              <Fade big left cascade>
+
                 <div className="content-header">
-                  <a className="anchor"></a>
-                  <h2>Skills</h2>
+                      <Fade big left cascade>
+                  <h2 className="skills-header">My Toolbox</h2>
+                      </Fade>
                 </div>
-              </Fade>
-                <div className="content-body">
-                  <StyleRoot>
-                    <Fade big left cascade>
+
+                <div className="content-body skills-group">
+                    <div className="skills-container">
+                      <Fade big left cascade>
+                        <h3>Languages</h3>
+                        <ul className="ul-skills">
+                          <li className="li-skills"><img src="../assets/images/javascript_logo.jpg" alt="js-icon" /><p>Javascript</p></li>
+                          <li className="li-skills"><img src="../assets/images/html5_logo.jpg" alt="html5-icon" /><p>HTML5</p></li>
+                          <li className="li-skills"><img src="../assets/images/css3.jpg" alt="CSS3-icon" /><p>CSS3</p></li>
+                        </ul>
+                      </Fade>                         
+                    </div>
+                    <div className="skills-container">
+                      <Fade big left cascade>
+                        <h3>Libraries</h3>
+                        <ul className="ul-skills">
+                          <li className="li-skills"><img src="../assets/images/bootstrap_logo.jpg" alt="bootstrap-icon" /><p>Bootstrap</p></li>
+                          <li className="li-skills"><img src="../assets/images/jquery_logo.jpg" alt="jquery-icon" /><p>jQuery</p></li>
+                          <li className="li-skills"><img src="../assets/images/react_logo.jpg" alt="react-icon" /><p>ReactJS</p></li>
+                          <li className="li-skills"><img src="../assets/images/redux_logo.jpg" alt="redux-icon" /><p>Redux</p></li>
+                        </ul>
+                      </Fade>                        
+                    </div>
+                    <div className="skills-container">
+                      <Fade big left cascade>
+                      <h3 style={{width:"150%"}}> Environments & Databases</h3>
                       <ul className="ul-skills">
-                        <li className="li-skills">Javascript</li>
-                        <li className="li-skills">MongoDB</li>
-                        <li className="li-skills">HTML5</li>
-                        <li className="li-skills">CSS3</li>
-                        <li className="li-skills">Bootstrap</li>
-                        <li className="li-skills">Express</li>
-                        <li className="li-skills">jQuery</li>
-                        <li className="li-skills">ReactJS</li>
-                        <li className="li-skills">MySQL</li>
-                        <li className="li-skills">API Integration</li>
-                        <li className="li-skills">NodeJS</li>
-                        <li className="li-skills">RESTful Applications</li>
+                        <li className="li-skills"><img src="../assets/images/node_logo.jpg" alt="node-icon" /><p>NodeJS</p></li>
+                        <li className="li-skills"><img src="../assets/images/mysql.jpg" alt="mysql-icon" /><p>MySQL</p></li>
+                        <li className="li-skills"><img src="../assets/images/mongodb_logo.jpg" alt="mongodb-icon" /><p>MongoDB</p></li>
                       </ul>
-                    </Fade>
-                  </StyleRoot>
+                      </Fade>                      
+                    </div>
                 </div>
+
+
               </div>
             </div>
           </div>
-        </div>
+      </StyleRoot>
 
- 	<div className="row">
+ 	<div className="row content-row" id="project-row">
     <div className="bg-overlay-rows" />
     <div className="main-content-lg">
       <Fade big left cascade>
@@ -203,7 +213,7 @@ console.log("goodbye");
   	</div>
   </div>
 
-  <div className="row whitesmoke" id="wips">
+  <div className="row content-row" id="wips">
     <div className="bg-overlay-rows" />
     <div className="main-content-lg">
       <Fade big left cascade>
@@ -226,7 +236,6 @@ console.log("goodbye");
             </div>
           </div>
 
-
             <div className="project-card">
               <div className="project-content">
                 <h3>Personal SASS/SCSS Template</h3>
@@ -247,6 +256,9 @@ console.log("goodbye");
     </div>
   </div>
 
+
+  <div className="bg-peak" />
+
   <div className="row blue">
       <div className="main-content" id="contact-form">
         <div className="content-header">
@@ -264,13 +276,10 @@ console.log("goodbye");
       </div>
   </div>
 
-	<div className="row">
+	<div className="row row-footer">
     <div className="main-content" id="page-footer">
       <div className="content-body">
         <p>&copy; 2018 Julius G. Dorfman</p>
-      </div>
-      <div className="content-body">
-        <p>This site was built utilizing: HTML5, CSS3, Javascript, ReactJS, Radium and various other packages</p>
       </div>
     </div>
   </div>

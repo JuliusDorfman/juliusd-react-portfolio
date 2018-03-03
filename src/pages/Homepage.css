@@ -268,7 +268,7 @@ li img {
 }
 
 .content-row {
-    min-height: 125vh;
+    min-height: 110vh;
 }
 
 .bg-overlay-reveal-1 {
@@ -295,6 +295,17 @@ li img {
     }
 }
 
+@media (max-width: 768px) {
+    #skills-container {
+        flex: 0 0 30%;
+    }
+}
+
+.skills-env-fix {
+    opacity: 1;
+    min-width: 150px;
+    margin-top: 0;
+}
 
 .welcome-intro {
     font-family: 'Poppins', sans-serif;
@@ -320,6 +331,10 @@ li img {
     margin: auto;
     margin-top: 2rem;
     margin-bottom: 3rem;
+}
+
+.wips-header {
+    margin-top: 3rem;
 }
 
 h2 {
@@ -480,10 +495,8 @@ h4 {
 }
 
 .content-body p {
-    text-align: left;
+    text-align: center;
 }
-
-
 
 /*CONTACT*/
 
@@ -492,6 +505,20 @@ h4 {
     background: steelblue;
     text-align: center;
     box-shadow: 0 0 15px 15px steelblue;
+}
+
+.contact-label {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 15%;
+    top: -30px;
+    background: steelblue;
+    color: white;
+    box-shadow: 0 0 15px 15px steelblue;
+    border-radius: 50%;
+    height: 50px;
 }
 
 .contact form {
@@ -574,3 +601,8 @@ h4 {
 
 
 /*CUSTOM*/
+
+.env-fix {
+    width: 150%;
+    margin-top: 0px;
+}

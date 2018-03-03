@@ -113,37 +113,43 @@ console.log("goodbye");
                 </div>
 
                 <div className="content-body skills-group">
-                    <div className="skills-container">
+
+                <div className="skills-min-header">
                       <Fade big left cascade>
+                      </Fade>
+                </div>
+
+                  <div className="skills-container">
+                    <Fade big left cascade>
                         <h3>Languages</h3>
-                        <ul className="ul-skills">
-                          <li className="li-skills"><img src="../assets/images/javascript_logo.jpg" alt="js-icon" /><p>Javascript</p></li>
-                          <li className="li-skills"><img src="../assets/images/html5_logo.jpg" alt="html5-icon" /><p>HTML5</p></li>
-                          <li className="li-skills"><img src="../assets/images/css3.jpg" alt="CSS3-icon" /><p>CSS3</p></li>
-                        </ul>
-                      </Fade>                         
-                    </div>
-                    <div className="skills-container">
-                      <Fade big left cascade>
-                        <h3>Libraries</h3>
-                        <ul className="ul-skills">
-                          <li className="li-skills"><img src="../assets/images/bootstrap_logo.jpg" alt="bootstrap-icon" /><p>Bootstrap</p></li>
-                          <li className="li-skills"><img src="../assets/images/jquery_logo.jpg" alt="jquery-icon" /><p>jQuery</p></li>
-                          <li className="li-skills"><img src="../assets/images/react_logo.jpg" alt="react-icon" /><p>ReactJS</p></li>
-                          <li className="li-skills"><img src="../assets/images/redux_logo.jpg" alt="redux-icon" /><p>Redux</p></li>
-                        </ul>
-                      </Fade>                        
-                    </div>
-                    <div className="skills-container">
-                      <Fade big left cascade>
-                      <h3 style={{width:"150%"}}> Environments & Databases</h3>
                       <ul className="ul-skills">
-                        <li className="li-skills"><img src="../assets/images/node_logo.jpg" alt="node-icon" /><p>NodeJS</p></li>
-                        <li className="li-skills"><img src="../assets/images/mysql.jpg" alt="mysql-icon" /><p>MySQL</p></li>
-                        <li className="li-skills"><img src="../assets/images/mongodb_logo.jpg" alt="mongodb-icon" /><p>MongoDB</p></li>
+                        <li className="li-skills"><img src="../assets/images/javascript_logo.jpg" alt="js-icon" /><p>Javascript</p></li>
+                        <li className="li-skills"><img src="../assets/images/html5_logo.jpg" alt="html5-icon" /><p>HTML5</p></li>
+                        <li className="li-skills"><img src="../assets/images/css3.jpg" alt="CSS3-icon" /><p>CSS3</p></li>
                       </ul>
-                      </Fade>                      
-                    </div>
+                    </Fade>                         
+                  </div>
+                  <div className="skills-container">
+                    <Fade big left cascade>
+                        <h3>Libraries</h3>
+                      <ul className="ul-skills">
+                        <li className="li-skills"><img src="../assets/images/bootstrap_logo.jpg" alt="bootstrap-icon" /><p>Bootstrap</p></li>
+                        <li className="li-skills"><img src="../assets/images/jquery_logo.jpg" alt="jquery-icon" /><p>jQuery</p></li>
+                        <li className="li-skills"><img src="../assets/images/react_logo.jpg" alt="react-icon" /><p>ReactJS</p></li>
+                        <li className="li-skills"><img src="../assets/images/redux_logo.jpg" alt="redux-icon" /><p>Redux</p></li>
+                      </ul>
+                    </Fade>                        
+                  </div>
+                  <div className="skills-container">
+                    <Fade big left cascade>
+                        <h3 className="skills-env-fix">Environments & Databases</h3>
+                    <ul className="ul-skills">
+                      <li className="li-skills"><img src="../assets/images/node_logo.jpg" alt="node-icon" /><p>NodeJS</p></li>
+                      <li className="li-skills"><img src="../assets/images/mysql.jpg" alt="mysql-icon" /><p>MySQL</p></li>
+                      <li className="li-skills"><img src="../assets/images/mongodb_logo.jpg" alt="mongodb-icon" /><p>MongoDB</p></li>
+                    </ul>
+                    </Fade>                      
+                  </div>
                 </div>
 
 
@@ -155,12 +161,12 @@ console.log("goodbye");
  	<div className="row content-row" id="project-row">
     <div className="bg-overlay-rows" />
     <div className="main-content-lg">
-      <Fade big left cascade>
         <div className="content-header">
           <a className="anchor" name="projects"></a>
-          <h2>Projects</h2>
+          <Fade big left cascade>
+            <h2>Projects</h2>
+          </Fade>
         </div>
-      </Fade>
       <Fade big left cascade>
         <div className="content-body">
           
@@ -219,7 +225,9 @@ console.log("goodbye");
       <Fade big left cascade>
         <div className="content-header">
           <a className="anchor" name="wips"></a>
-          <h2>What I'm Working on Now</h2>
+          <Fade big left cascade>
+            <h2 className="wips-header">What I'm Working on Now</h2>
+          </Fade>
         </div>
       </Fade>
 
@@ -243,13 +251,6 @@ console.log("goodbye");
               </div>
             </div>
 
-            <div className="project-card">
-              <div className="project-content">
-                <h3>Revisit and Refactor</h3>
-                <p>I have past projects, group and solo, that I'd like to refine.</p>
-              </div>
-            </div>
-
         </div>
       </Fade>
 
@@ -260,20 +261,24 @@ console.log("goodbye");
   <div className="bg-peak" />
 
   <div className="row blue">
-      <div className="main-content" id="contact-form">
-        <div className="content-header">
-          <a className="anchor" name="contact"></a>
-          <h2 className="white-text">Say "Hello"!</h2>
-        </div>
-        <div className="contact content-body">
-          <form method="POST" action="mailto:juliusgcd@gmail.com" encType="text/plain">
-            <input type="hidden" name="_subject" value="Contact request from personal website"/>
-            <input type="email" name="_replyto" placeholder="A Contact Email"/>
-            <textarea name="message" placeholder="Your message... constructive criticism, advice, words of love, emotional support, mean comments; anything, really."></textarea>
-            <button type="submit">Send</button>
-          </form>
-        </div>
+      <div className="contact-label">
+        <h4>Contact Corner</h4>
       </div>
+    <div className="main-content" id="contact-form">
+
+      <div className="contact content-body">
+            <div className="content-header">
+        <a className="anchor" name="contact"></a>
+        <h2 className="white-text">Say "Hello"!</h2>
+      </div>
+        <form method="POST" action="mailto:juliusgcd@gmail.com" encType="text/plain">
+          <input type="hidden" name="_subject" value="Contact request from personal website"/>
+          <input type="email" name="_replyto" placeholder="A Contact Email"/>
+          <textarea name="message" placeholder="Your message... constructive criticism, advice, words of love, emotional support, mean comments; anything, really."></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </div>
 
 	<div className="row row-footer">

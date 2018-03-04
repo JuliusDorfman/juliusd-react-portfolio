@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Radium, { StyleRoot } from 'radium';
-import Fade from 'react-reveal/Fade';
+import { Roll, Fade } from 'react-reveal';
 import { zoomIn, fadeIn, fadeInDown, fadeInUp } from 'react-animations';
 import "./Homepage.css";
 
@@ -82,15 +82,18 @@ console.log("goodbye");
                     Julius G. Dorfman
                 </h1>
                 <p style={this.styles.fadeIn}>
-                  Full-Stack Web Developer
+                  Logical Design | Creative Solutions
                 </p>
               <div className="jumbotron-social">
                 <ul className="ul-social">
                   <li className="li-social-links" style={this.styles.fadeIn}>
-                    <a className="social" href="https://github.com/JuliusDorfman" target="_blank" rel="noopener noreferrer"><i className="fa fa-github" aria-hidden="true"></i></a>
+                    <a className="social" href="https://github.com/JuliusDorfman" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                   </li>
                   <li className="li-social-links" style={this.styles.fadeIn}>
-                    <a className="social" href="https://www.linkedin.com/in/juliusgdorfman" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a className="social" href="https://www.linkedin.com/in/juliusgdorfman" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
+                  </li>
+                  <li className="li-social-links" style={this.styles.fadeIn}>
+                    <a className="social" target="_blank" href="../assets/docs/JuliusDorfman_Resume_030318.pdf" download="../assets/docs/JuliusDorfman_Resume_030318.pdf"><i class="far fa-file-word"></i></a>
                   </li>
                 </ul>
               </div>
@@ -105,23 +108,20 @@ console.log("goodbye");
 
             <div className="main-content" id="skills-row">
 
-
                 <div className="content-header">
-                      <Fade big left cascade>
-                  <h2 className="skills-header">My Toolbox</h2>
-                      </Fade>
+                  <Fade bottom cascade>
+                    <h2 className="skills-header">My Toolbox</h2>
+                  </Fade>
                 </div>
 
                 <div className="content-body skills-group">
-
-                <div className="skills-min-header">
-                      <Fade big left cascade>
-                      </Fade>
-                </div>
-
                   <div className="skills-container">
-                    <Fade big left cascade>
+                    <div className="skills-subheader">
+                      <Fade bottom cascade>
                         <h3>Languages</h3>
+                      </Fade>
+                    </div>
+                    <Fade bottom cascade>
                       <ul className="ul-skills">
                         <li className="li-skills"><img src="../assets/images/javascript_logo.jpg" alt="js-icon" /><p>Javascript</p></li>
                         <li className="li-skills"><img src="../assets/images/html5_logo.jpg" alt="html5-icon" /><p>HTML5</p></li>
@@ -130,8 +130,12 @@ console.log("goodbye");
                     </Fade>                         
                   </div>
                   <div className="skills-container">
-                    <Fade big left cascade>
+                    <div className="skills-subheader">
+                      <Fade bottom cascade>
                         <h3>Libraries</h3>
+                      </Fade>
+                    </div>
+                    <Fade bottom cascade>
                       <ul className="ul-skills">
                         <li className="li-skills"><img src="../assets/images/bootstrap_logo.jpg" alt="bootstrap-icon" /><p>Bootstrap</p></li>
                         <li className="li-skills"><img src="../assets/images/jquery_logo.jpg" alt="jquery-icon" /><p>jQuery</p></li>
@@ -141,13 +145,18 @@ console.log("goodbye");
                     </Fade>                        
                   </div>
                   <div className="skills-container">
-                    <Fade big left cascade>
-                        <h3 className="skills-env-fix">Environments & Databases</h3>
-                    <ul className="ul-skills">
-                      <li className="li-skills"><img src="../assets/images/node_logo.jpg" alt="node-icon" /><p>NodeJS</p></li>
-                      <li className="li-skills"><img src="../assets/images/mysql.jpg" alt="mysql-icon" /><p>MySQL</p></li>
-                      <li className="li-skills"><img src="../assets/images/mongodb_logo.jpg" alt="mongodb-icon" /><p>MongoDB</p></li>
-                    </ul>
+                    <div className="skills-subheader">
+                      <Fade bottom cascade>
+                        <h3>Environments &</h3> 
+                        <h3>Databases</h3>
+                      </Fade>
+                    </div>
+                    <Fade bottom cascade>
+                      <ul className="ul-skills">
+                        <li className="li-skills"><img src="../assets/images/node_logo.jpg" alt="node-icon" /><p>NodeJS</p></li>
+                        <li className="li-skills"><img src="../assets/images/mysql.jpg" alt="mysql-icon" /><p>MySQL</p></li>
+                        <li className="li-skills"><img src="../assets/images/mongodb_logo.jpg" alt="mongodb-icon" /><p>MongoDB</p></li>
+                      </ul>
                     </Fade>                      
                   </div>
                 </div>
@@ -261,11 +270,10 @@ console.log("goodbye");
   <div className="bg-peak" />
 
   <div className="row blue">
-      <div className="contact-label">
-        <h4>Contact Corner</h4>
-      </div>
+    <div className="contact-label">
+      <h4>Contact Corner</h4>
+    </div>
     <div className="main-content" id="contact-form">
-
       <div className="contact content-body">
             <div className="content-header">
         <a className="anchor" name="contact"></a>
@@ -279,14 +287,21 @@ console.log("goodbye");
         </form>
       </div>
     </div>
+
   </div>
 
 	<div className="row row-footer">
     <div className="main-content" id="page-footer">
-      <div className="content-body">
+      <div className="links-container">
+        <a className="footer-links" href="https://github.com/JuliusDorfman" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+        <a className="footer-links" href="https://www.linkedin.com/in/juliusgdorfman" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
+        <a className="footer-links" target="_blank" href="../assets/docs/JuliusDorfman_Resume_030318.pdf" download="../assets/docs/JuliusDorfman_Resume_030318.pdf"><i class="far fa-file-word"></i></a>
+      </div>
+      <div className="content-body copywrite">
         <p>&copy; 2018 Julius G. Dorfman</p>
       </div>
     </div>
+
   </div>
 
 	</div>

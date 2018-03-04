@@ -9,6 +9,7 @@ body {
 }
 
 
+
 /*NAVBAR*/
 
 .navbar {
@@ -50,6 +51,7 @@ body {
 .no-overflow {
     overflow: hidden;
 }
+
 
 
 /*JUMBOTRON*/
@@ -210,6 +212,7 @@ body {
 }
 
 
+
 /*SOCIAL LINKS*/
 
 .ul-social {
@@ -228,31 +231,49 @@ body {
     padding: 20px;
 }
 
+
 /*SKILLS*/
 
 .skills-container {
     display: flex;
     flex-direction: column;
-    width: min-content;
-    margin: 0 auto;
+    flex: 1;
     font-family: "Poppins", sans-serif;
     color: white;
 }
 
+.skills-subheader {
+    display: inline-block;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 40px;
+    font-size: 1.5rem;
+    width: max-content;
+    margin: 0 auto;
+}
+.skills-subheader h3{
+    margin: 0;
+}
+
+
 .ul-skills {
-padding: initial;
+    display: inherit;
+    flex-direction: column;
 }
 
 .li-skills {
     list-style-type: none;
-    align-content: center;
-    margin: 3rem auto;
 }
 
-li img {
-    height: 90px;
-    width: 90px;
+.li-skills p {
+    margin: 0 0 3rem 0;
 }
+
+.li-skills img {
+    width: 70px;
+    height: 70px
+}
+
 
 /*CONTENT*/
 
@@ -263,7 +284,7 @@ li img {
 }
 
 .row {
-    background: white;
+    background-color: white;
     display: flex;
 }
 
@@ -273,7 +294,6 @@ li img {
 
 .bg-overlay-reveal-1 {
     position: relative;
-    height: 100%;
     width: 100%;
     background: linear-gradient(black, black);
 }
@@ -364,6 +384,7 @@ h4 {
 
 
 
+
 /*PROJECTS*/
 
 .project-card {
@@ -405,7 +426,8 @@ h4 {
     opacity: 0.95;
 }
 
-.bg-card-overlay h3, p {
+.bg-card-overlay h3,
+p {
     font-size: 1.25rem;
     font-weight: bold;
     color: white;
@@ -462,7 +484,8 @@ h4 {
     margin: auto;
 }
 
-.project-content p, h3 {
+.project-content p,
+h3 {
     color: white;
 }
 
@@ -497,6 +520,7 @@ h4 {
 .content-body p {
     text-align: center;
 }
+
 
 /*CONTACT*/
 
@@ -563,7 +587,7 @@ h4 {
 }
 
 #contact-form {
-    flex: 50% 0;
+    width: 50%;
     margin: auto auto 3rem auto;
 }
 
@@ -583,6 +607,18 @@ h4 {
     color: white;
 }
 
+.links-container {}
+
+.footer-links {
+    margin: 0 1.5rem;
+    font-size: 3rem;
+    color: black;
+}
+
+.copywrite {
+    padding-bottom: 2rem;
+}
+
 ::placeholder {
     color: whitesmoke;
     opacity: 1;
@@ -598,6 +634,7 @@ h4 {
     /* Microsoft Edge */
     color: whitesmoke;
 }
+
 
 
 /*CUSTOM*/

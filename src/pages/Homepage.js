@@ -87,13 +87,13 @@ console.log("goodbye");
               <div className="jumbotron-social">
                 <ul className="ul-social">
                   <li className="li-social-links" style={this.styles.fadeIn}>
-                    <a className="social" href="https://github.com/JuliusDorfman" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a className="social" href="https://github.com/JuliusDorfman" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
                   </li>
                   <li className="li-social-links" style={this.styles.fadeIn}>
                     <a className="social" href="https://www.linkedin.com/in/juliusgdorfman" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
                   </li>
                   <li className="li-social-links" style={this.styles.fadeIn}>
-                    <a className="social" target="_blank" href="../assets/docs/JuliusDorfman_Resume_030318.pdf" download="../assets/docs/JuliusDorfman_Resume_030318.pdf"><i class="far fa-file-word"></i></a>
+                    <a className="social" target="_blank" href="../assets/docs/JuliusDorfman_Resume_030318.pdf" download="../assets/docs/JuliusDorfman_Resume_030318.pdf"><i className="far fa-file-word"></i></a>
                   </li>
                 </ul>
               </div>
@@ -243,17 +243,16 @@ console.log("goodbye");
       <Fade big left cascade>
         <div className="content-body">
 
-          <div className="project-card">
+          <div className="project-card news-from-card">
+            <div className="news-from-overlay" />
             <div className="project-content">
-              <h3>This Portfolio</h3>
-              <p>This Portfolio is in perpetual growth; 
-              I look forward to incorporating new libraries and techniques as I move forward in my 
-              programming career.
+              <h3 className="news-from-header">News-From</h3>
+              <p>News Site aggregator. Scraping top headlines from various popular websites and displaying them in a single destination, side by side.
               </p>
             </div>
           </div>
 
-            <div className="project-card">
+            <div className="project-card sass-card">
               <div className="project-content">
                 <h3>Personal SASS/SCSS Template</h3>
                 <p>I am VERY excited to begin working on a personal stylesheet.</p>
@@ -293,9 +292,9 @@ console.log("goodbye");
 	<div className="row row-footer">
     <div className="main-content" id="page-footer">
       <div className="links-container">
-        <a className="footer-links" href="https://github.com/JuliusDorfman" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+        <a className="footer-links" href="https://github.com/JuliusDorfman" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
         <a className="footer-links" href="https://www.linkedin.com/in/juliusgdorfman" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
-        <a className="footer-links" target="_blank" href="../assets/docs/JuliusDorfman_Resume_030318.pdf" download="../assets/docs/JuliusDorfman_Resume_030318.pdf"><i class="far fa-file-word"></i></a>
+        <a className="footer-links" target="_blank" href="../assets/docs/JuliusDorfman_Resume_030318.pdf" download="../assets/docs/JuliusDorfman_Resume_030318.pdf"><i className="far fa-file-word"></i></a>
       </div>
       <div className="content-body copywrite">
         <p>&copy; 2018 Julius G. Dorfman</p>

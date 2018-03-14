@@ -10,6 +10,7 @@ body {
 
 
 
+
 /*NAVBAR*/
 
 .navbar {
@@ -51,6 +52,7 @@ body {
 .no-overflow {
     overflow: hidden;
 }
+
 
 
 
@@ -213,6 +215,7 @@ body {
 
 
 
+
 /*SOCIAL LINKS*/
 
 .ul-social {
@@ -230,6 +233,7 @@ body {
     color: white;
     padding: 20px;
 }
+
 
 
 /*SKILLS*/
@@ -251,7 +255,8 @@ body {
     width: max-content;
     margin: 0 auto;
 }
-.skills-subheader h3{
+
+.skills-subheader h3 {
     margin: 0;
 }
 
@@ -273,6 +278,7 @@ body {
     width: 70px;
     height: 70px
 }
+
 
 
 /*CONTENT*/
@@ -357,6 +363,35 @@ body {
     margin-top: 3rem;
 }
 
+.news-from-header {
+    font-family: "Rammetto One", sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.news-from-card {
+    background: url("/assets/images/news-from.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.news-from-card div p {
+    color: white;
+}
+
+.news-from-overlay {
+    position: absolute;
+    z-index: -1;
+    width: inherit;
+    height: inherit;
+    background: black;
+    opacity: 0.5;
+}
+
+.sass-card {
+    background: black;
+}
+
 h2 {
     font-weight: 200;
     font-family: "Krona One", sans-serif;
@@ -381,6 +416,7 @@ h4 {
 .job-title {
     float: right;
 }
+
 
 
 
@@ -475,7 +511,6 @@ p {
 .project-content {
     flex: 1 1 auto;
     padding: 1.25rem;
-    background: black;
     display: flex;
     flex-direction: column;
 }
@@ -520,6 +555,7 @@ h3 {
 .content-body p {
     text-align: center;
 }
+
 
 
 /*CONTACT*/
@@ -634,6 +670,7 @@ h3 {
     /* Microsoft Edge */
     color: whitesmoke;
 }
+
 
 
 

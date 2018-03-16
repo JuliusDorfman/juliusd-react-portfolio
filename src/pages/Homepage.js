@@ -93,7 +93,7 @@ console.log("goodbye");
                     <a className="social" href="https://www.linkedin.com/in/juliusgdorfman" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
                   </li>
                   <li className="li-social-links" style={this.styles.fadeIn}>
-                    <a className="social" target="_blank" href="../assets/docs/JuliusDorfman_Resume_030318.pdf" download="../assets/docs/JuliusDorfman_Resume_030318.pdf"><i className="far fa-file-word"></i></a>
+                    <a className="social" target="_blank" href="../assets/docs/JuliusDorfman_Resume.doc" download="JuliusDorfman_Resume.doc"><i className="far fa-file-word"></i></a>
                   </li>
                 </ul>
               </div>
@@ -294,7 +294,7 @@ console.log("goodbye");
       <div className="links-container">
         <a className="footer-links" href="https://github.com/JuliusDorfman" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
         <a className="footer-links" href="https://www.linkedin.com/in/juliusgdorfman" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
-        <a className="footer-links" target="_blank" href="../assets/docs/JuliusDorfman_Resume_030318.pdf" download="../assets/docs/JuliusDorfman_Resume_030318.pdf"><i className="far fa-file-word"></i></a>
+        <a className="footer-links" target="_blank" href="../assets/docs/JuliusDorfman_Resume.doc" download="JuliusDorfman_Resume.doc"><i className="far fa-file-word"></i></a>
       </div>
       <div className="content-body copywrite">
         <p>&copy; 2018 Julius G. Dorfman</p>

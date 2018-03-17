@@ -105,7 +105,7 @@ console.log("goodbye");
       <div className="jumbotron-fadeInUp" style={this.styles.fadeInUp} />
         <div className="row content-row" id="aboutme" >
           <div className="bg-overlay-reveal-1">
-
+            <img src="" className="skills_background" />
             <div className="main-content" id="skills-row">
 
                 <div className="content-header">
@@ -167,8 +167,8 @@ console.log("goodbye");
           </div>
       </StyleRoot>
 
- 	<div className="row content-row" id="project-row">
-    <div className="bg-overlay-rows" />
+ 	<div className="row content-row">
+    <div className="bg-overlay-rows" id="project-row-background" />
     <div className="main-content-lg">
         <div className="content-header">
           <a className="anchor" name="projects"></a>
@@ -228,8 +228,8 @@ console.log("goodbye");
   	</div>
   </div>
 
-  <div className="row content-row" id="wips">
-    <div className="bg-overlay-rows" />
+  <div className="row content-row">
+    <div className="bg-overlay-rows" id="wips"/>
     <div className="main-content-lg">
       <Fade big left cascade>
         <div className="content-header">

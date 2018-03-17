@@ -9,8 +9,6 @@ body {
 }
 
 
-
-
 /*NAVBAR*/
 
 .navbar {
@@ -260,7 +258,6 @@ body {
     margin: 0;
 }
 
-
 .ul-skills {
     display: inherit;
     flex-direction: column;
@@ -279,7 +276,11 @@ body {
     height: 70px
 }
 
-
+.skills_background {
+    position: absolute;
+    display: grid;
+    opacity: .6
+}
 
 /*CONTENT*/
 
@@ -302,16 +303,21 @@ body {
     position: relative;
     width: 100%;
     background: linear-gradient(black, black);
+    box-shadow: 0 0 15px 15px black;
+    z-index: 1;
 }
 
 .skills-header {
     color: white;
 }
 
-
 #skills-row {
     display: flex;
     flex-direction: column;
+}
+
+#aboutme {
+    background: url("/assets/images/wips_construction.png");
 }
 
 @media (max-width: 1200px) {
@@ -363,6 +369,14 @@ body {
     margin-top: 3rem;
 }
 
+#wips {
+    background: url(/assets/images/wips_construction.png);
+    height: 100vh;
+    background-attachment: fixed;
+    opacity: .7;
+    box-shadow: 0 0 50px 50px white inset;
+}
+
 .news-from-header {
     font-family: "Rammetto One", sans-serif;
     font-size: 30px;
@@ -385,7 +399,7 @@ body {
     width: inherit;
     height: inherit;
     background: black;
-    opacity: 0.5;
+    opacity: 0.9;
 }
 
 .sass-card {
@@ -456,6 +470,15 @@ h4 {
     transition: 0.3s;
 }
 
+#project-row-background {
+    background: url("/assets/images/projects_background.jpg");
+    background-attachment: fixed;
+    opacity: .4;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    box-shadow: 0 0 50px 50px white inset;
+}
 
 .bg-card-overlay:hover {
     flex-direction: column;

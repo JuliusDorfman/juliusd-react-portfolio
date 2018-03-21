@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Radium, { StyleRoot } from 'radium';
-import { Roll, Fade } from 'react-reveal';
+import { Fade } from 'react-reveal';
 import { zoomIn, fadeIn, fadeInDown, fadeInUp } from 'react-animations';
 import "./Homepage.css";
 
@@ -37,7 +37,6 @@ componentWillMount() {
 };
 
 onMouseEnterHandler = (event) => {
-    this.styles.zoomIn
 };
 
 onMouseLeaveHandler = (event) => {
@@ -93,7 +92,7 @@ console.log("goodbye");
                     <a className="social" href="https://www.linkedin.com/in/juliusgdorfman" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
                   </li>
                   <li className="li-social-links" style={this.styles.fadeIn}>
-                    <a className="social" target="_blank" href="../assets/docs/JuliusDorfman_Resume.doc" download="JuliusDorfman_Resume.doc"><i className="far fa-file-word"></i></a>
+                    <a className="social" target="_blank" rel="noopener noreferrer" href="../assets/docs/JuliusDorfman_Resume.doc" download="JuliusDorfman_Resume.doc"><i className="far fa-file-word"></i></a>
                   </li>
                 </ul>
               </div>
@@ -105,7 +104,6 @@ console.log("goodbye");
       <div className="jumbotron-fadeInUp" style={this.styles.fadeInUp} />
         <div className="row content-row" id="aboutme" >
           <div className="bg-overlay-reveal-1">
-            <img src="" className="skills_background" />
             <div className="main-content" id="skills-row">
 
                 <div className="content-header">
@@ -170,8 +168,8 @@ console.log("goodbye");
  	<div className="row content-row">
     <div className="bg-overlay-rows" id="project-row-background" />
     <div className="main-content-lg">
+      <span className="anchor" id="projects"/>
         <div className="content-header">
-          <a className="anchor" name="projects"></a>
           <Fade big left cascade>
             <h2>Projects</h2>
           </Fade>
@@ -180,7 +178,7 @@ console.log("goodbye");
         <div className="content-body">
           
           <div className="project-card" id="cardOne">
-            <a href="https://crystal-game-juliusd.herokuapp.com/index.html" target="_blank">
+            <a href="https://crystal-game-juliusd.herokuapp.com/index.html" target="_blank" rel="noopener noreferrer">
               <div className="bg-card-overlay">
                 <h3>Crystals Number Matching Game</h3>
                 <p>Click the Crystals to discover their worth. Don't be greedy though. You'll only want to obtain enough points to MATCH the given number.</p>
@@ -190,7 +188,7 @@ console.log("goodbye");
 
 
           <div className="project-card" id="cardTwo">
-            <a href="https://github.com/JuliusDorfman/liri-node-app" target="_blank">
+            <a href="https://github.com/JuliusDorfman/liri-node-app" target="_blank" rel="noopener noreferrer">
               <div className="bg-card-overlay">
               	<h3>Liri-Bot</h3>
               	<p>A personal Node-app used to aggregate my last handful of tweets.</p>
@@ -204,7 +202,7 @@ console.log("goodbye");
         <div className="content-body">
 
           <div className="project-card" id="cardThree">
-            <a href="https://philosophy-quiz.herokuapp.com/" target="_blank">
+            <a href="https://philosophy-quiz.herokuapp.com/" target="_blank" rel="noopener noreferrer">
               <div className="bg-card-overlay">
                 <h3>Philosophy Trivia</h3>
                 <p>Think you've studied philosophy? I bet you "Kant" name these philosophers.</p>
@@ -214,7 +212,7 @@ console.log("goodbye");
 
 
           <div className="project-card" id="cardFour">
-            <a href="https://clicky-clicky-game.herokuapp.com/" target="_blank">
+            <a href="https://clicky-clicky-game.herokuapp.com/" target="_blank" rel="noopener noreferrer">
               <div className="bg-card-overlay">
               <h3>Memory-Click Game</h3>
               <p>A single page application built with React. Don't click the same iconic character twice in a round!</p>
@@ -233,7 +231,7 @@ console.log("goodbye");
     <div className="main-content-lg">
       <Fade big left cascade>
         <div className="content-header">
-          <a className="anchor" name="wips"></a>
+          <span id="wips" />
           <Fade big left cascade>
             <h2 className="wips-header">What I'm Working on Now</h2>
           </Fade>
@@ -274,16 +272,16 @@ console.log("goodbye");
     </div>
     <div className="main-content" id="contact-form">
       <div className="contact content-body">
-            <div className="content-header">
-        <a className="anchor" name="contact"></a>
+        <div className="content-header">
+        <span id="contact" />
         <h2 className="white-text">Say "Hello"!</h2>
       </div>
-        <form method="POST" action="mailto:juliusgcd@gmail.com" encType="text/plain">
-          <input type="hidden" name="_subject" value="Contact request from personal website"/>
-          <input type="email" name="_replyto" placeholder="A Contact Email"/>
-          <textarea name="message" placeholder="Your message... constructive criticism, advice, words of love, emotional support, mean comments; anything, really."></textarea>
-          <button type="submit">Send</button>
-        </form>
+      <form method="POST" action="mailto:juliusgcd@gmail.com" encType="text/plain">
+        <input type="hidden" name="_subject" value="Contact request from personal website"/>
+        <input type="email" name="_replyto" placeholder="A Contact Email"/>
+        <textarea name="message" placeholder="Your message... constructive criticism, advice, words of love, emotional support, mean comments; anything, really."></textarea>
+        <button type="submit">Send</button>
+      </form>
       </div>
     </div>
 
@@ -294,7 +292,7 @@ console.log("goodbye");
       <div className="links-container">
         <a className="footer-links" href="https://github.com/JuliusDorfman" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
         <a className="footer-links" href="https://www.linkedin.com/in/juliusgdorfman" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
-        <a className="footer-links" target="_blank" href="../assets/docs/JuliusDorfman_Resume.doc" download="JuliusDorfman_Resume.doc"><i className="far fa-file-word"></i></a>
+        <a className="footer-links" target="_blank" rel="noopener noreferrer" href="../assets/docs/JuliusDorfman_Resume.doc" download="JuliusDorfman_Resume.doc"><i className="far fa-file-word"></i></a>
       </div>
       <div className="content-body copywrite">
         <p>&copy; 2018 Julius G. Dorfman</p>

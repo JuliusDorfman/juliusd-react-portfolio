@@ -105,9 +105,8 @@ console.log("goodbye");
         <div className="row content-row" id="aboutme" >
           <div className="bg-overlay-reveal-1">
             <div className="main-content" id="skills-row">
-
                 <div className="content-header">
-                  <Fade bottom cascade>
+                  <Fade bottom>
                     <h2 className="skills-header">My Toolbox</h2>
                   </Fade>
                 </div>
@@ -124,6 +123,7 @@ console.log("goodbye");
                         <li className="li-skills"><img src="../assets/images/javascript_logo.jpg" alt="js-icon" /><p>Javascript</p></li>
                         <li className="li-skills"><img src="../assets/images/html5_logo.jpg" alt="html5-icon" /><p>HTML5</p></li>
                         <li className="li-skills"><img src="../assets/images/css3.jpg" alt="CSS3-icon" /><p>CSS3</p></li>
+                        <li className="li-skills"><img src="../assets/images/php.png" alt="php-icon" /><p>PHP</p></li>
                       </ul>
                     </Fade>                         
                   </div>

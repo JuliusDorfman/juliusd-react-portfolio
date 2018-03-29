@@ -72,7 +72,7 @@ body {
     width: 100%;
     height: 105vh;
     opacity: 0.5;
-    background: linear-gradient(to right, black, white, black);
+    background: linear-gradient(to right, black 30%, white, black 70%);
 }
 
 .bg-overlay-rows {
@@ -183,7 +183,7 @@ body {
     font-size: 2em;
     color: white;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 120px;
     height: 100%
 }
 
@@ -258,6 +258,11 @@ body {
     margin: 0;
 }
 
+.skills-group {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
 .ul-skills {
     display: inherit;
     flex-direction: column;
@@ -296,7 +301,8 @@ body {
 .bg-overlay-reveal-1 {
     position: relative;
     width: 100%;
-    background: linear-gradient(black, black);
+    background: url("/assets/images/skills-bg.jpg"), -webkit-linear-gradient(top, black, gray, black);
+    background-blend-mode: multiply;
     box-shadow: 0 0 15px 15px black;
     z-index: 1;
 }
@@ -367,6 +373,9 @@ body {
     background: url(/assets/images/wips_construction.png);
     height: 100vh;
     background-attachment: fixed;
+    background-size: contain;
+    background-repeat-y: no-repeat;
+    background-position-y: 150px;
     opacity: .7;
     box-shadow: 0 0 50px 50px white inset;
 }

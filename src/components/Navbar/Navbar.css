@@ -1,0 +1,37 @@
+
+
+/*NAVBAR*/
+
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 20;
+    background: black;
+    justify-content: center;
+    box-shadow: 0px 0px 5px 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar a {
+    font-weight: 200;
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+
+    transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.navbar a:hover {
+    padding: 5px 45px;
+    font-weight: 900;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 5px 10px white;
+}

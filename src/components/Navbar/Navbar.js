@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Radium, { StyleRoot } from 'radium';
 import { fadeInDown } from 'react-animations';
 import './Navbar.css';

@@ -12,11 +12,11 @@ export class Homepage extends Component {
       fadeInDown: {
         animation: '3.5s',
         animationName: Radium.keyframes(fadeInDown, 'fadeInDown')
-    }, 
+      }, 
         fadeIn: {
         animation: '6.0s',
         animationName: Radium.keyframes(fadeIn, 'fadeIn')
-    }
+      }
     }
   };
 
@@ -34,7 +34,7 @@ componentDidMount() {
         }
       })
 
-      $('.fadeinleft').each( function(i){
+      $('.fadeinleft').each(function(i){
             var bottom_of_element = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             if( bottom_of_window > bottom_of_element ){
@@ -44,10 +44,9 @@ componentDidMount() {
 
       $('#card-one').css({
       "background-position-y": (Math.round(scrollTop/4))+"px"
+      });
     });
-
-    });
-}
+    }
 
 	render() {
 

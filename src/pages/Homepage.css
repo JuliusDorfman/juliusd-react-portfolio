@@ -239,7 +239,7 @@ body {
     position: relative;
     background-size: 10%;
     height: 400px;
-    background-image: url(/static/media/crystal-bg.4bd0f117.jpg);
+    background-image: url("../assets/images/crystal-bg.jpg");
     box-shadow: 0 0 7px 7px pink, 0 0 10px 10px pink inset;
 }
 
@@ -312,6 +312,12 @@ body {
     font-family: 'Press Start 2P', cursive;
     color: green;
     font-weight: 100;
+    animation: blink cubic-bezier(1.0,0,0,1.0) 1000ms infinite;
+}
+
+@keyframes blink {
+    from {color: green;}
+    to {color: black;}
 }
 
 #card-two p {

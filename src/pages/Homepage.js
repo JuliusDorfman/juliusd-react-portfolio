@@ -20,14 +20,14 @@ export class Homepage extends Component {
     }
   };
 
-componentDidMount() {
+componentWillMount() {
       $(window).scroll(function() {
       var screenTop = $(document).scrollTop()
       var scrollTop = $(window).scrollTop();
 
         $('.jumbotron').css({
           height: function() {
-            let height =  (1250 - screenTop) * .75;
+            let height =  (1000 - screenTop) * .75;
             if (height >= 450) {
               return height
           }
@@ -45,6 +45,23 @@ componentDidMount() {
       $('#card-one').css({
       "background-position-y": (Math.round(scrollTop/4))+"px"
       });
+
+      $('.crystal-ruby').css({
+      "top": -100 + (Math.round(scrollTop/2))+"px"
+      });
+
+      $('.crystal-diamond').css({
+      "top": -300 + (Math.round(scrollTop/1))+"px"
+      });
+
+      $('.crystal-sapphire').css({
+      "top": -1000 + (Math.round(scrollTop/.5))+"px"
+      });
+
+      $('.crystal-emerald').css({
+      "top": -1600 + (Math.round(scrollTop/.4))+"px"
+      });
+
     });
     }
 
@@ -86,18 +103,31 @@ componentDidMount() {
       </div>
     </div>
 
-    <div className="divider" />
-
  	<div className="row" id="projects">
     <div className="main-content">
-      <div className="projects-header">
-        <h2>\\ [WORKING TITLE]</h2>
-        <div className="underline-projects fadeinleft" />
-      </div>
+
+  <div className="project-outline">
+    <div className="project-outline-content">
+      <h3>Crystal Game</h3>
+      <h4>Project Outline</h4>
+      <p>To create a single-page, javascript driven math game.</p>
+      <h4>My Role</h4>
+      <p>Developing all HTML, CSS, and JavaScript assets for the project.</p>
+    </div>
+    <div className="project-outline-tools">
+        <i class="fab fa-html5" />
+        <i class="fab fa-css3-alt" />
+        <i class="fab fa-js-square" />
+    </div>
+  </div>
           
           <div className="project-card" id="card-one">
+            <img src="/assets/images/crystal_ruby.png" className="crystal-ruby" />
+            <img src="/assets/images/crystal_diamond.png" className="crystal-diamond" />
+            <img src="/assets/images/crystal_sapphire.png" className="crystal-sapphire" />
+            <img src="/assets/images/crystal_emerald.png" className="crystal-emerald" />
             <a href="https://crystal-game-juliusd.herokuapp.com/index.html" target="_blank" rel="noopener noreferrer">
-              <h4 className="project-title">Crystal Game</h4>
+              <h3 className="project-title">Crystal Game</h3>
             </a>
             <p><span className="first-word">{(`Challenging   `)}</span> math game based on intuition and pragmatism. Collect crystals with undisclosed values. Beware: greed never pays; don't go over the goal value!</p>
         	</div>

@@ -10,7 +10,47 @@ body {
 
 .row {
     z-index: 1;
+    background-color: white;
 }
+
+
+
+/*Grid*/
+
+
+/*
+.item-a {
+    grid-area: header;
+}
+.item-b {
+    grid-area: main;
+}
+.item-c {
+    grid-area: sidebar;
+}
+.item-d {
+    grid-area: footer;
+}
+
+
+.grid-container {
+    display: grid;
+    position: absolute;
+    height: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: 25%;
+    border: 1px solid black;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "main main main"
+    "footer footer footer"
+    ;
+}
+*/
 
 
 /*JUMBOTRON*/
@@ -164,6 +204,7 @@ body {
 }
 
 
+
 /*SOCIAL LINKS*/
 
 .ul-social {
@@ -183,6 +224,7 @@ body {
 }
 
 
+
 /*PROJECTS*/
 
 .projects-header {
@@ -196,33 +238,31 @@ body {
     color: black;
 }
 
-/*.underline-projects {
+.underline-projects {
     position: relative;
-    width: 250px;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid black;
     margin-bottom: 30px;
-    border-radius: 50%
-}*/
-
-.fadeinleft {
- margin-left:-400px; 
- max-width:100%;
 }
+
+.underline-projects {}
 
 .project-outline {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
+    width: inherit;
     padding: 20px 50px 20px 100px;
-    width: 100%;
     text-align: left;
+    flex-wrap: wrap;
     background: rgba(0, 0, 0, 0.2);
 }
 
 .project-outline h3 {
-    font-size: 2rem;
-    color: black;
+    position: relative;
+    display: inline-block;
     margin: auto;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: black;
 }
 
 .project-outline h4 {
@@ -234,15 +274,27 @@ body {
     margin: auto;
 }
 
-.project-outline-tools {
-    display: flex;
-    width: 10%;
+.project-outline-content {
+    position: relative;
+    display: inline;
+    text-align: left;
+    width: 50%;
 }
 
-.project-outline-tools svg {
+.project-outline-tools {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.project-outline-tools * {
     font-size: 3rem;
-    justify-content: space-between;
-    margin: 10%;
+    margin-left: 40px;
+    margin-top: 40px;
+    height: 40px;
+    width: 40px;
 }
 
 .project-card {
@@ -251,7 +303,7 @@ body {
     height: 350px;
     flex: 0 1 auto;
     padding: 0 200px;
-    margin-bottom: 30vh;
+    margin-bottom: 10vh;
 
     transition: 0.3s;
     -o-transition: 0.3s;
@@ -259,10 +311,7 @@ body {
     -webkit-transition: 0.3s;
 }
 
-.project-card:hover {
-}
-
-.project-card a {
+#card-one a {
     position: relative;
     display: flex;
     text-decoration: none;
@@ -297,7 +346,7 @@ body {
     position: absolute;
     top: 40%;
     right: 20%;
-    width: 50%;    
+    width: 50%;
     padding: 25px;
     margin: 0 auto;
     text-align: left;
@@ -353,7 +402,7 @@ body {
 #card-two {
     position: relative;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     height: 100%;
     flex-wrap: wrap;
     padding: 30px;
@@ -365,12 +414,13 @@ body {
     #card-two {
         flex-direction: column;
         align-items: center;
-        }
+    }
 }
 
 
 #card-two a {
     flex-direction: column;
+    text-decoration: none;
 }
 
 #card-two .project-title {
@@ -387,12 +437,16 @@ body {
     font-family: 'Press Start 2P', cursive;
     color: green;
     font-weight: 100;
-    animation: blink cubic-bezier(1.0,0,0,1.0) 1000ms infinite;
+    animation: blink cubic-bezier(1.0, 0, 0, 1.0) 1000ms infinite;
 }
 
 @keyframes blink {
-    from {color: green;}
-    to {color: black;}
+    from {
+        color: green;
+    }
+    to {
+        color: black;
+    }
 }
 
 #card-two p {
@@ -406,36 +460,202 @@ body {
     font-weight: 700;
 }
 
+#card-two ul {
+    list-style-type: none;
+    top: 0;
+    right: 15%;
+    padding: 0 25px;
+    margin: 0 50px;
+    text-align: left;
+    font-size: .55rem;
+    color: green;
+    font-weight: 700;
+}
 
 #card-three {
     overflow: hidden;
-    background: url("../assets/images/philo-bg-1.png");
+    background-image: url("../assets/images/philo-bg-1.png");
+    padding: 0 100px;
 }
+
+#card-three a {
+    z-index: 2;
+    text-decoration: none;
+    height: fit-content;
+}
+
+#card-three h4 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.speech-bubble {
+    position: relative;
+    background: #00aabb;
+    border-radius: .4em;
+    height: 100px;
+    min-width: 200px;
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    width: 0;
+    height: 0;
+    border: 65px solid transparent;
+    border-top-color: #00aabb;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -32.5px;
+    margin-bottom: -65px;
+}
+
+.pic-wrapper-area {
+    display: flex;
+    position: absolute;
+    height: inherit;
+    width: 700px;
+    padding-left: 100px;
+    align-items: flex-end;
+/*    animation: philoSlide 3s infinite;
+    animation-timing-function: cubic-bezier(.1, .1, .1, 1);
+*/
+}
+
+.pic-wrapper-area img {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+}
+
+/*@keyframes philoSlide {
+    0% {
+        left: 1000px;
+        opacity: 0;
+    }
+    50% {
+        left: 0px;
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+        left: 0px;
+    }
+    100% {
+        opacity: 0;
+        left: 0px;
+    }
+}
+*/
+
 
 #card-four {
-    background-image: url("../assets/images/clicky_zoom.png");
-    background-size: 30%;
-}
-
-.project-content {
-    flex: 1 1 auto;
-    padding: 1.25rem;
+    background: url('/assets/images/streetfighter-bg.jpg');
     display: flex;
-    flex-direction: column;
+    position: relative;
+    flex-direction: row;
+    padding: 0 20px;
+    height: 100%;
 }
 
-.project-content a {
+@media (max-width: 1128px) {
+    #card-four {
+        flex-direction: column;
+    }
+
+}
+
+#card-four h4 {
     margin: auto;
+    font-size: 2rem;
+    font-family: "Shojumaru", cursive;
+    color: orange;
 }
 
-.project-content p,
-h3 {
-    color: white;
+#card-four a {
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+    min-width: 330px;
+    padding-top: 10px;
+    margin: auto;
+    width: 30%;
+    background: rgba(0, 0, 0, .8);
+    height: 30%;
 }
 
-.project-content .btn-philosophy {
-    height: 66px;
+.fighters-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 30%;
+    margin: auto;
+    min-width: 330px;
+    height: 100%;
+    overflow: hidden;
+    min-height: 330px;
+    min-width: 330px;
 }
+
+.fighters-bg-overlay {
+    position: absolute;
+    display: inline;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+    background: white;
+    z-index: 0;
+}
+
+.fighter-row {
+    display: flex;
+    flex: auto;
+    height: 50%;
+    width: 100%;
+}
+
+.fighter-wrapper {
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+    width: 100%;
+    margin: 1px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 2s;
+}
+
+.fighter-wrapper:hover {
+    display: flex;
+    width: 700px;
+}
+
+.fighter {
+    justify-content: space-between;
+    width: 75px;
+    height: 75px;
+    transition: 0.5s;
+    opacity: .5;
+}
+
+.fighter:hover {
+    transform: scale(2, 2);
+    opacity: 1;
+}
+
+
 
 
 /*CONTENT*/
@@ -483,11 +703,13 @@ h2 {
     text-transform: uppercase;
 }
 
+
+
 /*End Page */
 
 #page-footer {
-    height: 50px;
     width: 100%;
+    background: gray;
 }
 
 #page-footer p {
@@ -496,19 +718,20 @@ h2 {
     color: black;
 }
 
-.row-footer {
-    margin-top: 25px;
+.footer-links-wrapper {
+    padding-top: 20px;
 }
 
-.footer-links {
+.footer-link {
     margin: 0 1.5rem;
     font-size: 3rem;
     color: black;
 }
 
 .copywrite {
-    padding-bottom: 2rem;
+    padding-bottom: 20px;
 }
+
 
 
 /*CUSTOM*/
@@ -518,6 +741,34 @@ h2 {
     display: flex;
     height: 20px;
     background-color: black;
+}
+
+.chunli {
+    transform: scale(.85, 1);
+}
+
+.chunli:hover {
+    transform: scale(1.75, 2);
+}
+
+.zangief {
+    transform: scale(1.6, 1.5) translate(-5px, -5px);
+}
+
+.zangief:hover {
+    transform: scale(2.2, 2.25);
+}
+
+.morrigan {
+    transform: scale(.6, 1) translate(-5px, -3px);
+}
+
+.morrigan:hover {
+    transform: scale(1, 1.75);
+}
+
+.servbot:hover {
+    transform: scale(2, 2) translate(0, -20px);
 }
 
 .cyan {

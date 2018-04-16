@@ -15,6 +15,7 @@ body {
 
 
 
+
 /*Grid*/
 
 
@@ -61,10 +62,46 @@ body {
     height: 100vh;
     margin-bottom: 0;
     background: white;
+    overflow: hidden;
+}
+
+.jumbo-overlay {
+    position: absolute;
+    opacity: .2;
+    width: 100%;
+    height: inherit;
+    background: url('/assets/images/test-grain.jpg');
+    background-size: 100%;
+}
+
+.jumbo-grain {
+    position: absolute;
+    opacity: .2;
+    top: -100%;
+    left: -100%;
+    width: 1000%;
+    height: 1000%;
+    background: url('/assets/images/grainy.jpg');
+    background-size: 100%;
+    animation: grainAnimation 15s infinite;
+}
+
+@keyframes grainAnimation {
+    0%, 100% { transform: translate(0, 0); }
+    30% {
+        transform: translate(0, 10%);
+    }
+    50% {
+        transform: translate(-10%, 0);
+    }
+    80% {
+        transform: translate(10%, 10%);
+    }
 }
 
 #scroll-down {
     position: relative;
+    opacity: 0;
     top: 50px;
     width: 34px;
     height: 60px;
@@ -72,7 +109,22 @@ body {
     background-color: transparent;
     margin: 0 auto;
     border-radius: 27px;
+    animation: scrollKinda 15s infinite;
 }
+
+@keyframes scrollKinda {
+    0%, 100% { transform: translate(0, 0); }
+    30% {
+        transform: translate(0, 30%);
+    }
+    50% {
+        transform: translate(-30%, 0);
+    }
+    80% {
+        transform: translate(30%, 30%);
+    }
+}
+
 
 .scroll-animation {
     background-color: black;
@@ -205,6 +257,7 @@ body {
 
 
 
+
 /*SOCIAL LINKS*/
 
 .ul-social {
@@ -222,6 +275,7 @@ body {
     color: black;
     padding: 20px;
 }
+
 
 
 
@@ -279,6 +333,7 @@ body {
     display: inline;
     text-align: left;
     width: 50%;
+    min-width: 450px;
 }
 
 .project-outline-tools {
@@ -302,7 +357,7 @@ body {
     display: flex;
     height: 350px;
     flex: 0 1 auto;
-    padding: 0 200px;
+    padding: 0 20px;
     margin-bottom: 10vh;
 
     transition: 0.3s;
@@ -317,8 +372,7 @@ body {
     text-decoration: none;
     height: 20%;
     background-color: rgba(0, 0, 0, .8);
-    margin: 30px;
-    padding: 0 20px;
+    margin: 50px 0 0 100px;
 }
 
 
@@ -330,6 +384,7 @@ body {
     background-attachment: fixed;
     overflow: hidden;
 }
+
 
 #card-one .project-title {
     display: flex;
@@ -353,6 +408,37 @@ body {
     font-size: 1.25rem;
     color: white;
     background-color: rgba(0, 0, 0, .8);
+}
+
+@media (max-width: 1128px) {
+    #card-one {
+        justify-content: center;
+    }
+
+    #card-one a {
+        margin: 30px 0 0 0;
+    }
+
+
+    #card-one p {
+        right: initial;
+    }
+    .project-outline-content {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .project-outline-tools {
+        justify-content: initial;
+    }
+}
+
+@media(max-width: 630px) {
+    .project-outline {
+        padding: 20px;
+    }
+    .project-outline-content {
+        min-width: 300px;
+    }
 }
 
 .first-word {
@@ -410,7 +496,7 @@ body {
     background-size: 400%;
 }
 
-@media (max-width: 1128px) {
+1128 @media (max-width: px) {
     #card-two {
         flex-direction: column;
         align-items: center;
@@ -421,6 +507,7 @@ body {
 #card-two a {
     flex-direction: column;
     text-decoration: none;
+    height: fit-content;
 }
 
 #card-two .project-title {
@@ -520,12 +607,11 @@ body {
 
 .pic-wrapper-area {
     display: flex;
-    position: absolute;
     height: inherit;
     width: 700px;
     padding-left: 100px;
     align-items: flex-end;
-/*    animation: philoSlide 3s infinite;
+    /*    animation: philoSlide 3s infinite;
     animation-timing-function: cubic-bezier(.1, .1, .1, 1);
 */
 }
@@ -535,6 +621,7 @@ body {
     height: 150px;
     width: 150px;
 }
+
 
 /*@keyframes philoSlide {
     0% {
@@ -556,7 +643,6 @@ body {
 }
 */
 
-
 #card-four {
     background: url('/assets/images/streetfighter-bg.jpg');
     display: flex;
@@ -570,14 +656,13 @@ body {
     #card-four {
         flex-direction: column;
     }
-
 }
 
 #card-four h4 {
     margin: auto;
     font-size: 2rem;
     font-family: "Shojumaru", cursive;
-    color: orange;
+    color: lightpink;
 }
 
 #card-four a {
@@ -658,6 +743,7 @@ body {
 
 
 
+
 /*CONTENT*/
 
 .container {
@@ -705,6 +791,7 @@ h2 {
 
 
 
+
 /*End Page */
 
 #page-footer {
@@ -731,6 +818,7 @@ h2 {
 .copywrite {
     padding-bottom: 20px;
 }
+
 
 
 

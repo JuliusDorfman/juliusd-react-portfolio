@@ -79,24 +79,30 @@ componentWillMount() {
 
   philosopherAnimate = () => {
     const philosophers = [];
-    const philPic = $('<img>').css({"opacity":0, "left": 1000+"px"});
+    const philPic = $('<img>');
     this.state.philosophers.map((philosopher, i) => {
-        philosophers.push(philosopher)
+        return philosophers.push(philosopher)
   })
-    for (let j=0; j < philosophers.length; j++){
+    setInterval(function() {
       philPic
-        .attr('src', philosophers[j])
+        .css({"opacity":0, "left": 30+"px"})
+        .attr('src', philosophers[Math.floor(Math.random() * 6 - 0) + 0])
         .appendTo('.pic-wrapper-area')
-        .animate({"opacity":1,"left":0}, 2000)
-      console.log('inside loop philosopher', philosophers[j]);
-}
+        .animate({"opacity":1,"left":30 + "px"}, 1500)
+
+      philPic
+        .animate({"opacity":0, "left":30 + "px"}, 750)
+
+    }, 2500)
 
 }
 
 
 componentDidMount() {
   this.philosopherAnimate();
-
+  $('.fade-in')
+  .css({"opacity":0})
+  .animate({"opacity": 1}, 1000)
 }
 
 	render() {
@@ -106,6 +112,8 @@ componentDidMount() {
 	    
   <div className="container"> 
     <div className="jumbotron">
+    <div className="jumbo-overlay" />
+    <div className="jumbo-grain" />
       <div className="jumbotron-text">
         <StyleRoot>
           <h1 
@@ -129,7 +137,7 @@ componentDidMount() {
             </li>
           </ul>
         </div>
-        <div id="scroll-down" style={this.styles.fadeIn}>
+        <div id="scroll-down" className="fade-in">
           <div className="scroll-animation" />
         </div>
         </StyleRoot>
@@ -141,7 +149,9 @@ componentDidMount() {
 
     <div className="project-outline">
       <div className="project-outline-content">
-        <h3 className="underline-projects">Crystal Game</h3>
+        <a href="https://crystal-game-juliusd.herokuapp.com/index.html" target="_blank" rel="noopener noreferrer">
+          <h3 className="underline-projects">Crystal Game</h3>
+        </a>
         <h4>Project Outline</h4>
         <p>To create a single-page, javascript driven math game.</p>
         <h4>My Role</h4>
@@ -167,7 +177,9 @@ componentDidMount() {
 
     <div className="project-outline">
       <div className="project-outline-content">
-        <h3 className="underline-projects">Liri-Bot</h3>
+        <a href="https://github.com/JuliusDorfman/liri-node-app" target="_blank" rel="noopener noreferrer">
+          <h3 className="underline-projects">Liri-Bot</h3>
+        </a>
         <h4>Project Outline</h4>
         <p>To create a Language Interpretation and Recognition Interface program.</p>
         <h4>My Role</h4>
@@ -175,7 +187,7 @@ componentDidMount() {
       </div>
       <div className="project-outline-tools">
           <i className="fab fa-node" />
-          <img src="/assets/images/express-icon.png" />
+          <img src="/assets/images/express-icon.png" alt="express-icon"/>
       </div>
     </div>
 
@@ -232,7 +244,9 @@ componentDidMount() {
 
     <div className="project-outline">
       <div className="project-outline-content">
-        <h3 className="underline-projects">Philosophy Trivia</h3>
+        <a href="https://philosophy-quiz.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+          <h3 className="underline-projects">Philosophy Trivia</h3>
+        </a>
         <h4>Project Outline</h4>
         <p>To create a philosophy themed time-based quiz</p>
         <h4>My Role</h4>
@@ -257,7 +271,9 @@ componentDidMount() {
 
     <div className="project-outline">
       <div className="project-outline-content">
-        <h3 className="underline-projects">Memory Game</h3>
+        <a href="https://clicky-clicky-game.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+          <h3 className="underline-projects">Memory Game</h3>
+        </a>
         <h4>Project Outline</h4>
         <p>Create a Web App based on the popular card matching memory game.</p>
         <h4>My Role</h4>

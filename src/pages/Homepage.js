@@ -14,7 +14,8 @@ export class Homepage extends Component {
 	constructor(props){
 		super(props);
 		this.state = {
-      philosophers:[nietzsche, rand, locke, paine, marx, confucius]
+      philosophers:[nietzsche, rand, locke, paine, marx, confucius],
+      quotes:["\"He who fights with monsters might take care lest he thereby become a monster. And if you gaze for long into an abyss, the abyss gazes also into you.\" \n -F. Nietzsche"]
     };
     this.styles = {
       fadeInDown: {
@@ -53,28 +54,9 @@ componentWillMount() {
       $('#card-one').css({
       "background-position-y": (Math.round(scrollTop/4))+"px"
       });
-
-      $('.crystal-ruby').css({
-      "top": -100 + (Math.round(scrollTop/2))+"px"
-      });
-
-      $('.crystal-diamond').css({
-      "top": -300 + (Math.round(scrollTop/1))+"px"
-      });
-
-      $('.crystal-sapphire').css({
-      "top": -1000 + (Math.round(scrollTop/.5))+"px"
-      });
-
-      $('.crystal-emerald').css({
-      "top": -1600 + (Math.round(scrollTop/.4))+"px"
-      });
-
-      $('.fighter-wrapper').click(function() {
-          console.log(this.currentTarget)
-      })
-
     });
+
+
   }
 
   philosopherAnimate = () => {
@@ -103,77 +85,96 @@ componentDidMount() {
   $('.fade-in')
   .css({"opacity":0})
   .animate({"opacity": 1}, 1000)
+
+    setInterval(function(){
+      $('.crystal-ruby')
+        .css({"top": -500 + "px", "left": 200 + "px"})
+        .animate({"top": 1000 + "px"}, 10000);
+      }, 10200)
+
+    setInterval(function(){
+
+      $('.crystal-diamond')
+        .css({"top": -500 + "px", "left": 500 + "px"})
+        .animate({"top": 1000 + "px"}, 5000);
+      }, 5200)
+
+    setInterval(function(){
+
+      $('.crystal-sapphire')
+        .css({"top": -500 + "px", "left": 1000 + "px"})
+        .animate({"top": 1000 + "px"}, 3000);
+      }, 3200)
+
+    setInterval(function(){
+      $('.crystal-emerald')
+        .css({"top": -500 + "px", "left": 800 + "px"})
+        .animate({"top": 1000 + "px"}, 2500);
+      }, 2700)
+
 }
 
 	render() {
 		return (
 
 <div className="pages-homepage">
-	    
+
+      <StyleRoot>
+	     <nav 
+        className="navbar"
+        style={this.styles.fadeInDown}
+        >
+        <div className="nav-overlay" />
+          <div className="jumbotron-social">
+            <ul className="ul-social">
+              <li className="li-social-links" style={this.styles.fadeIn}>
+                <a className="social" href="https://github.com/JuliusDorfman" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
+              </li>
+              <li className="li-social-links" style={this.styles.fadeIn}>
+                <a className="social" href="https://www.linkedin.com/in/juliusgdorfman" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
+              </li>
+              <li className="li-social-links" style={this.styles.fadeIn}>
+                <a className="social" target="_blank" rel="noopener noreferrer" href="../assets/docs/JuliusDorfman_Resume.doc" download="JuliusDorfman_Resume.doc"><i className="far fa-file-word"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div id="scroll-down" className="fade-in">
+            <div className="scroll-animation" />
+          </div>
+        </nav>
+        </StyleRoot>
+
   <div className="container"> 
     <div className="jumbotron">
     <div className="jumbo-overlay" />
     <div className="jumbo-grain" />
-      <div className="jumbotron-text">
-        <StyleRoot>
-          <h1 
-            id="my-name"
-            style={this.styles.fadeIn} >
-              [NAME]
-          </h1>
-          <p style={this.styles.fadeIn}>
-            Logical Design | Creative Solutions
-          </p>
-        <div className="jumbotron-social">
-          <ul className="ul-social">
-            <li className="li-social-links" style={this.styles.fadeIn}>
-              <a className="social" href="https://github.com/JuliusDorfman" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
-            </li>
-            <li className="li-social-links" style={this.styles.fadeIn}>
-              <a className="social" href="https://www.linkedin.com/in/juliusgdorfman" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
-            </li>
-            <li className="li-social-links" style={this.styles.fadeIn}>
-              <a className="social" target="_blank" rel="noopener noreferrer" href="../assets/docs/JuliusDorfman_Resume.doc" download="JuliusDorfman_Resume.doc"><i className="far fa-file-word"></i></a>
-            </li>
-          </ul>
+      <StyleRoot>
+        <div className="jumbotron-text">
+          <span
+            className="jumbo-flavor-left"
+            style={this.styles.fadeIn}
+            >
+          </span>
+            <h1 
+              id="my-name"
+              style={this.styles.fadeIn} >
+               Julius G. Dorfman
+            </h1>
+            <p style={this.styles.fadeIn}>
+            </p>
+          <span
+            className="jumbo-flavor-right"
+            style={this.styles.fadeIn}
+            >
+          </span>
+
         </div>
-        <div id="scroll-down" className="fade-in">
-          <div className="scroll-animation" />
-        </div>
-        </StyleRoot>
-      </div>
+      </StyleRoot>
     </div>
 
    	<div className="row" id="projects">
       <div className="main-content">
 
-    <div className="project-outline">
-      <div className="project-outline-content">
-        <a href="https://crystal-game-juliusd.herokuapp.com/index.html" target="_blank" rel="noopener noreferrer">
-          <h3 className="underline-projects">Crystal Game</h3>
-        </a>
-        <h4>Project Outline</h4>
-        <p>To create a single-page, javascript driven math game.</p>
-        <h4>My Role</h4>
-        <p>Developing all HTML, CSS, and JavaScript assets for the project.</p>
-      </div>
-      <div className="project-outline-tools">
-          <i className="fab fa-html5" alt="html5_logo"/>
-          <i className="fab fa-css3-alt" alt="css3-alt"/>
-          <i className="fab fa-js-square" alt="js-square"/>
-      </div>
-    </div>
-            
-    <div className="project-card" id="card-one">
-      <img src="/assets/images/crystal_ruby.png" className="crystal-ruby" alt="ruby" />
-      <img src="/assets/images/crystal_diamond.png" className="crystal-diamond" alt="diamond" />
-      <img src="/assets/images/crystal_sapphire.png" className="crystal-sapphire" alt="sapphire" />
-      <img src="/assets/images/crystal_emerald.png" className="crystal-emerald" alt="emerald" />
-      <a href="https://crystal-game-juliusd.herokuapp.com/index.html" target="_blank" rel="noopener noreferrer">
-        <h3 className="project-title">Crystal Game</h3>
-      </a>
-      <p><span className="first-word">{(`Challenging   `)}</span> math game based on intuition and pragmatism. Collect crystals with undisclosed values. Beware: greed never pays; don't go over the goal value!</p>
-  	</div>
 
     <div className="project-outline">
       <div className="project-outline-content">
@@ -242,6 +243,35 @@ componentDidMount() {
       </ul>
     </div>
 
+
+    <div className="project-outline">
+      <div className="project-outline-content">
+        <a href="https://crystal-game-juliusd.herokuapp.com/index.html" target="_blank" rel="noopener noreferrer">
+          <h3 className="underline-projects">Crystal Game</h3>
+        </a>
+        <h4>Project Outline</h4>
+        <p>To create a single-page, javascript driven math game.</p>
+        <h4>My Role</h4>
+        <p>Developing all HTML, CSS, and JavaScript assets for the project.</p>
+      </div>
+      <div className="project-outline-tools">
+          <i className="fab fa-html5" alt="html5_logo"/>
+          <i className="fab fa-css3-alt" alt="css3-alt"/>
+          <i className="fab fa-js-square" alt="js-square"/>
+      </div>
+    </div>
+            
+    <div className="project-card" id="card-one">
+      <img src="/assets/images/crystal_ruby.png" className="crystal-ruby" alt="ruby" />
+      <img src="/assets/images/crystal_diamond.png" className="crystal-diamond" alt="diamond" />
+      <img src="/assets/images/crystal_sapphire.png" className="crystal-sapphire" alt="sapphire" />
+      <img src="/assets/images/crystal_emerald.png" className="crystal-emerald" alt="emerald" />
+      <a href="https://crystal-game-juliusd.herokuapp.com/index.html" target="_blank" rel="noopener noreferrer">
+        <h3 className="project-title">Crystal Game</h3>
+      </a>
+      <p><span className="first-word">{(`Challenging   `)}</span> math game based on intuition and pragmatism. Collect crystals with undisclosed values. Beware: greed never pays; don't go over the goal value!</p>
+  	</div>
+
     <div className="project-outline">
       <div className="project-outline-content">
         <a href="https://philosophy-quiz.herokuapp.com/" target="_blank" rel="noopener noreferrer">
@@ -267,6 +297,11 @@ componentDidMount() {
     </a>
       <div className="pic-wrapper-area">
       </div>
+    <div className="quote-wrapper">
+      <p className="phil-quotes">
+      {this.state.quotes}
+      </p>
+    </div>
     </div>
 
     <div className="project-outline">
@@ -290,12 +325,12 @@ componentDidMount() {
 
       <div className="project-card" id="card-four">
         <a href="https://clicky-clicky-game.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-          <h4 className="project-title">Clicky Memory Game</h4>
+          <h4 className="project-title">Choose Your Fighter!</h4>
         </a>
         <div className="fighters-container">
           <span className="fighters-bg-overlay"/>
           <div className="fighter-row">
-            <span className="fighter-wrapper"><img className="fighter" src="/assets/images/ryu-pixel.png" alt="ryu" /></span>
+            <span className="fighter-wrapper"><span className="bounce-wrapper"><img className="fighter" src="/assets/images/ryu-pixel.png" alt="ryu" /></span></span>
             <span className="fighter-wrapper"><img className="fighter" src="/assets/images/heihachi-pixel.png" alt="heihachi" /></span>
             <span className="fighter-wrapper"><img className="fighter chunli" id="chunli" src="/assets/images/chunli-pixel.png" alt="heihachi" /></span>
           </div>

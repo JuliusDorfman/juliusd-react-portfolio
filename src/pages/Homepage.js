@@ -75,7 +75,7 @@ componentWillMount() {
       philPic
         .animate({"opacity":0, "left":30 + "px"}, 750)
 
-    }, 2500)
+    }, 3000)
 
 }
 
@@ -86,32 +86,22 @@ componentDidMount() {
   .css({"opacity":0})
   .animate({"opacity": 1}, 1000)
 
-    setInterval(function(){
-      $('.crystal-ruby')
-        .css({"top": -500 + "px", "left": 200 + "px"})
-        .animate({"top": 1000 + "px"}, 10000);
-      }, 10200)
+  let navStat = "open"
 
-    setInterval(function(){
-
-      $('.crystal-diamond')
-        .css({"top": -500 + "px", "left": 500 + "px"})
-        .animate({"top": 1000 + "px"}, 5000);
-      }, 5200)
-
-    setInterval(function(){
-
-      $('.crystal-sapphire')
-        .css({"top": -500 + "px", "left": 1000 + "px"})
-        .animate({"top": 1000 + "px"}, 3000);
-      }, 3200)
-
-    setInterval(function(){
-      $('.crystal-emerald')
-        .css({"top": -500 + "px", "left": 800 + "px"})
-        .animate({"top": 1000 + "px"}, 2500);
-      }, 2700)
-
+  $('.nav-control')
+    .click(function(){
+    if (navStat === "open") {
+      $('nav').animate({"top": -48 + "%"})
+      console.log("open", navStat)
+    navStat = "closed";
+      console.log("open", navStat)
+    } else {
+      $('nav').animate({"top": 0})
+      console.log("closed", navStat)
+      navStat = "open"
+      console.log("closed", navStat)
+    }
+    });
 }
 
 	render() {
@@ -141,6 +131,7 @@ componentDidMount() {
           <div id="scroll-down" className="fade-in">
             <div className="scroll-animation" />
           </div>
+          <div className="nav-control" />
         </nav>
         </StyleRoot>
 

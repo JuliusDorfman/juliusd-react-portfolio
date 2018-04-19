@@ -28,55 +28,49 @@ export class Homepage extends Component {
       }
     }
   };
-
 componentWillMount() {
-      $(window).scroll(function() {
-      var screenTop = $(document).scrollTop()
-      var scrollTop = $(window).scrollTop();
+    $(window).scroll(function() {
+        var screenTop = $(document).scrollTop()
+        var scrollTop = $(window).scrollTop();
 
         $('.jumbotron').css({
-          height: function() {
-            let height =  (1000 - screenTop) * .75;
-            if (height >= 450) {
-              return height
-          }
-        }
-      })
+            height: function() {
+                let height = (1000 - screenTop) * .75;
+                if (height >= 450) {
+                    return height
+                }
+            }
+        })
 
-      $('.fadeInLeft').each(function(i){
+        $('.fadeInLeft').each(function(i) {
             var bottom_of_element = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if( bottom_of_window > bottom_of_element ){
-                $(this).animate({'left':'0px'},1000);
-            } 
-        }); 
+            if (bottom_of_window > bottom_of_element) {
+                $(this).animate({ 'left': '0px' }, 1000);
+            }
+        });
 
-      $('#card-one').css({
-      "background-position-y": (Math.round(scrollTop/4))+"px"
-      });
+        $('#card-one').css({
+            "background-position-y": (Math.round(scrollTop / 4)) + "px"
+        });
     });
-
-
-  }
-
-  philosopherAnimate = () => {
+}
+philosopherAnimate = () => {
     const philosophers = [];
     const philPic = $('<img>');
     this.state.philosophers.map((philosopher, i) => {
         return philosophers.push(philosopher)
-  })
+    })
     setInterval(function() {
-      philPic
-        .css({"opacity":0, "left": 30+"px"})
-        .attr('src', philosophers[Math.floor(Math.random() * 6 - 0) + 0])
-        .appendTo('.pic-wrapper-area')
-        .animate({"opacity":1,"left":30 + "px"}, 1500)
+        philPic
+            .css({ "opacity": 0, "left": 30 + "px" })
+            .attr('src', philosophers[Math.floor(Math.random() * 6 - 0) + 0])
+            .appendTo('.pic-wrapper-area')
+            .animate({ "opacity": 1, "left": 30 + "px" }, 1500)
 
-      philPic
-        .animate({"opacity":0, "left":30 + "px"}, 750)
-
-    }, 3000)
-
+        philPic
+            .animate({ "opacity": 0, "left": 30 + "px" }, 750)
+    }, 2500)
 }
 
 
@@ -101,7 +95,7 @@ componentDidMount() {
       navStat = "open"
       console.log("closed", navStat)
     }
-    });
+  });
 }
 
 	render() {

@@ -206,6 +206,9 @@ nav {
     .navbar a {
         font-size: .75rem;
     }
+    .navbar {
+        height: 35%;
+    }
 }
 
 .jumbotron-text {
@@ -350,11 +353,12 @@ nav {
     display: flex;
     width: inherit;
     padding: 20px 50px 20px 100px;
-    background-color: gainsboro;
     text-align: left;
     flex-wrap: wrap;
-    background: rgba(0, 0, 0, 0.09);
-    border-top: 1px solid black;
+    background: url('../assets/images/steelplate_background_light-edited.png');
+    background-size: cover;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
 
 .project-outline h3 {
@@ -406,7 +410,7 @@ nav {
     flex: 0 1 auto;
     padding: 0 20px;
     margin-bottom: 10vh;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid gray;
 
     transition: 0.3s;
     -o-transition: 0.3s;
@@ -902,6 +906,7 @@ nav {
 .container {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -951,7 +956,9 @@ h2 {
 
 #page-footer {
     width: 100%;
-    background: gray;
+    background: url('../assets/images/steelplate_background.png');
+    background-size: cover;
+    border-top: 1px solid gray;
 }
 
 #page-footer p {

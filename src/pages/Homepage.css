@@ -355,10 +355,9 @@ nav {
     padding: 20px 50px 20px 100px;
     text-align: left;
     flex-wrap: wrap;
-    background: url('../assets/images/steelplate_background_light-edited.png');
+    background: url('../assets/images/steelplate_nobolts-light.jpg');
     background-size: cover;
     border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
 }
 
 .project-outline h3 {
@@ -956,9 +955,9 @@ h2 {
 
 #page-footer {
     width: 100%;
-    background: url('../assets/images/steelplate_background.png');
+    background: url('../assets/images/steelplate_nobolts-dark.jpg');
     background-size: cover;
-    border-top: 1px solid gray;
+    border-top: 1px solid black;
 }
 
 #page-footer p {

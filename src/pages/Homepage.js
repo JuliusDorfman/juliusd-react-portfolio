@@ -257,6 +257,31 @@ componentDidMount() {
       <p><span className="first-word">{(`Challenging   `)}</span> math game based on intuition and pragmatism. Collect crystals with undisclosed values. Beware: greed never pays; don't go over the goal value!</p>
   	</div>
 
+
+    <div className="project-outline">
+      <div className="project-outline-content">
+        <a href="https://crystal-game-juliusd.herokuapp.com/index.html" target="_blank" rel="noopener noreferrer">
+          <h3 className="underline-projects">imagEdits</h3>
+        </a>
+        <h4>Project Outline</h4>
+        <p>To create a single-page, online application that edits and saves .jpg/.png files.</p>
+        <h4>My Role</h4>
+        <p>Developing all HTML, CSS, and JavaScript assets for the project. Become Proficient in CamanJS plugin/library.</p>
+      </div>
+      <div className="project-outline-tools">
+          <i className="fab fa-html5" alt="html5_logo"/>
+          <i className="fab fa-css3-alt" alt="css3-alt"/>
+          <i className="fab fa-js-square" alt="js-square"/>
+      </div>
+    </div>
+            
+    <div className="project-card" id="card-imagedits">
+      <a href="https://juliusdorfman.github.io/imagEdits/" target="_blank" rel="noopener noreferrer">
+        <h3 className="project-title">imagEdits</h3>
+      </a>
+    </div>
+
+
     <div className="project-outline">
       <div className="project-outline-content">
         <a href="https://philosophy-quiz.herokuapp.com/" target="_blank" rel="noopener noreferrer">

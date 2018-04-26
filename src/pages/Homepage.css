@@ -899,6 +899,37 @@ nav {
     }
 }
 
+#card-imagedits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: url('/assets/images/imagEdits_ss.png');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#card-imagedits a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: royalblue;
+    transform: rotate(340deg);
+    height: 6rem;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    outline: 5px solid royalblue;
+}
+
+#card-imagedits h3 {
+    color: white;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    font-size: 50px;
+    width: 2000px;
+}
 
 /*CONTENT*/
 

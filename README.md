@@ -8,7 +8,7 @@ This Portfolio, as well as my Person, are in a perpetual state of growth. As my 
 
 ## Visit the Site
 (hosted on Heroku may take half a minute to load)
-https://juliusd-react-portfolio.herokuapp.com/
+https://jdorfman.herokuapp.com/
 
 ### Prerequisites
 
@@ -22,7 +22,7 @@ Javascript running in browser.
 
 ## Authors
 
-* **Julius G. Dorfman** - *Initial work* - [JuliusDorfman](https://github.com/JuliusDorfman)
+* [**Julius G. Dorfman**](https://github.com/JuliusDorfman)
 
 ## License
 

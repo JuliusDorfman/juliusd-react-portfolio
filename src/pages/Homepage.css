@@ -556,7 +556,7 @@ nav {
     background-size: 400%;
 }
 
-1128 @media (max-width: px) {
+@media (max-width: 1128px) {
     #card-two {
         flex-direction: column;
         align-items: center;
@@ -916,17 +916,37 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: royalblue;
-    transform: rotate(340deg);
+    transform: rotate(340deg) translate(-305px, -100px);
+    font-family: 'Pacifico', cursive;
     height: 6rem;
     border-top: 5px solid white;
     border-bottom: 5px solid white;
     outline: 5px solid royalblue;
 }
 
+@media (max-width: 1128px) {
+    #card-imagedits a {
+    transform: rotate(340deg) translate(-150px, -100px);
+    }    
+}
+
+@media (max-width: 750px) {
+    #card-imagedits a {
+    transform: rotate(340deg) translate(-75px, -100px);
+    }    
+}
+
+
+@media (max-width: 600px) {
+    #card-imagedits a {
+    transform: rotate(340deg) translate(50px, -100px);
+    }    
+}
+
 #card-imagedits h3 {
     color: white;
     text-decoration: underline;
-    letter-spacing: 2px;
+    letter-spacing: 15px;
     font-size: 50px;
     width: 2000px;
 }

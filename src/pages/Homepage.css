@@ -663,7 +663,7 @@ nav {
     min-width: 200px;
 }
 
-.speech-bubble:after {
+/*.speech-bubble:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -677,7 +677,7 @@ nav {
     margin-left: -32.5px;
     margin-bottom: -65px;
 }
-
+*/
 .pic-wrapper-area {
     display: flex;
     align-items: flex-end;

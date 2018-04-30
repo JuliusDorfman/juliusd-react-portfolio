@@ -305,8 +305,7 @@ componentDidMount() {
     <a href="https://philosophy-quiz.herokuapp.com/" target="_blank" rel="noopener noreferrer">
       <h4 className="speech-bubble">Philosophy Trivia!</h4>
     </a>
-      <div className="pic-wrapper-area">
-      </div>
+
     <div className="quote-wrapper">
       <p className="phil-quotes">
       {this.state.quotes}

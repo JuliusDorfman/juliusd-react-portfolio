@@ -42,14 +42,6 @@ componentWillMount() {
             }
         })
 
-        $('.fadeInLeft').each(function(i) {
-            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if (bottom_of_window > bottom_of_element) {
-                $(this).animate({ 'left': '0px' }, 1000);
-            }
-        });
-
         $('#card-one').css({
             "background-position-y": (Math.round(scrollTop / 4)) + "px"
         });
@@ -260,7 +252,7 @@ componentDidMount() {
 
     <div className="project-outline">
       <div className="project-outline-content">
-        <a href="https://crystal-game-juliusd.herokuapp.com/index.html" target="_blank" rel="noopener noreferrer">
+        <a href="https://juliusdorfman.github.io/imagEdits/" target="_blank" rel="noopener noreferrer">
           <h3 className="underline-projects">imagEdits</h3>
         </a>
         <h4>Project Outline</h4>

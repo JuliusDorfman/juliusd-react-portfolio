@@ -344,18 +344,20 @@ nav {
 
 .underline-projects {
     position: relative;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     margin-bottom: 30px;
 }
 
 .project-outline {
+    color: white;
     position: relative;
     display: flex;
     width: inherit;
-    padding: 20px 50px 20px 100px;
+    padding: 20px 50px 20px 150px;
+    justify-content: center;
     text-align: left;
     flex-wrap: wrap;
-    background: url('../assets/images/steelplate_nobolts-light.jpg');
+    background: url('../assets/images/chalkboard_background.jpg');
     background-size: cover;
     border-top: 1px solid gray;
 }
@@ -366,7 +368,7 @@ nav {
     margin: auto;
     font-size: 2rem;
     letter-spacing: 1px;
-    color: black;
+    color: white;
 }
 
 .project-outline h4 {
@@ -482,14 +484,6 @@ nav {
     }
 }
 
-@media(max-width: 630px) {
-    .project-outline {
-        padding: 20px;
-    }
-    .project-outline-content {
-        min-width: 300px;
-    }
-}
 
 .first-word {
     position: relative;
@@ -1006,9 +1000,8 @@ h2 {
 
 #page-footer {
     width: 100%;
-    background: url('../assets/images/steelplate_nobolts-dark.jpg');
+    background: dimgray;
     background-size: cover;
-    border-top: 1px solid black;
 }
 
 #page-footer p {

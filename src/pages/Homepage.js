@@ -28,8 +28,38 @@ export class Homepage extends Component {
       }
     }
   };
+
+componentDidMount() {
+  window.addEventListener('scroll', this.handleScroll);
+
+
+  this.philosopherAnimate();
+  $('.fade-in')
+  .css({"opacity":0})
+  .animate({"opacity": 1}, 1000)
+
+  let navStat = "open"
+
+
+  $('.nav-control')
+    .click(function(){
+  let hideHeight = $('.nav-overlay').height();
+  console.log(hideHeight);
+
+    if (navStat === "open") {
+      $('nav').animate({"top": -(hideHeight)+ 20+ "px"})
+    navStat = "closed";
+    } else {
+      $('nav').animate({"top": 0})
+      navStat = "open"
+    }
+  });
+}
+
 componentWillMount() {
-    $(window).scroll(function() {
+}
+
+handleScroll = () => {
         var screenTop = $(document).scrollTop()
         var scrollTop = $(window).scrollTop();
 
@@ -43,10 +73,10 @@ componentWillMount() {
         })
 
         $('#card-one').css({
-            "background-position-y": (Math.round(scrollTop / 4)) + "px"
+            "background-position-y": (Math.round(scrollTop / 10)) + "px"
         });
-    });
-}
+};
+
 philosopherAnimate = () => {
     const philosophers = [];
     const philPic = $('<img>');
@@ -63,32 +93,8 @@ philosopherAnimate = () => {
         philPic
             .animate({ "opacity": 0, "left": 30 + "px" }, 750)
     }, 2500)
-}
+};
 
-
-componentDidMount() {
-  this.philosopherAnimate();
-  $('.fade-in')
-  .css({"opacity":0})
-  .animate({"opacity": 1}, 1000)
-
-  let navStat = "open"
-
-  $('.nav-control')
-    .click(function(){
-    if (navStat === "open") {
-      $('nav').animate({"top": -48 + "%"})
-      console.log("open", navStat)
-    navStat = "closed";
-      console.log("open", navStat)
-    } else {
-      $('nav').animate({"top": 0})
-      console.log("closed", navStat)
-      navStat = "open"
-      console.log("closed", navStat)
-    }
-  });
-}
 
 	render() {
 		return (
@@ -114,7 +120,7 @@ componentDidMount() {
               </li>
             </ul>
           </div>
-          <div id="scroll-down" className="fade-in">
+          <div id="scroll-down" className="fade-in nav-control">
             <div className="scroll-animation" />
           </div>
           <div className="nav-control" />
@@ -267,10 +273,12 @@ componentDidMount() {
       </div>
     </div>
             
-    <div className="project-card" id="card-imagedits">
+    <div className="project-card imagEdits-wrapper">
+      <div id="card-imagedits">
       <a href="https://juliusdorfman.github.io/imagEdits/" target="_blank" rel="noopener noreferrer">
         <h3 className="project-title">imagEdits</h3>
       </a>
+      </div>
     </div>
 
 

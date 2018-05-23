@@ -41,7 +41,6 @@ nav {
     width: 100%;
     height: 20px;
     bottom: -9px;
-    padding-top: 10px;
     background: black;
     cursor: pointer;
 }
@@ -344,12 +343,12 @@ nav {
 
 .underline-projects {
     position: relative;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
     margin-bottom: 30px;
 }
 
 .project-outline {
-    color: white;
+    color: black;
     position: relative;
     display: flex;
     width: inherit;
@@ -357,7 +356,7 @@ nav {
     justify-content: center;
     text-align: left;
     flex-wrap: wrap;
-    background: url('../assets/images/chalkboard_background.jpg');
+    background-image: url('../assets/images/graywhitethread.png');
     background-size: cover;
     border-top: 1px solid gray;
 }
@@ -368,7 +367,7 @@ nav {
     margin: auto;
     font-size: 2rem;
     letter-spacing: 1px;
-    color: white;
+    color: black;
 }
 
 .project-outline h4 {
@@ -385,7 +384,7 @@ nav {
     display: inline;
     text-align: left;
     width: 50%;
-    min-width: 450px;
+    min-width: 300px;
 }
 
 .project-outline-tools {
@@ -902,6 +901,14 @@ nav {
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center;
+    height: inherit;
+    border-bottom: solid 1px black;
+}
+
+.imagEdits-wrapper {
+    background-color: white;
+    height: 400px;
+    margin-bottom: 10vh;
 }
 
 #card-imagedits a {
@@ -960,7 +967,7 @@ nav {
 }
 
 .main-content {
-    background: white;
+    background-color: white;
 }
 
 .news-from-header {
@@ -1000,14 +1007,14 @@ h2 {
 
 #page-footer {
     width: 100%;
-    background: dimgray;
+    background: black;
     background-size: cover;
 }
 
 #page-footer p {
     margin: auto;
     font-size: 1rem;
-    color: black;
+    color: white;
 }
 
 .footer-links-wrapper {
@@ -1017,7 +1024,7 @@ h2 {
 .footer-link {
     margin: 0 1.5rem;
     font-size: 3rem;
-    color: black;
+    color: whitesmoke;
 }
 
 .copywrite {

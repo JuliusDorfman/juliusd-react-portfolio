@@ -167,6 +167,71 @@ export class Homepage extends Component {
               <div className="project-outline">
                 <div className="project-outline-content">
                   <a
+                    href="https://news-from.herokuapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <h3 className="underline-projects">News-From</h3>
+                  </a>
+                  <h4>Project Outline</h4>
+                  <p>
+                    Create a news aggregator where the user is able to
+                    manipulate headlines from various news sources as data and
+                    output an aesthetic infographic based on findings
+                  </p>
+                  <h4>My Role</h4>
+                  <p>
+                    Develop all React components, a from-scratch API, and establish
+                    database models and communication routes, user interface.
+                  </p>
+                </div>
+                <div className="project-outline-tools">
+                  <i className="fab fa-html5" alt="html5_logo" title="html5" />
+                  <i className="fab fa-css3-alt" alt="css3-alt" title="css3" />
+                  <i
+                    className="fab fa-js-square"
+                    alt="js-square"
+                    title="javascript"
+                  />
+                  <i className="fab fa-react" alt="react" title="react" />
+                  <img
+                    src="/assets/images/mLab-logo.jpg"
+                    alt="mLab-Logo"
+                    title="mLab"
+                  />
+                </div>
+              </div>
+
+              <div className="project-card" id="news-from">
+                <div className="opacity-overlay" />
+                <a
+                  href="https://news-from.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h3 className="project-title">
+                    News-From<img
+                      className="news-from-logo"
+                      src="/assets/images/news-from-logo.png"
+                      alt="news-from-logo"
+                      title="news-from-logo"
+                    />
+                  </h3>
+                </a>
+                <p>
+                  Find the most recent headlines from the largest news (and fake news) media websites.
+                  Manipulate various metrics as you see fit and then output as
+                  an aesthetic infographic.
+                </p>
+              </div>
+
+              <div className="background-partition">
+                <div className="background-partition-overlay" />
+              </div>
+
+              <div className="project-outline">
+                <div className="project-outline-content">
+                  <a
                     href="https://github.com/JuliusDorfman/liri-node-app"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -265,7 +330,7 @@ export class Homepage extends Component {
               <div className="background-partition">
                 <div className="background-partition-overlay" />
               </div>
-              
+
               <div className="project-outline">
                 <div className="project-outline-content">
                   <a
@@ -415,7 +480,7 @@ export class Homepage extends Component {
                   <p className="phil-quotes">{this.state.quotes}</p>
                 </div>
               </div>
-              
+
               <div className="background-partition">
                 <div className="background-partition-overlay" />
               </div>
@@ -445,7 +510,7 @@ export class Homepage extends Component {
                   <i className="fab fa-css3-alt" alt="css3-alt" />
                   <i className="fab fa-js-square" alt="js-square" />
                   <img src="/assets/images/jquery-icon.png" alt="jquery-icon" />
-                  <i className="fab fa-react" />
+                  <i className="fab fa-react" alt="react" />
                 </div>
               </div>
 
@@ -461,7 +526,7 @@ export class Homepage extends Component {
                   <span className="fighters-bg-overlay" />
                   <div className="fighter-row">
                     <span className="fighter-wrapper">
-                      <span className="bounce-wrapper">
+                      <span className="bounce-wrapper bounce-wrapper-ryu">
                         <img
                           className="fighter"
                           src="/assets/images/ryu-pixel.png"
@@ -470,42 +535,52 @@ export class Homepage extends Component {
                       </span>
                     </span>
                     <span className="fighter-wrapper">
-                      <img
-                        className="fighter"
-                        src="/assets/images/heihachi-pixel.png"
-                        alt="heihachi"
-                      />
+                      <span className="bounce-wrapper bounce-wrapper-heih">
+                        <img
+                          className="fighter"
+                          src="/assets/images/heihachi-pixel.png"
+                          alt="heihachi"
+                        />
+                      </span>
                     </span>
                     <span className="fighter-wrapper">
-                      <img
-                        className="fighter chunli"
-                        id="chunli"
-                        src="/assets/images/chunli-pixel.png"
-                        alt="heihachi"
-                      />
+                      <span className="bounce-wrapper bounce-wrapper-chun">
+                        <img
+                          className="fighter chunli"
+                          id="chunli"
+                          src="/assets/images/chunli-pixel.png"
+                          alt="heihachi"
+                        />
+                      </span>
                     </span>
                   </div>
                   <div className="fighter-row">
                     <span className="fighter-wrapper">
-                      <img
-                        className="fighter zangief"
-                        src="/assets/images/zangief-pixel.png"
-                        alt="heihachi"
-                      />
+                      <span className="bounce-wrapper-zang">
+                        <img
+                          className="fighter zangief"
+                          src="/assets/images/zangief-pixel.png"
+                          alt="heihachi"
+                        />
+                      </span>
                     </span>
                     <span className="fighter-wrapper">
-                      <img
-                        className="fighter servbot"
-                        src="/assets/images/servbot-pixel.png"
-                        alt="heihachi"
-                      />
+                      <span className="bounce-wrapper bounce-wrapper-serv">
+                        <img
+                          className="fighter servbot"
+                          src="/assets/images/servbot-pixel.png"
+                          alt="heihachi"
+                        />
+                      </span>
                     </span>
                     <span className="fighter-wrapper">
-                      <img
-                        className="fighter morrigan"
-                        src="/assets/images/morrigan-pixel.png"
-                        alt="morrigan"
-                      />
+                      <span className="bounce-wrapper bounce-wrapper-morg">
+                        <img
+                          className="fighter morrigan"
+                          src="/assets/images/morrigan-pixel.png"
+                          alt="morrigan"
+                        />
+                      </span>
                     </span>
                   </div>
                 </div>
@@ -514,7 +589,6 @@ export class Homepage extends Component {
               <div className="background-partition">
                 <div className="background-partition-overlay" />
               </div>
-
             </div>
           </div>
 

@@ -413,7 +413,6 @@ nav {
   position: relative;
   display: inline;
   text-align: left;
-  width: 50%;
   min-width: 300px;
 }
 
@@ -454,8 +453,8 @@ nav {
   min-height: 400px;
   height: 100%;
   background-image: url("../assets/images/news-from-image.png");
-  background-size: contain;
-  background-attachment: fixed;
+  background-size: 100%;
+  background-position: -100px;
 }
 
 .opacity-overlay {
@@ -1234,13 +1233,6 @@ nav {
 
 
 
-
-
-
-
-
-
-
 /*CONTENT*/
 
 .container {
@@ -1320,18 +1312,6 @@ h2 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*End Page */
 
 #page-footer {
@@ -1359,19 +1339,6 @@ h2 {
 .copywrite {
   padding-bottom: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*CUSTOM*/

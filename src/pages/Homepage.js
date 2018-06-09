@@ -334,7 +334,7 @@ export class Homepage extends Component {
               <div className="project-outline">
                 <div className="project-outline-content">
                   <a
-                    href="https://crystal-game-juliusd.herokuapp.com/index.html"
+                    href="https://crystal-numbers.herokuapp.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -377,7 +377,7 @@ export class Homepage extends Component {
                   alt="emerald"
                 />
                 <a
-                  href="https://crystal-game-juliusd.herokuapp.com/index.html"
+                  href="https://crystal-numbers.herokuapp.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

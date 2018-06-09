@@ -4,11 +4,12 @@ body {
   margin: 0;
 }
 
+
 * {
   box-sizing: border-box
 }
 
-.row {
+.page-content {
   z-index: 1;
   background-color: white;
 }
@@ -45,45 +46,89 @@ nav {
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-/*
-.nav-grain {
-    position: fixed;
-    z-index: -2;
-    opacity: .2;
-    height: inherit;
-    width: inherit;
-    background: url('/assets/images/grainy.jpg');
-    background-size: 100%;
-    animation: navgrain 10s infinite ease-in-out;
-}*/
-
-
-/*@keyframes navgrain {
-    0%,
-    100% {
-        transform: translate(0, 0);
-    }
-    25% {
-        transform: translate(-40%, -40%);
-    }
-    50% {
-        transform: translate(0%, 40%);
-    }
-    75% {
-        transform: translate(40%, 0%);
-    }
+#scroll-down {
+  position: relative;
+  opacity: 0;
+  top: 30px;
+  width: 34px;
+  height: 60px;
+  border: 1px solid black;
+  background-color: transparent;
+  margin: 0 auto;
+  border-radius: 27px;
+  /*animation: scrollKinda 15s infinite ease-in-out;*/
 }
-*/
 
+@keyframes scrollKinda {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0, 30%);
+  }
+  50% {
+    transform: translate(-30%, 0);
+  }
+  75% {
+    transform: translate(30%, 30%);
+  }
+}
+
+.scroll-animation {
+  background-color: black;
+  border-radius: 100%;
+  position: inherit;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  align-items: center;
+  height: 10px;
+  width: 5px;
+  -webkit-animation: moveball 2.5s infinite;
+  animation: moveball 2.5s infinite;
+}
+
+@-webkit-keyframes moveball {
+  0% {
+    top: 2px;
+    background-color: red;
+    opacity: 0;
+  }
+  50% {
+    background-color: red;
+    opacity: .75;
+  }
+  100% {
+    top: 48px;
+    opacity: 0;
+  }
+}
+
+@keyframes moveball {
+  0% {
+    top: 2px;
+    background-color: red;
+    opacity: 0;
+  }
+  50% {
+    background-color: red;
+    opacity: .75;
+  }
+  100% {
+    top: 48px;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .navbar a {
+    font-size: .75rem;
+  }
+  .navbar {
+    height: 35%;
+  }
+}
 
 /*JUMBOTRON*/
 
@@ -94,6 +139,7 @@ nav {
   margin-bottom: 0;
   background: white;
   overflow: hidden;
+  font-family: "Ubuntu Mono", sans-serif;
 }
 
 .jumbo-overlay {
@@ -133,137 +179,64 @@ nav {
   }
 }
 
-#scroll-down {
-  position: relative;
-  opacity: 0;
-  top: 30px;
-  width: 34px;
-  height: 60px;
-  border: 1px solid black;
-  background-color: transparent;
-  margin: 0 auto;
-  border-radius: 27px;
-  /*animation: scrollKinda 15s infinite ease-in-out;*/
-}
-
-@keyframes scrollKinda {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(0, 30%);
-  }
-  50% {
-    transform: translate(-30%, 0);
-  }
-  75% {
-    transform: translate(30%, 30%);
-  }
-}
-
-
-.scroll-animation {
-  background-color: black;
-  border-radius: 100%;
-  position: inherit;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  align-items: center;
-  height: 10px;
-  width: 5px;
-  -webkit-animation: moveball 2.5s infinite;
-  animation: moveball 2.5s infinite;
-}
-
-@-webkit-keyframes moveball {
-  0% {
-    top: 2px;
-    background-color: red;
-    opacity: 0;
-  }
-
-  50% {
-    background-color: red;
-    opacity: .75;
-  }
-
-  100% {
-    top: 48px;
-    opacity: 0;
-  }
-}
-
-@keyframes moveball {
-  0% {
-    top: 2px;
-    background-color: red;
-    opacity: 0;
-  }
-
-  50% {
-    background-color: red;
-    opacity: .75;
-  }
-
-  100% {
-    top: 48px;
-    opacity: 0;
-  }
-}
-
-@media (max-width: 650px) {
-  .navbar a {
-    font-size: .75rem;
-  }
-  .navbar {
-    height: 35%;
-  }
-}
-
 .jumbotron-text {
-  display: inline-flex;
-  flex: auto;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   z-index: 1;
-  font-family: "Krona One", sans-serif;
-  font-size: 2em;
-  text-align: center;
-  padding-top: 120px;
-  height: 100%;
-  width: 75%;
-  margin: 0 auto;
+  font-size: 2.5em;
+  padding-left: 20vw;
+  padding-top:20vh;
+}
+
+#my-name {
+margin: 50px 0 20px 0;
+text-align: left;
+font-size: 1.5;
+}
+
+.my-properties {
+  margin: 0 0 0 10%;
+  font-size: 1.5rem;
+  list-style: none;
+  text-align: left;
+}
+
+.my-properties > li {
+  margin-top: 2%;
 }
 
 .jumbo-flavor-left {
   width: 20%;
   font-size: 5rem;
   z-index: 5;
+  text-align: left;
 }
 
 .jumbo-flavor-right {
   width: 20%;
   font-size: 5rem;
   z-index: 5;
-}
-
-@media (max-width: 1400px) {
-  .jumbotron-text {
-    padding-top: 90px;
-  }
+  margin: 2% 0 0 0;
+  text-align: left;
+  font-weight: bold;
 }
 
 @media (max-width: 700px) {
   .jumbotron-text {
-    font-size: 1rem;
     padding-top: 200px;
+    font-size: 1rem;
+    padding-left: 10vw;
   }
   #scroll-down {
     height: 40px;
     width: 20px;
+  }
+  .jumbo-flavor-left {
+    font-size: 3rem;
+  }
+  .jumbo-flavor-right {
+    font-size: 3rem;
+  }
+  .my-properties > li {
+    font-size: .75rem;
   }
   .scroll-animation {
     height: 5px;
@@ -274,12 +247,10 @@ nav {
       background-color: red;
       opacity: 0;
     }
-
     50% {
       background-color: red;
       opacity: .75;
     }
-
     100% {
       top: 33px;
       opacity: 0;
@@ -291,36 +262,16 @@ nav {
       background-color: red;
       opacity: 0;
     }
-
     50% {
       background-color: red;
       opacity: .75;
     }
-
     100% {
       top: 33px;
       opacity: 0;
     }
   }
 }
-
-.jumbotron-text h1 {
-  text-transform: uppercase;
-  font-size: 3em;
-  margin-bottom: 0;
-}
-
-.jumbotron-text p {
-  margin: 0;
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -343,20 +294,6 @@ nav {
   color: black;
   padding: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*PROJECTS*/
 
@@ -439,13 +376,11 @@ nav {
   flex: 0 1 auto;
   padding: 0 20px;
   border-bottom: 1px solid gray;
-
   transition: 0.3s;
   -o-transition: 0.3s;
   -moz-transition: 0.3s;
   -webkit-transition: 0.3s;
 }
-
 
 #news-from {
   display: block;
@@ -466,7 +401,6 @@ nav {
   background: rgba(225, 225, 225, .1);
 }
 
-
 #news-from h3 {
   margin: auto;
   font-size: 3rem;
@@ -479,7 +413,7 @@ nav {
   display: inline-block;
   text-decoration: none;
   color: black;
-  background:rgba(225, 225, 225, .9);
+  background: rgba(225, 225, 225, .9);
   border: 1px solid black;
   font-size: 2rem;
 }
@@ -496,7 +430,7 @@ nav {
 #news-from p {
   margin: 40px;
   max-width: 65vw;
-  font-size: 2.2rem;
+  font-size: 1.75rem;
   font-family: 'Heebo', serif;
   font-weight: bolder;
 }
@@ -512,7 +446,6 @@ nav {
   height: 50px;
 }
 
-
 #card-one a {
   position: absolute;
   display: flex;
@@ -522,7 +455,6 @@ nav {
   margin: 50px 0 0 100px;
 }
 
-
 #card-one {
   position: relative;
   background-size: 115px;
@@ -530,7 +462,6 @@ nav {
   background-image: url("../assets/images/red-bg-light.jpg");
   overflow: hidden;
 }
-
 
 #card-one .project-title {
   display: flex;
@@ -560,12 +491,9 @@ nav {
   #card-one {
     justify-content: center;
   }
-
   #card-one a {
     margin: 30px 0 0 0;
   }
-
-
   #card-one p {
     right: initial;
   }
@@ -577,7 +505,6 @@ nav {
     justify-content: initial;
   }
 }
-
 
 .first-word {
   position: relative;
@@ -627,7 +554,6 @@ nav {
   animation: falling 7s infinite linear;
 }
 
-
 @keyframes falling {
   0% {
     top: -160px;
@@ -654,7 +580,6 @@ nav {
     align-items: center;
   }
 }
-
 
 #card-two a {
   flex-direction: column;
@@ -721,7 +646,6 @@ nav {
   #card-three {
     flex-direction: column;
   }
-
   .quote-wrapper {
     margin: auto;
   }
@@ -754,15 +678,6 @@ nav {
   height: 100px;
   min-width: 200px;
 }
-
-
-
-
-
-
-
-
-
 
 /*.speech-bubble:after {
     content: '';
@@ -812,16 +727,6 @@ nav {
   box-shadow: 0 0 10px 10px white;
   padding: 20px;
 }
-
-
-
-
-
-
-
-
-
-
 
 /*@keyframes philoSlide {
     0% {
@@ -926,7 +831,6 @@ nav {
   transition: 2s cubic-bezier(.07, .85, .66, .9);
 }
 
-
 .fighter-wrapper:hover {
   display: flex;
   width: 700px;
@@ -1011,7 +915,6 @@ nav {
   }
 }
 
-
 .bounce-wrapper-heih {
   animation: "bounceheih" 4s infinite;
 }
@@ -1033,7 +936,6 @@ nav {
     -o-animation: ease-in;
     animation: ease-in;
   }
-
   17% {
     transform: translate(-40%, -0%);
     -webkit-animation: ease-in;
@@ -1072,11 +974,9 @@ nav {
   }
 }
 
-
 .bounce-wrapper-zang {
   animation: "bouncezang" 1.5s infinite;
 }
-
 
 @keyframes bouncezang {
   0%,
@@ -1109,11 +1009,9 @@ nav {
   }
 }
 
-
 .bounce-wrapper-serv {
   animation: "bounceserve" .5s infinite;
 }
-
 
 @keyframes bounceserve {
   0% {
@@ -1130,11 +1028,9 @@ nav {
   }
 }
 
-
 .bounce-wrapper-chun {
   animation: "bouncechun" .75s infinite;
 }
-
 
 @keyframes bouncechun {
   0% {
@@ -1154,7 +1050,6 @@ nav {
 .bounce-wrapper-morg {
   animation: "bouncemorg" 3s infinite;
 }
-
 
 @keyframes bouncemorg {
   0% {
@@ -1215,7 +1110,6 @@ nav {
   }
 }
 
-
 @media (max-width: 600px) {
   #card-imagedits a {
     transform: rotate(340deg) translate(50px, -100px);
@@ -1230,8 +1124,6 @@ nav {
   width: 2000px;
 }
 
-
-
 /*CONTENT*/
 
 .container {
@@ -1245,8 +1137,6 @@ nav {
     font-size: .75rem;
   }
 }
-
-.main-content {}
 
 .background-partition {
   position: relative;
@@ -1270,7 +1160,6 @@ nav {
   z-index: -2;
   background-repeat: repeat;
 }
-
 
 @keyframes partitionAnimation {
   0% {
@@ -1309,8 +1198,6 @@ h2 {
   text-transform: uppercase;
 }
 
-
-
 /*End Page */
 
 #page-footer {
@@ -1338,7 +1225,6 @@ h2 {
 .copywrite {
   padding-bottom: 20px;
 }
-
 
 /*CUSTOM*/
 
@@ -1379,10 +1265,6 @@ h2 {
 
 .cyan {
   color: cyan;
-}
-
-#my-name {
-  z-index: 5;
 }
 
 .fa-link {

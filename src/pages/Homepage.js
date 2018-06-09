@@ -55,7 +55,7 @@ export class Homepage extends Component {
     });
   }
 
-  componentWillMount() {}
+  componentWillMount() { }
 
   handleScroll = () => {
     var screenTop = $(document).scrollTop();
@@ -98,41 +98,39 @@ export class Homepage extends Component {
         <StyleRoot>
           <nav className="navbar" style={this.styles.fadeInDown}>
             <div className="nav-overlay" />
-            <div className="jumbotron-social">
-              <ul className="ul-social">
-                <li className="li-social-links" style={this.styles.fadeIn}>
-                  <a
-                    className="social"
-                    href="https://github.com/JuliusDorfman"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-github" />
-                  </a>
-                </li>
-                <li className="li-social-links" style={this.styles.fadeIn}>
-                  <a
-                    className="social"
-                    href="https://www.linkedin.com/in/juliusgdorfman"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-linkedin" />
-                  </a>
-                </li>
-                <li className="li-social-links" style={this.styles.fadeIn}>
-                  <a
-                    className="social"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="../assets/docs/JuliusDorfman_Resume.doc"
-                    download="JuliusDorfman_Resume.doc"
-                  >
-                    <i className="far fa-file-word" />
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <ul className="ul-social">
+              <li className="li-social-links" style={this.styles.fadeIn}>
+                <a
+                  className="social"
+                  href="https://github.com/JuliusDorfman"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-github" />
+                </a>
+              </li>
+              <li className="li-social-links" style={this.styles.fadeIn}>
+                <a
+                  className="social"
+                  href="https://www.linkedin.com/in/juliusgdorfman"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-linkedin" />
+                </a>
+              </li>
+              <li className="li-social-links" style={this.styles.fadeIn}>
+                <a
+                  className="social"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="../assets/docs/JuliusDorfman_Resume.doc"
+                  download="JuliusDorfman_Resume.doc"
+                >
+                  <i className="far fa-file-word" />
+                </a>
+              </li>
+            </ul>
             <div id="scroll-down" className="fade-in nav-control">
               <div className="scroll-animation" />
             </div>
@@ -141,28 +139,35 @@ export class Homepage extends Component {
         </StyleRoot>
 
         <div className="container">
-          <div className="jumbotron">
-            <div className="jumbo-overlay" />
-            <div className="jumbo-grain" />
-            <StyleRoot>
+          <StyleRoot>
+            <div className="jumbotron">
+              <div className="jumbo-overlay" />
+              <div className="jumbo-grain" />
               <div className="jumbotron-text">
-                <span
-                  className="jumbo-flavor-left"
-                  style={this.styles.fadeIn}
-                />
                 <h1 id="my-name" style={this.styles.fadeIn}>
-                  Julius G. Dorfman
+                  <span
+                    className="jumbo-flavor-left"
+                  >
+                    {`<`}
+                  </span>
+                  JULIUS G. DORFMAN
                 </h1>
-                <p style={this.styles.fadeIn} />
-                <span
+                <ul className="my-properties" style={this.styles.fadeIn}>
+                  <li style={this.styles.fadeIn}>type="human"</li>
+                  <li style={this.styles.fadeIn}>occupation="web-developer"</li>
+                  <li style={this.styles.fadeIn}>hobby="aquarist"</li>
+                  <li style={this.styles.fadeIn}>location={'{location}'}</li>
+                </ul>
+                <div
                   className="jumbo-flavor-right"
-                  style={this.styles.fadeIn}
-                />
+                  style={this.styles.fadeIn}>
+                  {` />`}
+                </div>
               </div>
-            </StyleRoot>
-          </div>
+            </div>
+          </StyleRoot>
 
-          <div className="row" id="projects">
+          <div className="page-content" id="projects">
             <div className="main-content">
               <div className="project-outline">
                 <div className="project-outline-content">
@@ -252,8 +257,8 @@ export class Homepage extends Component {
                   </p>
                 </div>
                 <div className="project-outline-tools">
-                  <i className="fab fa-node" 
-                  title="node"
+                  <i className="fab fa-node"
+                    title="node"
                   />
                   <img
                     src="/assets/images/express-icon.png"
@@ -355,9 +360,9 @@ export class Homepage extends Component {
                   </p>
                 </div>
                 <div className="project-outline-tools">
-                  <i className="fab fa-html5" alt="html5_logo" title="html5"/>
-                  <i className="fab fa-css3-alt" alt="css3-alt" title="css3"/>
-                  <i className="fab fa-js-square" alt="js-square" title="javascript"/>
+                  <i className="fab fa-html5" alt="html5_logo" title="html5" />
+                  <i className="fab fa-css3-alt" alt="css3-alt" title="css3" />
+                  <i className="fab fa-js-square" alt="js-square" title="javascript" />
                 </div>
               </div>
 
@@ -423,9 +428,9 @@ export class Homepage extends Component {
                   </p>
                 </div>
                 <div className="project-outline-tools">
-                  <i className="fab fa-html5" alt="html5_logo" title="html5"/>
-                  <i className="fab fa-css3-alt" alt="css3-alt" title="css3"/>
-                  <i className="fab fa-js-square" alt="js-square" title="javascript"/>
+                  <i className="fab fa-html5" alt="html5_logo" title="html5" />
+                  <i className="fab fa-css3-alt" alt="css3-alt" title="css3" />
+                  <i className="fab fa-js-square" alt="js-square" title="javascript" />
                 </div>
               </div>
 
@@ -467,7 +472,7 @@ export class Homepage extends Component {
                   <i className="fab fa-html5" alt="html5_logo" />
                   <i className="fab fa-css3-alt" alt="css3-alt" />
                   <i className="fab fa-js-square" alt="js-square" />
-                  <img src="/assets/images/jquery-icon.png" alt="jquery-icon" title="jquery"/>
+                  <img src="/assets/images/jquery-icon.png" alt="jquery-icon" title="jquery" />
                   <img
                     src="/assets/images/bootstrap-logo.png"
                     alt="bootstrap-logo"
@@ -516,15 +521,15 @@ export class Homepage extends Component {
                   </p>
                 </div>
                 <div className="project-outline-tools">
-                  <i className="fab fa-html5" alt="html5_logo" 
-                  title="html5"/>
-                  <i className="fab fa-css3-alt" alt="css3-alt" 
-                  title="css3"/>
-                  <i className="fab fa-js-square" alt="js-square" 
-                  title="javascript"/>
+                  <i className="fab fa-html5" alt="html5_logo"
+                    title="html5" />
+                  <i className="fab fa-css3-alt" alt="css3-alt"
+                    title="css3" />
+                  <i className="fab fa-js-square" alt="js-square"
+                    title="javascript" />
                   <img src="/assets/images/jquery-icon.png" alt="jquery-icon" />
-                  <i className="fab fa-react" alt="react" 
-                  title="react"/>
+                  <i className="fab fa-react" alt="react"
+                    title="react" />
                 </div>
               </div>
 
@@ -606,7 +611,7 @@ export class Homepage extends Component {
             </div>
           </div>
 
-          <div className="row">
+          <div className="page-content">
             <div id="page-footer">
               <div className="footer-links-wrapper">
                 <a
@@ -641,7 +646,7 @@ export class Homepage extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </div >
     );
   }
 }

@@ -4,7 +4,6 @@ body {
   margin: 0;
 }
 
-
 * {
   box-sizing: border-box
 }
@@ -183,13 +182,12 @@ nav {
   z-index: 1;
   font-size: 2.5em;
   padding-left: 20vw;
-  padding-top:20vh;
+  padding-top: 20vh;
 }
 
 #my-name {
-margin: 50px 0 20px 0;
-text-align: left;
-font-size: 1.5;
+  margin: 50px 0 20px 0;
+  text-align: left;
 }
 
 .my-properties {
@@ -199,7 +197,7 @@ font-size: 1.5;
   text-align: left;
 }
 
-.my-properties > li {
+.my-properties>li {
   margin-top: 2%;
 }
 
@@ -232,10 +230,14 @@ font-size: 1.5;
   .jumbo-flavor-left {
     font-size: 3rem;
   }
+  .jumbo-slash {
+    font-size: 2rem;
+    vertical-align: 10%;
+  }
   .jumbo-flavor-right {
     font-size: 3rem;
   }
-  .my-properties > li {
+  .my-properties>li {
     font-size: .75rem;
   }
   .scroll-animation {
@@ -272,8 +274,6 @@ font-size: 1.5;
     }
   }
 }
-
-
 
 /*SOCIAL LINKS*/
 

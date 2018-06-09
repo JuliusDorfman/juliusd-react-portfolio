@@ -161,7 +161,7 @@ export class Homepage extends Component {
                 <div
                   className="jumbo-flavor-right"
                   style={this.styles.fadeIn}>
-                  {` />`}
+                  <span className="jumbo-slash">/</span>>
                 </div>
               </div>
             </div>

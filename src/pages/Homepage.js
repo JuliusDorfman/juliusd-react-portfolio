@@ -172,6 +172,7 @@ export class Homepage extends Component {
                     rel="noopener noreferrer"
                   >
                     <h3 className="underline-projects">News-From</h3>
+                    <i className="fas fa-link"></i>
                   </a>
                   <h4>Project Outline</h4>
                   <p>
@@ -237,6 +238,7 @@ export class Homepage extends Component {
                     rel="noopener noreferrer"
                   >
                     <h3 className="underline-projects">Liri-Bot</h3>
+                    <i className="fas fa-link"></i>
                   </a>
                   <h4>Project Outline</h4>
                   <p>
@@ -250,10 +252,13 @@ export class Homepage extends Component {
                   </p>
                 </div>
                 <div className="project-outline-tools">
-                  <i className="fab fa-node" />
+                  <i className="fab fa-node" 
+                  title="node"
+                  />
                   <img
                     src="/assets/images/express-icon.png"
                     alt="express-icon"
+                    title="express"
                   />
                 </div>
               </div>
@@ -339,6 +344,7 @@ export class Homepage extends Component {
                     rel="noopener noreferrer"
                   >
                     <h3 className="underline-projects">Crystal Game</h3>
+                    <i className="fas fa-link"></i>
                   </a>
                   <h4>Project Outline</h4>
                   <p>To create a single-page, javascript driven math game.</p>
@@ -349,9 +355,9 @@ export class Homepage extends Component {
                   </p>
                 </div>
                 <div className="project-outline-tools">
-                  <i className="fab fa-html5" alt="html5_logo" />
-                  <i className="fab fa-css3-alt" alt="css3-alt" />
-                  <i className="fab fa-js-square" alt="js-square" />
+                  <i className="fab fa-html5" alt="html5_logo" title="html5"/>
+                  <i className="fab fa-css3-alt" alt="css3-alt" title="css3"/>
+                  <i className="fab fa-js-square" alt="js-square" title="javascript"/>
                 </div>
               </div>
 
@@ -403,6 +409,7 @@ export class Homepage extends Component {
                     rel="noopener noreferrer"
                   >
                     <h3 className="underline-projects">imagEdits</h3>
+                    <i className="fas fa-link"></i>
                   </a>
                   <h4>Project Outline</h4>
                   <p>
@@ -416,9 +423,9 @@ export class Homepage extends Component {
                   </p>
                 </div>
                 <div className="project-outline-tools">
-                  <i className="fab fa-html5" alt="html5_logo" />
-                  <i className="fab fa-css3-alt" alt="css3-alt" />
-                  <i className="fab fa-js-square" alt="js-square" />
+                  <i className="fab fa-html5" alt="html5_logo" title="html5"/>
+                  <i className="fab fa-css3-alt" alt="css3-alt" title="css3"/>
+                  <i className="fab fa-js-square" alt="js-square" title="javascript"/>
                 </div>
               </div>
 
@@ -446,6 +453,7 @@ export class Homepage extends Component {
                     rel="noopener noreferrer"
                   >
                     <h3 className="underline-projects">Philosophy Trivia</h3>
+                    <i className="fas fa-link"></i>
                   </a>
                   <h4>Project Outline</h4>
                   <p>To create a philosophy themed time-based quiz</p>
@@ -459,10 +467,11 @@ export class Homepage extends Component {
                   <i className="fab fa-html5" alt="html5_logo" />
                   <i className="fab fa-css3-alt" alt="css3-alt" />
                   <i className="fab fa-js-square" alt="js-square" />
-                  <img src="/assets/images/jquery-icon.png" alt="jquery-icon" />
+                  <img src="/assets/images/jquery-icon.png" alt="jquery-icon" title="jquery"/>
                   <img
                     src="/assets/images/bootstrap-logo.png"
                     alt="bootstrap-logo"
+                    title="bootstrap"
                   />
                 </div>
               </div>
@@ -493,6 +502,7 @@ export class Homepage extends Component {
                     rel="noopener noreferrer"
                   >
                     <h3 className="underline-projects">Memory Game</h3>
+                    <i className="fas fa-link"></i>
                   </a>
                   <h4>Project Outline</h4>
                   <p>
@@ -506,11 +516,15 @@ export class Homepage extends Component {
                   </p>
                 </div>
                 <div className="project-outline-tools">
-                  <i className="fab fa-html5" alt="html5_logo" />
-                  <i className="fab fa-css3-alt" alt="css3-alt" />
-                  <i className="fab fa-js-square" alt="js-square" />
+                  <i className="fab fa-html5" alt="html5_logo" 
+                  title="html5"/>
+                  <i className="fab fa-css3-alt" alt="css3-alt" 
+                  title="css3"/>
+                  <i className="fab fa-js-square" alt="js-square" 
+                  title="javascript"/>
                   <img src="/assets/images/jquery-icon.png" alt="jquery-icon" />
-                  <i className="fab fa-react" alt="react" />
+                  <i className="fab fa-react" alt="react" 
+                  title="react"/>
                 </div>
               </div>
 

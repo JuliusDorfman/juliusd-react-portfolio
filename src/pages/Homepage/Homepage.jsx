@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import Navbar from "../../components/Navbar";
 import Radium, { StyleRoot } from 'radium';
 import { fadeIn, fadeInDown } from 'react-animations';
-import nietzsche from '../assets/images/nietzsche.jpg';
-import rand from '../assets/images/aynrand.jpg';
-import locke from '../assets/images/locke.jpg';
-import paine from '../assets/images/paine.jpg';
-import marx from '../assets/images/marx.jpg';
-import confucius from '../assets/images/confucius.jpg';
+import nietzsche from '../../assets/images/nietzsche.jpg';
+import rand from '../../assets/images/aynrand.jpg';
+import locke from '../../assets/images/locke.jpg';
+import paine from '../../assets/images/paine.jpg';
+import marx from '../../assets/images/marx.jpg';
+import confucius from '../../assets/images/confucius.jpg';
 import $ from 'jquery';
 import './Homepage.css';
 
@@ -39,23 +40,7 @@ export class Homepage extends Component {
       .css({ opacity: 0 })
       .animate({ opacity: 1 }, 1000);
 
-    let navStat = 'open';
-
-    $('.nav-control').click(function() {
-      let hideHeight = $('.nav-overlay').height();
-      console.log(hideHeight);
-
-      if (navStat === 'open') {
-        $('nav').animate({ top: -hideHeight + 20 + 'px' });
-        navStat = 'closed';
-      } else {
-        $('nav').animate({ top: 0 });
-        navStat = 'open';
-      }
-    });
   }
-
-  componentWillMount() { }
 
   handleScroll = () => {
     var screenTop = $(document).scrollTop();
@@ -96,46 +81,7 @@ export class Homepage extends Component {
     return (
       <div className="pages-homepage">
         <StyleRoot>
-          <nav className="navbar" style={this.styles.fadeInDown}>
-            <div className="nav-overlay" />
-            <ul className="ul-social">
-              <li className="li-social-links" style={this.styles.fadeIn}>
-                <a
-                  className="social"
-                  href="https://github.com/JuliusDorfman"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-github" />
-                </a>
-              </li>
-              <li className="li-social-links" style={this.styles.fadeIn}>
-                <a
-                  className="social"
-                  href="https://www.linkedin.com/in/juliusgdorfman"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-linkedin" />
-                </a>
-              </li>
-              <li className="li-social-links" style={this.styles.fadeIn}>
-                <a
-                  className="social"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="../assets/docs/JuliusDorfman_Resume.doc"
-                  download="JuliusDorfman_Resume.doc"
-                >
-                  <i className="far fa-file-word" />
-                </a>
-              </li>
-            </ul>
-            <div id="scroll-down" className="fade-in nav-control">
-              <div className="scroll-animation" />
-            </div>
-            <div className="nav-control" />
-          </nav>
+          <Navbar />
         </StyleRoot>
 
         <div className="container">
@@ -634,7 +580,7 @@ export class Homepage extends Component {
                   className="footer-link"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="../assets/docs/JuliusDorfman_Resume.doc"
+                  href="../../assets/docs/JuliusDorfman_Resume.doc"
                   download="JuliusDorfman_Resume.doc"
                 >
                   <i className="far fa-file-word" />

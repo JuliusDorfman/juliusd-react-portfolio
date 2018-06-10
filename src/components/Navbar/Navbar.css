@@ -1,0 +1,98 @@
+nav {
+  display: flex;
+  z-index: 5;
+  position: fixed;
+  flex-direction: column;
+  width: 5%;
+  right: 0;
+  height: 50%;
+  border-left: 1px solid black;
+  overflow: hidden;
+  transition: 1.5s cubic-bezier(.01, 0, .47, .99);
+}
+
+.nav-overlay {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: inherit;
+  background: rgba(255, 255, 255, .2);
+  background-size: 200%;
+}
+
+.nav-control {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 20px;
+  bottom: -9px;
+  background: black;
+  cursor: pointer;
+}
+
+#scroll-down {
+  position: relative;
+  opacity: 0;
+  top: 30px;
+  width: 34px;
+  height: 60px;
+  border: 1px solid black;
+  background-color: transparent;
+  margin: 0 auto;
+  border-radius: 27px;
+}
+
+.scroll-animation {
+  background-color: black;
+  border-radius: 100%;
+  position: inherit;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  align-items: center;
+  height: 10px;
+  width: 5px;
+  -webkit-animation: moveball 2.5s infinite;
+  animation: moveball 2.5s infinite;
+}
+
+@-webkit-keyframes moveball {
+  0% {
+    top: 2px;
+    background-color: red;
+    opacity: 0;
+  }
+  50% {
+    background-color: red;
+    opacity: .75;
+  }
+  100% {
+    top: 48px;
+    opacity: 0;
+  }
+}
+
+@keyframes moveball {
+  0% {
+    top: 2px;
+    background-color: red;
+    opacity: 0;
+  }
+  50% {
+    background-color: red;
+    opacity: .75;
+  }
+  100% {
+    top: 48px;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .navbar a {
+    font-size: .75rem;
+  }
+  .navbar {
+    height: 35%;
+  }
+}

@@ -73,7 +73,7 @@ export default class Navbar extends Component {
                   className="social"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="../assets/docs/JuliusDorfman_Resume.doc"
+                  href="../../assets/docs/JuliusDorfman_Resume.doc"
                   download="JuliusDorfman_Resume.doc"
                 >
                   <i className="far fa-file-word" />

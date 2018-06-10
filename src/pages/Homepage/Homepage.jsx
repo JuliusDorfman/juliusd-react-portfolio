@@ -1,14 +1,20 @@
+// React and Componentss
 import React, { Component } from 'react';
 import Navbar from "../../components/Navbar";
+import Jumbotron from "../../components/Jumbotron";
+
+// Third Party Packages
 import Radium, { StyleRoot } from 'radium';
 import { fadeIn, fadeInDown } from 'react-animations';
+import $ from 'jquery';
+
+// Assets
 import nietzsche from '../../assets/images/nietzsche.jpg';
 import rand from '../../assets/images/aynrand.jpg';
 import locke from '../../assets/images/locke.jpg';
 import paine from '../../assets/images/paine.jpg';
 import marx from '../../assets/images/marx.jpg';
 import confucius from '../../assets/images/confucius.jpg';
-import $ from 'jquery';
 import './Homepage.css';
 
 export class Homepage extends Component {
@@ -34,7 +40,6 @@ export class Homepage extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
-
     this.philosopherAnimate();
     $('.fade-in')
       .css({ opacity: 0 })
@@ -43,18 +48,7 @@ export class Homepage extends Component {
   }
 
   handleScroll = () => {
-    var screenTop = $(document).scrollTop();
     var scrollTop = $(window).scrollTop();
-
-    $('.jumbotron').css({
-      height: function() {
-        let height = (1000 - screenTop) * 0.75;
-        if (height >= 450) {
-          return height;
-        }
-      }
-    });
-
     $('#card-one').css({
       'background-position-y': Math.round(scrollTop / 10) + 'px'
     });
@@ -86,31 +80,7 @@ export class Homepage extends Component {
 
         <div className="container">
           <StyleRoot>
-            <div className="jumbotron">
-              <div className="jumbo-overlay" />
-              <div className="jumbo-grain" />
-              <div className="jumbotron-text">
-                <h1 id="my-name" style={this.styles.fadeIn}>
-                  <span
-                    className="jumbo-flavor-left"
-                  >
-                    {`<`}
-                  </span>
-                  JULIUS G. DORFMAN
-                </h1>
-                <ul className="my-properties" style={this.styles.fadeIn}>
-                  <li style={this.styles.fadeIn}>type="human"</li>
-                  <li style={this.styles.fadeIn}>occupation="web-developer"</li>
-                  <li style={this.styles.fadeIn}>hobby="aquarist"</li>
-                  <li style={this.styles.fadeIn}>location={'{location}'}</li>
-                </ul>
-                <div
-                  className="jumbo-flavor-right"
-                  style={this.styles.fadeIn}>
-                  <span className="jumbo-slash">/</span>>
-                </div>
-              </div>
-            </div>
+            <Jumbotron />
           </StyleRoot>
 
           <div className="page-content" id="projects">

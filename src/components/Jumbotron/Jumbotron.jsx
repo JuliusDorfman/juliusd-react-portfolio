@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+// Components
+import Bio from "../Bio";
+
 // Third Party
 import Radium, { StyleRoot } from 'radium';
 import { fadeIn, fadeInDown } from 'react-animations';
@@ -44,30 +47,31 @@ export default class Jumbotron extends Component {
 
     return (
       <div className="jumbotron-component">
-      <StyleRoot>
-        <div className="jumbo-overlay" />
-        <div className="jumbo-grain" />
-        <div className="jumbotron-text">
-          <h1 id="my-name" style={this.styles.fadeIn}>
-            <span
-              className="jumbo-flavor-left"
-            >
-              {`<`}
-            </span>
-            JULIUS G. DORFMAN
-                </h1>
-          <ul className="my-properties" style={this.styles.fadeIn}>
-            <li style={this.styles.fadeIn}>type="human"</li>
-            <li style={this.styles.fadeIn}>occupation="web-developer"</li>
-            <li style={this.styles.fadeIn}>hobby="aquarist"</li>
-            <li style={this.styles.fadeIn}>location={'{location}'}</li>
-          </ul>
-          <div
-            className="jumbo-flavor-right"
-            style={this.styles.fadeIn}>
-            <span className="jumbo-slash">/</span>>
-                </div>
-        </div>
+        <StyleRoot>
+          <div className="jumbo-overlay" />
+          <div className="jumbo-grain" />
+          <div className="jumbotron-text">
+            <h1 id="my-name" style={this.styles.fadeIn}>
+              <span
+                className="jumbo-flavor-left"
+              >
+                {`<`}
+              </span>
+              JULIUS G. DORFMAN
+            </h1>
+            <ul className="my-properties" style={this.styles.fadeIn}>
+              <li style={this.styles.fadeIn}>type="human"</li>
+              <li style={this.styles.fadeIn}>occupation="web-developer"</li>
+              <li style={this.styles.fadeIn}>hobby="aquarist"</li>
+              <li style={this.styles.fadeIn}>location={'{location}'}</li>
+            </ul>
+            <div
+              className="jumbo-flavor-right"
+              style={this.styles.fadeIn}>
+              <span className="jumbo-slash">/</span>>
+            </div>
+            <Bio />
+          </div>
         </StyleRoot>
       </div>
     )

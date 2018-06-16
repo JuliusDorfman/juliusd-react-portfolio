@@ -550,8 +550,8 @@ export class Homepage extends Component {
                   className="footer-link"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="../../assets/docs/JuliusDorfman_Resume.doc"
-                  download="JuliusDorfman_Resume.doc"
+                  href="../../assets/docs/JuliusDorfman_Resume.docx"
+                  download="JuliusDorfman_Resume.docx"
                 >
                   <i className="far fa-file-word" />
                 </a>

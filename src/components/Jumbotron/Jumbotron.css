@@ -84,10 +84,10 @@
   font-weight: bold;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .jumbotron-text {
     padding-top: 200px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding-left: 10vw;
   }
   #scroll-down {
@@ -139,5 +139,11 @@
       top: 33px;
       opacity: 0;
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .jumbotron-text {
+    font-size: .9rem;
   }
 }

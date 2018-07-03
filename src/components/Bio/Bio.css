@@ -14,7 +14,6 @@
 }
 
 .bio-info-wrapper {
-  height: 70%;
   padding-right: 10%;
 }
 
@@ -36,6 +35,27 @@ li a {
   width: 40%;
   border-radius: 20%;
 }
+
+@media (max-width: 1000px) {
+  .bio-component {
+    justify-content: center;
+    width: 210px;
+    height: 150px;
+    top: 60vh;
+  }
+  .bio-profile-pic {
+    margin-right: 50px;
+  }
+  .bio-info-wrapper {
+    padding: 0 0 0 3%;
+  }
+  .bio-info-wrapper li {
+    margin-left: 22px;
+    list-style: none;
+    font-size: .75rem;
+  }
+}
+
 
 @media (max-width: 740px) {
   .bio-component {

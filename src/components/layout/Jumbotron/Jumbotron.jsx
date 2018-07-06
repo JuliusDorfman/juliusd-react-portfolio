@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // Components
-import Bio from "../Bio";
+import Bio from "../../Bio";
 
 // Third Party
 import Radium, { StyleRoot } from 'radium';

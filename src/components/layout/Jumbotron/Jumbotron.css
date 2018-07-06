@@ -17,7 +17,7 @@
   background-size: 100%;
 }
 
-.jumbo-grain {
+/* .jumbo-grain {
   position: fixed;
   opacity: .2;
   top: -650%;
@@ -27,7 +27,7 @@
   background: url('/assets/images/grainy.jpg');
   background-size: 100%;
   animation: grainAnimation 60s infinite ease-in-out;
-}
+} */
 
 @keyframes grainAnimation {
   0%,

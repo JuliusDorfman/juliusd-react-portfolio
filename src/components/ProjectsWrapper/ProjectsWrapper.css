@@ -1,0 +1,26 @@
+.projects-wrapper-component {
+  height: 95vh;
+}
+
+.projects-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+
+.projects-list-item {
+  display: flex;
+  flex: auto;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.projects-list-item:hover {
+  background-color: gainsboro;
+}
+
+.project-list-title {
+  width: 100%;
+}

@@ -8,6 +8,16 @@
   float: left;
   width: 20%;
   height: 100%;
+  background: whitesmoke;
+}
+
+@media (max-width: 650px) {
+  .projects-list-wrapper {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+  }
 }
 
 .projects-list-item {

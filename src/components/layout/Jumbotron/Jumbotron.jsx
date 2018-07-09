@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // Components
-import Bio from "../../Bio";
+// import Bio from "../../Bio";
 
 // Third Party
 import Radium, { StyleRoot } from 'radium';
@@ -25,11 +25,11 @@ export default class Jumbotron extends Component {
         animationName: Radium.keyframes(fadeIn, 'fadeIn')
       }
     };
+    this.handleScroll = this.handleScroll.bind(this);
   }
 
   handleScroll = () => {
     var screenTop = $(document).scrollTop();
-
     $('.jumbotron-component').css({
       height: function() {
         let height = (1000 - screenTop) * 0.75;
@@ -40,37 +40,38 @@ export default class Jumbotron extends Component {
     });
   }
 
+  click(e) {
+    window.scroll({
+      top: 500,
+      behavior: 'smooth'
+    })
+  }
+
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
   }
-  render() {
 
+
+  render() {
+    window.scroll({
+      top: 2500,
+      left: 0,
+      behavior: 'smooth'
+    });
     return (
       <div className="jumbotron-component">
         <StyleRoot>
-          <div className="jumbo-overlay" />
-          <div className="jumbo-grain" />
-          <div className="jumbotron-text">
-            <h1 id="my-name" style={this.styles.fadeIn}>
-              <span
-                className="jumbo-flavor-left"
-              >
-                {`<`}
-              </span>
-              JULIUS G. DORFMAN
-            </h1>
-            <ul className="my-properties" style={this.styles.fadeIn}>
-              <li style={this.styles.fadeIn}>type="human"</li>
-              <li style={this.styles.fadeIn}>occupation="web-developer"</li>
-              <li style={this.styles.fadeIn}>hobby="aquarist"</li>
-              <li style={this.styles.fadeIn}>location={'{location}'}</li>
-            </ul>
-            <div
-              className="jumbo-flavor-right"
-              style={this.styles.fadeIn}>
-              <span className="jumbo-slash">/</span>>
+          <div className="transparent-overlay" style={this.styles.fadeIn}>
+            <div className="landing-intro">
+              <h1>Julius <span className="responsive-disappear">G.</span> Dorfman</h1>
+              <h3>Website & Application:</h3>
+              <ul className="occupation-list">
+                <li className="occupation-list-items">Planning</li>
+                <li className="occupation-list-items">Design</li>
+                <li className="occupation-list-items">Development</li>
+              </ul>
             </div>
-            <Bio />
+            <span onClick={this.click.bind(this)}><i className="far fa-arrow-alt-circle-down scroll-down-button"></i></span>
           </div>
         </StyleRoot>
       </div>

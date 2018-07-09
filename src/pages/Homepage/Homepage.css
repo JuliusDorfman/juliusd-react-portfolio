@@ -31,12 +31,13 @@ body {
 /*PROJECTS*/
 
 .project-wrapper {
-  height: 95vh;
+  height: 100vh;
 }
 
 .project-outline {
+  flex-direction: column;
   position: relative;
-  height: 35vh;
+  height: 40vh;
   padding: 1%;
   display: flex;
   color: black;
@@ -427,7 +428,6 @@ body {
   padding-top: 10px;
   margin: auto;
   width: 30%;
-  height: 30%;
 }
 
 .fighters-container {
@@ -441,10 +441,8 @@ body {
   margin: auto;
   border: 3px solid black;
   min-width: 330px;
-  height: 100%;
+  height: 80%;
   overflow: hidden;
-  min-height: 330px;
-  min-width: 330px;
 }
 
 .fighters-bg-overlay {
@@ -802,7 +800,6 @@ body {
 #jojo-fanpage {
   background: url('/assets/images/jojo_fanpage_bg.png');
   background-size: cover;
-  background-position-y: -200px;
   padding: 0;
 }
 
@@ -837,6 +834,13 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  background: black;
+}
+
+@media (max-width: 650px) {
+  .container {
+    overflow: initial;
+  }
 }
 
 @media (max-width: 768px) {

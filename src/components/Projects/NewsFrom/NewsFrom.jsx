@@ -46,30 +46,24 @@ export default class NewsFrom extends Component {
         </div>
 
         <div className="project-card" id="news-from">
-          <a
-            className="news-from-header"
-            href="https://news-from.herokuapp.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className="news-from-logo"
-              src="/assets/images/news-from-logo.png"
-              alt="news-from-logo"
-              title="news-from-logo"
-            />
-            <h3 className="project-title">
-              News-From
-            </h3>
-          </a>
-          <div>
-            <summary>
-              Find the most recent headlines from the largest news (and fake news) media websites.
+              <a
+                href="https://news-from.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              <img
+                  className="news-from-logo"
+                  src="/assets/images/news-from-logo.png"
+                  alt="news-from-logo"
+                  title="news-from-logo"
+                />
+              </a>
+            <div className="news-from-summary">
+              Find the most recent headlines from the largest news media websites.
               Manipulate various metrics as you see fit and then output as
               an aesthetic infographic.
-          </summary>
           </div>
-        </div>
+          </div>
       </article>
     )
   }

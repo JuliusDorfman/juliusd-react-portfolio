@@ -15,6 +15,7 @@ export default class ProjectsWrapper extends Component {
       renderComponent: []
     };
     this.handleClick = this.handleClick.bind(this);
+    this.onScroll = this.onScroll.bind(this);
   }
 
   handleClick(e) {
@@ -24,9 +25,17 @@ export default class ProjectsWrapper extends Component {
   }
 
 
+  componentDidMount() {
+    window.addEventListener('scroll', this.onScroll);
+  }
+  onScroll = (e) => {
+    let parallaxElement = document.getElementsByClassName('projects-wrapper-component')[0].style;
+    console.log(parallaxElement)
+    parallaxElement = "200px 2000px";
+  }
   render() {
     return (
-      <div className="projects-wrapper-component">
+      <div className="projects-wrapper-component" onScroll={this.onScroll}>
         <aside className="projects-list-wrapper">
           <div className="projects-list-item" onClick={this.handleClick}>
             <h4 className="project-list-title" value="NewsFrom">News-From</h4>

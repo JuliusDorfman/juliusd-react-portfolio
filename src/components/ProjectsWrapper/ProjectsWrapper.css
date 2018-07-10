@@ -1,5 +1,7 @@
 .projects-wrapper-component {
   height: 95vh;
+  background: url("../../assets/images/coral-reef-bg-edited.jpg");
+  background-attachment: fixed;
 }
 
 .projects-list-wrapper {

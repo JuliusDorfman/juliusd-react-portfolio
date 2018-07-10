@@ -63,19 +63,19 @@ export default class NewsFrom extends Component {
           <div className="news-from-summary">
             <ul>
               <li>
-                <i class="far fa-newspaper"></i>
+                <i className="far fa-newspaper"></i>
                   &nbsp;Lost Dog travels 1000 miles to pee on owners carpet!&nbsp;
-                <i class="far fa-newspaper"></i>
+                <i className="far fa-newspaper"></i>
               </li>
               <li>
-                <i class="far fa-newspaper"></i>
+                <i className="far fa-newspaper"></i>
                 &nbsp;Missippi's Literacy Program Improves!&nbsp;
-                <i class="far fa-newspaper"></i>
+                <i className="far fa-newspaper"></i>
               </li>
               <li>
-                <i class="far fa-newspaper"></i>
+                <i className="far fa-newspaper"></i>
                 &nbsp;Birds all over the world now on Keto free diet!&nbsp;
-                <i class="far fa-newspaper"></i>
+                <i className="far fa-newspaper"></i>
               </li>
             </ul>
           </div>

@@ -8,6 +8,8 @@ import PhilosophyTrivia from "../Projects/PhilosophyTrivia";
 import MemoryGame from "../Projects/MemoryGame";
 import './ProjectsWrapper.css';
 
+import $ from 'jquery';
+
 export default class ProjectsWrapper extends Component {
   constructor(props) {
     super(props);
@@ -15,7 +17,6 @@ export default class ProjectsWrapper extends Component {
       renderComponent: []
     };
     this.handleClick = this.handleClick.bind(this);
-    this.onScroll = this.onScroll.bind(this);
   }
 
   handleClick(e) {
@@ -25,17 +26,31 @@ export default class ProjectsWrapper extends Component {
   }
 
 
+
   componentDidMount() {
-    window.addEventListener('scroll', this.onScroll);
+
+    var background_image_parallax = function($object, multiplier){
+      multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+      multiplier = 1 - multiplier;
+      var $doc = $(document);
+      $object.css({"background-attatchment" : "fixed"});
+      $(window).scroll(function(){
+        var from_top = $doc.scrollTop(),
+            bg_css = '0px ' +(multiplier * from_top) + 'px';
+        $object.css({"background-position" : bg_css });
+      });
+    };
+
+    background_image_parallax($(".projects-wrapper-component"), 3);
   }
-  onScroll = (e) => {
-    let parallaxElement = document.getElementsByClassName('projects-wrapper-component')[0].style;
-    console.log(parallaxElement)
-    parallaxElement = "200px 2000px";
-  }
+
   render() {
+
+   
+
+
     return (
-      <div className="projects-wrapper-component" onScroll={this.onScroll}>
+      <div className="projects-wrapper-component">
         <aside className="projects-list-wrapper">
           <div className="projects-list-item" onClick={this.handleClick}>
             <h4 className="project-list-title" value="NewsFrom">News-From</h4>

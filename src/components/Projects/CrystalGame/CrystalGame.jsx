@@ -8,26 +8,28 @@ export default class CrystalGame extends Component {
 
         <div className="project-outline crystal-numbers-project-outline">
           <div className="project-outline-content">
-            <a
-              href="https://crystal-numbers.herokuapp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h3 className="underline-projects">Crystal Game</h3>
-              <i className="fas fa-link"></i>
-            </a>
-            <h4>Project Outline</h4>
-            <p>To create a single-page, javascript driven math game.</p>
-            <h4>My Role</h4>
-            <p>
-              Developing all HTML, CSS, and JavaScript assets for the
-              project.
+            <div className="project-outline-details">
+              <a
+                href="https://crystal-numbers.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h3 className="underline-projects">Crystal Game</h3>
+                <i className="fas fa-link"></i>
+              </a>
+              <h4>Project Outline</h4>
+              <p>To create a single-page, javascript driven math game.</p>
+              <h4>My Role</h4>
+              <p>
+                Developing all HTML, CSS, and JavaScript assets for the
+                project.
                   </p>
-          </div>
-          <div className="project-outline-tools">
-            <i className="fab fa-html5" alt="html5_logo" title="html5" />
-            <i className="fab fa-css3-alt" alt="css3-alt" title="css3" />
-            <i className="fab fa-js-square" alt="js-square" title="javascript" />
+            </div>
+            <div className="project-outline-tools">
+              <i className="fab fa-html5" alt="html5_logo" title="html5" />
+              <i className="fab fa-css3-alt" alt="css3-alt" title="css3" />
+              <i className="fab fa-js-square" alt="js-square" title="javascript" />
+            </div>
           </div>
         </div>
 

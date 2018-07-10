@@ -7,35 +7,37 @@ export default class MemoryGame extends Component {
       <div className="memory-game-component">
         <div className="project-outline memory-game-project-outline">
           <div className="project-outline-content">
-            <a
-              href="https://clicky-clicky-game.herokuapp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h3 className="underline-projects">Memory Game</h3>
-              <i className="fas fa-link"></i>
-            </a>
-            <h4>Project Outline</h4>
-            <p>
-              Create a Web App based on the popular card matching memory
-              game.
+            <div className="project-outline-details">
+              <a
+                href="https://clicky-clicky-game.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h3 className="underline-projects">Memory Game</h3>
+                <i className="fas fa-link"></i>
+              </a>
+              <h4>Project Outline</h4>
+              <p>
+                Create a Web App based on the popular card matching memory
+                game.
                   </p>
-            <h4>My Role</h4>
-            <p>
-              Developed all Components, HTML, CSS, and JavaScript assets
-              for the project.
+              <h4>My Role</h4>
+              <p>
+                Developed all Components, HTML, CSS, and JavaScript assets
+                for the project.
                   </p>
-          </div>
-          <div className="project-outline-tools">
-            <i className="fab fa-html5" alt="html5_logo"
-              title="html5" />
-            <i className="fab fa-css3-alt" alt="css3-alt"
-              title="css3" />
-            <i className="fab fa-js-square" alt="js-square"
-              title="javascript" />
-            <img src="/assets/images/jquery-icon.png" alt="jquery-icon" />
-            <i className="fab fa-react" alt="react"
-              title="react" />
+            </div>
+            <div className="project-outline-tools">
+              <i className="fab fa-html5" alt="html5_logo"
+                title="html5" />
+              <i className="fab fa-css3-alt" alt="css3-alt"
+                title="css3" />
+              <i className="fab fa-js-square" alt="js-square"
+                title="javascript" />
+              <img src="/assets/images/jquery-icon.png" alt="jquery-icon" />
+              <i className="fab fa-react" alt="react"
+                title="react" />
+            </div>
           </div>
         </div>
 

@@ -5,16 +5,14 @@
 }
 
 .news-from-project-outline {
-  background: linear-gradient(to right bottom, rgba(150, 150, 250, .3) 50%, rgba(200, 200, 200, .5) 50%);
   border-bottom: 1px solid black;
 }
 
-.news-from-component{
+.news-from-component {
   background: white;
 }
 
 /* Project Card */
-
 
 #news-from {
   position: relative;
@@ -24,9 +22,9 @@
   padding: 1%;
 }
 
-
 .news-from-logo {
   margin-left: 5%;
+  margin-right: 5%;
   width: 70px;
   animation: "news-logo-spin" infinite 3s;
   float: left;
@@ -41,14 +39,13 @@
   }
 }
 
-.news-from-card {
-  background: url("/assets/images/news-from.jpg");
-  background-position: center;
-  background-size: cover;
+.news-from-summary ul{ 
+  text-align: left;
+  list-style: none;
 }
 
-.news-from-summary {
-
+.news-from-summary ul li {
+  margin-top: 3%;
 }
 
 .text-align-center {

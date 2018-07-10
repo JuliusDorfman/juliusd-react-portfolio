@@ -8,6 +8,7 @@ export default class LiriBot extends Component {
         
         <div className="project-outline liri-node-project-outline">
                 <div className="project-outline-content">
+          <div className="project-outline-details">
                   <a
                     href="https://github.com/JuliusDorfman/liri-node-app"
                     target="_blank"
@@ -37,6 +38,7 @@ export default class LiriBot extends Component {
                     title="express"
                   />
                 </div>
+              </div>
               </div>
 
               <div className="project-card" id="card-two">

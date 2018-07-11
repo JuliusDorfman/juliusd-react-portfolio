@@ -1,7 +1,7 @@
 .projects-wrapper-component {
   height: 95vh;
   background: url("../../assets/images/bokeh-wallpaper.jpg");
-  background-size: 250%;
+  background-size: cover;
 }
 
 .projects-list-wrapper {

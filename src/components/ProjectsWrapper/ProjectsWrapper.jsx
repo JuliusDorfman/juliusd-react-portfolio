@@ -8,7 +8,7 @@ import PhilosophyTrivia from "../Projects/PhilosophyTrivia";
 import MemoryGame from "../Projects/MemoryGame";
 import './ProjectsWrapper.css';
 
-import $ from 'jquery';
+// import $ from 'jquery';
 
 export default class ProjectsWrapper extends Component {
   constructor(props) {
@@ -29,19 +29,19 @@ export default class ProjectsWrapper extends Component {
 
   componentDidMount() {
 
-    var background_image_parallax = function($object, multiplier){
-      multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-      multiplier = 1 - multiplier;
-      var $doc = $(document);
-      $object.css({"background-attatchment" : "fixed"});
-      $(window).scroll(function(){
-        var from_top = $doc.scrollTop(),
-            bg_css = '0px ' +(multiplier * from_top) + 'px';
-        $object.css({"background-position" : bg_css });
-      });
-    };
+    // var background_image_parallax = function($object, multiplier){
+    //   multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+    //   multiplier = 1 - multiplier;
+    //   var $doc = $(document);
+    //   $object.css({"background-attatchment" : "fixed"});
+    //   $(window).scroll(function(){
+    //     var from_top = $doc.scrollTop(),
+    //         bg_css = '0px ' +(multiplier * from_top) + 'px';
+    //     $object.css({"background-position" : bg_css });
+    //   });
+    // };
 
-    background_image_parallax($(".projects-wrapper-component"), 3);
+    // background_image_parallax($(".projects-wrapper-component"), .75);
   }
 
   render() {

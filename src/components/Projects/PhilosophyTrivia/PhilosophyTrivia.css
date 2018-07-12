@@ -1,0 +1,84 @@
+
+.philosophy-project-outline {
+  border-bottom: 1px solid black;
+  background-color: white
+}
+
+.philosophy-project-outline {
+  border-bottom: 1px solid black;
+  background-color: white;
+}
+
+
+#philosophy-trivia {
+  overflow: hidden;
+  background-image: url("../../../assets/images/philo-bg-1.png");
+  padding: 0 100px;
+}
+
+@media (max-width: 690px) {
+  #philosophy-trivia {
+    flex-direction: column;
+  }
+  .quote-wrapper {
+    margin: auto;
+  }
+  .pic-wrapper-area img {
+    display: none;
+  }
+}
+
+#philosophy-trivia a {
+  z-index: 2;
+  text-decoration: none;
+  height: fit-content;
+}
+
+#philosophy-trivia h4 {
+  display: flex;
+  position: relative;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 2rem;
+}
+
+.speech-bubble {
+  position: relative;
+  background: #00aabb;
+  border-radius: .4em;
+  height: 100px;
+  min-width: 200px;
+}
+
+.pic-wrapper-area {
+  display: flex;
+  align-items: flex-end;
+}
+
+.pic-wrapper-area img {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+}
+
+.quote-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  left: 0;
+  min-width: 200px;
+  padding: 10px;
+}
+
+.phil-quotes {
+  background: white;
+  font-family: Special Elite, cursive;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px 10px white;
+  padding: 20px;
+}

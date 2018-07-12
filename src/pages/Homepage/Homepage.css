@@ -23,26 +23,14 @@ body {
 /*PROJECTS*/
 
 .project-wrapper {
-  height: 100vh;
+  height: 95vh;
 }
 
-.project-outline {
-  flex-direction: column;
-  position: relative;
-  padding: 0.01%;
-  height: 40vh;
-  display: flex;
-  color: black;
-  border-top: 1px solid gray;
-  background: url("../../assets/images/grandpiano-bg.jpg");
-  background-size: 120%;
-  background-position: center;
-}
 
 .project-card {
   position: relative;
   overflow: hidden;
-  height: 60vh;
+  height: 100vh;
   border-bottom: 1px solid gray;
   transition: 0.3s;
   -o-transition: 0.3s;
@@ -67,38 +55,33 @@ body {
   margin-bottom: 30px;
 }
 
-.project-outline h3 {
-  position: relative;
-  display: inline-block;
-  margin: auto;
+.project-card a {
   font-size: 2rem;
   letter-spacing: 1px;
   color: black;
 }
 
-.project-outline h4 {
+.project-card h4 {
   margin: 10px 0 5px 0;
   font-weight: bold;
 }
 
-.project-outline p {
+.project-card p {
   margin: 0;
 }
 
 .project-outline-content {
-  display: flex;
   position: relative;
   height: 100%;
   text-align: left;
-  background: linear-gradient(to right, rgba(250, 250, 250, 1), rgba(250, 250, 250, .65));
+  background: linear-gradient(to right bottom, rgba(250, 250, 250, 1), rgba(250, 250, 250, .2));
   padding: 1%;
 }
 
-.project-outline-details {
-  display: flex;
-  flex-direction: column;
-  flex: 70%;
-  overflow: overlay;
+.project-outline-summary {
+  width: 80%;
+  margin: auto;
+  text-align: left;
 }
 
 .project-outline-tools {
@@ -118,264 +101,18 @@ body {
 }
 
 @media (max-width: 650px) {
-  .project-outline h3 {
+  .project-card h3 {
     font-size: 1.5rem;
   }
-  .project-outline h4 {
+  .project-card h4 {
     font-size: 1rem;
   }
-  .project-outline p {
+  .project-card p {
     font-size: .8rem;
   }
   .project-outline-content {
     flex-direction: column;
   }
-}
-
-#card-one a {
-  position: absolute;
-  display: flex;
-  text-decoration: none;
-  height: 20%;
-  background-color: rgba(0, 0, 0, .8);
-  margin: 50px 0 0 100px;
-}
-
-#card-one {
-  position: relative;
-  background-size: 115px;
-  background-image: url("../../assets/images/red-bg-light.jpg");
-  overflow: hidden;
-}
-
-#card-one .project-title {
-  display: flex;
-  position: relative;
-  align-items: center;
-  font-family: 'Lobster Two', cursive;
-  font-size: 2rem;
-  letter-spacing: 2px;
-  color: white;
-  padding: 0 20px;
-}
-
-#card-one p {
-  position: absolute;
-  top: 40%;
-  right: 0;
-  left: 0;
-  width: 75%;
-  padding: 25px;
-  margin: 0 auto;
-  text-align: left;
-  font-size: 1.25rem;
-  color: white;
-  background-color: rgba(0, 0, 0, .8);
-}
-
-.crystal-numbers-project-outline {
-  border-bottom: 1px solid black;
-  background-color: white;
-}
-
-.first-word {
-  position: relative;
-  font-size: 1.5rem;
-  padding-right: 10px;
-  letter-spacing: 2px;
-  font-family: 'Abril Fatface', cursive;
-}
-
-.crystal-ruby {
-  position: absolute;
-  height: 50%;
-  left: 10%;
-  opacity: .3;
-  transform: rotate(-30deg);
-  overflow: hidden;
-  animation: falling 12s infinite linear;
-}
-
-.crystal-diamond {
-  position: absolute;
-  height: 50%;
-  left: 20%;
-  opacity: .6;
-  transform: rotate(45deg);
-  overflow: hidden;
-  animation: falling 6s infinite linear;
-}
-
-.crystal-sapphire {
-  position: absolute;
-  height: 50%;
-  left: 50%;
-  opacity: .5;
-  transform: rotate(-20deg);
-  overflow: hidden;
-  animation: falling 5s infinite linear;
-}
-
-.crystal-emerald {
-  position: absolute;
-  height: 30%;
-  left: 75%;
-  opacity: .4;
-  transform: rotate(25deg);
-  overflow: hidden;
-  animation: falling 7s infinite linear;
-}
-
-@keyframes falling {
-  0% {
-    top: -160px;
-  }
-  100% {
-    top: 1000px;
-  }
-}
-
-#card-two {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 30px;
-  background: black;
-  background-size: 400%;
-}
-
-#card-two a {
-  flex-direction: column;
-  text-decoration: none;
-  height: fit-content;
-}
-
-#card-two .project-title {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  font-size: 2rem;
-  font-family: 'Press Start 2P', cursive;
-  color: yellow;
-}
-
-.liri-flavor {
-  text-decoration: none;
-  font-family: 'Press Start 2P', cursive;
-  color: green;
-  font-weight: 100;
-  animation: blink cubic-bezier(1.0, 0, 0, 1.0) 1000ms infinite;
-}
-
-@keyframes blink {
-  from {
-    color: green;
-  }
-  to {
-    color: black;
-  }
-}
-
-#card-two p {
-  top: 0;
-  right: 15%;
-  padding: 0 25px;
-  margin: 0 50px;
-  text-align: left;
-  font-size: .55rem;
-  color: green;
-  font-weight: 700;
-}
-
-#card-two ul {
-  list-style-type: none;
-  top: 0;
-  right: 15%;
-  padding: 0 25px;
-  margin: 0 50px;
-  text-align: left;
-  font-size: .55rem;
-  color: green;
-  font-weight: 700;
-}
-
-.liri-node-project-outline {
-  border-bottom: 1px solid black;
-  background-color: white;
-}
-
-#card-three {
-  overflow: hidden;
-  background-image: url("../../assets/images/philo-bg-1.png");
-  padding: 0 100px;
-}
-
-@media (max-width: 690px) {
-  #card-three {
-    flex-direction: column;
-  }
-  .quote-wrapper {
-    margin: auto;
-  }
-  .pic-wrapper-area img {
-    display: none;
-  }
-}
-
-#card-three a {
-  z-index: 2;
-  text-decoration: none;
-  height: fit-content;
-}
-
-#card-three h4 {
-  display: flex;
-  position: relative;
-  margin: 10px;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-family: 'Berkshire Swash', cursive;
-  font-size: 2rem;
-}
-
-.speech-bubble {
-  position: relative;
-  background: #00aabb;
-  border-radius: .4em;
-  height: 100px;
-  min-width: 200px;
-}
-
-.pic-wrapper-area {
-  display: flex;
-  align-items: flex-end;
-}
-
-.pic-wrapper-area img {
-  position: absolute;
-  height: 150px;
-  width: 150px;
-}
-
-.quote-wrapper {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  left: 0;
-  min-width: 200px;
-  padding: 10px;
-}
-
-.phil-quotes {
-  background: white;
-  font-family: Special Elite, cursive;
-  letter-spacing: 1px;
-  box-shadow: 0 0 10px 10px white;
-  padding: 20px;
 }
 
 #card-four {
@@ -395,7 +132,6 @@ body {
   color: orangered;
 }
 
-
 @media (max-width: 900px) {
   #card-four {
     flex-direction: column;
@@ -404,7 +140,6 @@ body {
     font-size: 2rem;
   }
 }
-
 
 #card-four a {
   display: flex;
@@ -696,99 +431,9 @@ body {
   }
 }
 
-#card-imagedits {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  background: url('/assets/images/imagEdits_ss.png');
-  background-size: auto 100%;
-  background-position: center;
-  height: inherit;
-  border-bottom: solid 1px black;
-}
-
-#card-imagedits a {
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: royalblue;
-  transform: rotate(340deg) translate(-305px, -100px);
-  font-family: 'Pacifico', cursive;
-  height: 6rem;
-  border-top: 5px solid white;
-  border-bottom: 5px solid white;
-  outline: 5px solid royalblue;
-}
-
-@media (max-width: 1128px) {
-  #card-imagedits a {
-    transform: rotate(340deg) translate(-150px, -100px);
-  }
-}
-
-@media (max-width: 750px) {
-  #card-imagedits a {
-    transform: rotate(340deg) translate(-75px, -100px);
-  }
-}
-
-#card-imagedits h3 {
-  color: white;
-  text-decoration: underline;
-  letter-spacing: 15px;
-  font-size: 50px;
-  width: 2000px;
-  transform: translateX(100px);
-}
-
-.imagedits-project-outline {
-  border-bottom: 1px solid black;
-  background-color: white;
-}
-
-.philosophy-project-outline {
-  border-bottom: 1px solid black;
-  background-color: white
-}
-
-.philosophy-project-outline {
-  border-bottom: 1px solid black;
-  background-color: white;
-}
-
 .memory-game-project-outline {
   border-bottom: 1px solid black;
   background-color: white;
-}
-
-#jojo-fanpage {
-  background: url('/assets/images/jojo_fanpage_bg.png');
-  background-size: cover;
-  padding: 0;
-}
-
-.rohan-jolyne {
-  position: absolute;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-}
-
-.jojo-fanpage-project-outline {
-  border-bottom: 1px solid black;
-  background-color: white;
-}
-
-.jojo-overlay {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  height: 100%;
-  background: rgba(255, 255, 255, .5)
 }
 
 /*CONTENT*/
@@ -898,8 +543,7 @@ h2 {
 
 .under_construction {
   position: absolute;
-  top: -20%;
-  left: 10%;
-  height: 40%;
+  top: 10%;
+  right: 10%;
   width: 250px;
 }

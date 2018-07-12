@@ -51,7 +51,6 @@ export default class Jumbotron extends Component {
     window.addEventListener('scroll', this.handleScroll);
   }
 
-
   render() {
     window.scroll({
       top: 2500,

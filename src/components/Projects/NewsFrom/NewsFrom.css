@@ -1,21 +1,15 @@
-/* Project Outline */
+
 
 #news-from summary {
   display: inline-block;
 }
-
-.news-from-project-outline {
-  border-bottom: 1px solid black;
-}
-
-/* Project Card */
 
 #news-from {
   position: relative;
   background-image: url("../../../assets/images/news-from-bg.jpg");
   background-size: cover;
   background-position: center;
-  padding: 1%;
+  padding: 0.01%;
 }
 
 .news-from-logo {

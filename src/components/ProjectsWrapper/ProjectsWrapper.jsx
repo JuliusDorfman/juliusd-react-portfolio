@@ -25,10 +25,7 @@ export default class ProjectsWrapper extends Component {
     this.setState({ renderComponent: conditionalRender })
   }
 
-
-
   componentDidMount() {
-
     // var background_image_parallax = function($object, multiplier){
     //   multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
     //   multiplier = 1 - multiplier;
@@ -40,15 +37,10 @@ export default class ProjectsWrapper extends Component {
     //     $object.css({"background-position" : bg_css });
     //   });
     // };
-
     // background_image_parallax($(".projects-wrapper-component"), .75);
   }
 
   render() {
-
-   
-
-
     return (
       <div className="projects-wrapper-component">
         <aside className="projects-list-wrapper">
@@ -95,7 +87,6 @@ export default class ProjectsWrapper extends Component {
                 return null;
             }
           })()}
-
         </section>
       </div >
     )

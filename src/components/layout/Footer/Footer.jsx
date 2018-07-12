@@ -32,7 +32,7 @@ export default class Footer extends Component {
         >
           <i className="far fa-file-word" />
         </a>
-        <span className="footer-copyright">&copy; 2018 Julius G. Dorfman</span>
+       <p>&copy; 2018 Julius G. Dorfman</p>
       </div>
     )
   }

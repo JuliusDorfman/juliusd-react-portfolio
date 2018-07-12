@@ -1,0 +1,28 @@
+
+#jojo-fanpage {
+  background: url('/assets/images/jojo_fanpage_bg.png');
+  background-size: cover;
+  padding: 0.01%;
+}
+
+.rohan-jolyne {
+  position: absolute;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.jojo-fanpage-project-outline {
+  border-bottom: 1px solid black;
+  background-color: white;
+}
+
+.jojo-overlay {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, .5)
+}

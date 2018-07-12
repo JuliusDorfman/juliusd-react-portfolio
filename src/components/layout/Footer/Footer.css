@@ -1,7 +1,6 @@
 .footer-component {
   display: flex;
   height: 5vh;
-  width: 20%;
   justify-content: flex-start;
   background-color: black;
   align-items: center;
@@ -12,19 +11,6 @@
   padding-left: 1%;
 }
 
-.footer-copyright{
-  font-size: 1vw;
+.footer-copyright {
   margin-left: 20px;
-}
-
-@media (max-width: 800px) {
-  .footer-copyright {
-    display: none;
-  }
-.footer-component {
-  justify-content: space-evenly;
-}
-  .footer-component > * {
-    padding: auto;
-  }
 }

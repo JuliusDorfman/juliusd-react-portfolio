@@ -5,28 +5,31 @@ export default class NewsFrom extends Component {
   render() {
     return (
       <article className="project-wrapper news-from-component">
-        <div className="project-outline news-from-project-outline">
+        <div className="project-card" id="news-from">
+
           <div className="project-outline-content">
-            <div className="project-outline-details">
+            <h3 className="underline-projects">
               <a
                 href="https://news-from.herokuapp.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h3 className="underline-projects">News-From</h3>
+                News-From
                 <i className="fas fa-link"></i>
               </a>
+            </h3>
+            <div className="project-outline-summary">
               <h4>Project Outline</h4>
               <p>
                 Create a news aggregator where the user is able to
                 manipulate headlines from various news sources as data and
                 output an aesthetic infographic based on findings
-                  </p>
+              </p>
               <h4>My Role</h4>
               <p>
                 Develop UX/UI, a from-scratch API, establish
                 database models and communication routes.
-                  </p>
+              </p>
             </div>
             <div className="project-outline-tools">
               <i className="fab fa-html5" alt="html5_logo" title="html5" />
@@ -43,28 +46,23 @@ export default class NewsFrom extends Component {
                 title="mLab"
               />
             </div>
-          </div>
 
-        </div>
-
-        <div className="project-card" id="news-from">
-          <a
-            href="https://news-from.herokuapp.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className="news-from-logo"
-              src="/assets/images/news-from-logo.png"
-              alt="news-from-logo"
-              title="news-from-logo"
-            />
-          </a>
-          <div className="news-from-summary">
+            <a
+              href="https://news-from.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="news-from-logo"
+                src="/assets/images/news-from-logo.png"
+                alt="news-from-logo"
+                title="news-from-logo"
+              />
+            </a>
             <ul>
               <li>
                 <i className="far fa-newspaper"></i>
-                  &nbsp;Lost Dog travels 1000 miles to pee on owners carpet!&nbsp;
+                &nbsp;Lost Dog travels 1000 miles to pee on owners carpet!&nbsp;
                 <i className="far fa-newspaper"></i>
               </li>
               <li>
@@ -84,3 +82,4 @@ export default class NewsFrom extends Component {
     )
   }
 }
+

@@ -1,0 +1,56 @@
+
+.imagedits-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/assets/images/imagEdits_ss.png');
+  background-size: auto 100%;
+  background-position: center;
+  height: inherit;
+  border-bottom: solid 1px black;
+  padding: 0.01%;
+}
+
+.project-wrapper {
+  padding: 0.01%;
+}
+
+#imagedits {
+  padding: 0.01%;
+}
+
+.imagedits-component a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: royalblue;
+  transform: rotate(340deg) translate(-305px, -100px);
+  font-family: 'Pacifico', cursive;
+  height: 6rem;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  outline: 5px solid royalblue;
+}
+
+@media (max-width: 1128px) {
+  .imagedits-component a {
+    transform: rotate(340deg) translate(-150px, -100px);
+  }
+}
+
+@media (max-width: 750px) {
+  .imagedits-component a {
+    transform: rotate(340deg) translate(-75px, -100px);
+  }
+}
+
+.imagedits-component h3 {
+  color: white;
+  text-decoration: underline;
+  letter-spacing: 15px;
+  font-size: 50px;
+  width: 2000px;
+  transform: translateX(100px);
+}
+

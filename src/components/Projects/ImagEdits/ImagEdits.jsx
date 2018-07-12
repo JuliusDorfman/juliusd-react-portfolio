@@ -3,19 +3,21 @@ import "./ImagEdits";
 export default class ImagEdits extends Component {
   render() {
     return (
-      <div>
+      <article className="project-wrapper imagedits-component">
+        <div className="project-card" id="imagedits">
 
-        <div className="project-outline imagedits-project-outline">
           <div className="project-outline-content">
-            <div className="project-outline-details">
+            <h3 className="underline-projects">
               <a
                 href="https://juliusdorfman.github.io/imagEdits/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h3 className="underline-projects">imagEdits</h3>
-                <i className="fas fa-link"></i>
+                imagEdits
+              <i className="fas fa-link"></i>
               </a>
+            </h3>
+            <div className="project-outline-summary">
               <h4>Project Outline</h4>
               <p>
                 To create a single-page, online application that edits and
@@ -33,21 +35,17 @@ export default class ImagEdits extends Component {
               <i className="fab fa-js-square" alt="js-square" title="javascript" />
             </div>
           </div>
+
+          <a
+            href="https://juliusdorfman.github.io/imagEdits/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h3 className="project-title">imagEdits</h3>
+          </a>
         </div>
 
-        <div className="project-card">
-          <div id="card-imagedits">
-            <a
-              href="https://juliusdorfman.github.io/imagEdits/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h3 className="project-title">imagEdits</h3>
-            </a>
-          </div>
-        </div>
-
-      </div>
+      </article >
     )
   }
 }

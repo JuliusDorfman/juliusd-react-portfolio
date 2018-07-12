@@ -40,27 +40,28 @@ export default class PhilosophyTrivia extends Component {
 
   render() {
     return (
-      <div>
 
-        <div className="project-outline philosophy-project-outline">
+      <article className="project-wrapper philosophy-project-outline">
+        <div className="project-card" id="philosophy-trivia">
+
           <div className="project-outline-content">
-            <div className="project-outline-details">
+            <h3 className="underline-projects">
               <a
                 href="https://philosophy-quiz.herokuapp.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h3 className="underline-projects">Philosophy Trivia</h3>
-                <i className="fas fa-link"></i>
+                Philosophy Trivia
+              <i className="fas fa-link"></i>
               </a>
-              <h4>Project Outline</h4>
-              <p>To create a philosophy themed time-based quiz</p>
-              <h4>My Role</h4>
-              <p>
-                Create client interface. Establish communication between
-                Spotify, Twitter, and OMDB APIs.
+            </h3>
+            <h4>Project Outline</h4>
+            <p>To create a philosophy themed time-based quiz</p>
+            <h4>My Role</h4>
+            <p>
+              Create client interface. Establish communication between
+              Spotify, Twitter, and OMDB APIs.
                   </p>
-            </div>
             <div className="project-outline-tools">
               <i className="fab fa-html5" alt="html5_logo" />
               <i className="fab fa-css3-alt" alt="css3-alt" />
@@ -74,22 +75,19 @@ export default class PhilosophyTrivia extends Component {
             </div>
           </div>
         </div>
+        <a
+          href="https://philosophy-quiz.herokuapp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h4 className="speech-bubble">Philosophy Trivia!</h4>
+        </a>
 
-        <div className="project-card" id="card-three">
-          <a
-            href="https://philosophy-quiz.herokuapp.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h4 className="speech-bubble">Philosophy Trivia!</h4>
-          </a>
-
-          <div className="quote-wrapper">
-            <p className="phil-quotes">{this.state.quotes}</p>
-          </div>
+        <div className="quote-wrapper">
+          <p className="phil-quotes">{this.state.quotes}</p>
         </div>
+      </article>
 
-      </div>
     )
   }
 }

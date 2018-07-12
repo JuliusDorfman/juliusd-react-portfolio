@@ -1,0 +1,71 @@
+.crystal-ruby {
+  position: absolute;
+  height: 20%;
+  left: 10%;
+  opacity: .3;
+  transform: rotate(-30deg);
+  overflow: hidden;
+  animation: falling 12s infinite linear;
+}
+
+.crystal-diamond {
+  position: absolute;
+  height: 20%;
+  left: 20%;
+  opacity: .6;
+  transform: rotate(45deg);
+  overflow: hidden;
+  animation: falling 6s infinite linear;
+}
+
+.crystal-sapphire {
+  position: absolute;
+  height: 20%;
+  left: 50%;
+  opacity: .5;
+  transform: rotate(-20deg);
+  overflow: hidden;
+  animation: falling 5s infinite linear;
+}
+
+.crystal-emerald {
+  position: absolute;
+  height: 10%;
+  left: 75%;
+  opacity: .4;
+  transform: rotate(25deg);
+  overflow: hidden;
+  animation: falling 7s infinite linear;
+}
+
+@keyframes falling {
+  0% {
+    top: -160px;
+  }
+  100% {
+    top: 1000px;
+  }
+}
+
+.crystal-numbers-project {
+  position: relative;
+  background-size: 115px;
+  background-image: url("../../../assets/images/red-bg-light.jpg");
+  overflow: hidden;
+  padding: 0.01%;
+}
+
+
+
+.crystal-numbers-project-outline {
+  border-bottom: 1px solid black;
+  background-color: white;
+}
+
+.first-word {
+  position: relative;
+  font-size: 1.5rem;
+  padding-right: 10px;
+  letter-spacing: 2px;
+  font-family: 'Abril Fatface', cursive;
+}

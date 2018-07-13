@@ -4,34 +4,32 @@ import './NewsFrom.css';
 export default class NewsFrom extends Component {
   render() {
     return (
-      <article className="project-wrapper news-from-component">
-        <div className="project-card" id="news-from">
-
-          <div className="project-outline-content">
-            <h3 className="underline-projects">
-              <a
-                href="https://news-from.herokuapp.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                News-From
+      <article className="project-card" id="news-from">
+        <div className="project-outline-content">
+          <h3 className="underline-projects">
+            <a
+              href="https://news-from.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              News-From
                 <i className="fas fa-link"></i>
-              </a>
-            </h3>
-            <div className="project-outline-summary">
-              <h4>Project Outline</h4>
-              <p>
-                Create a news aggregator where the user is able to
-                manipulate headlines from various news sources as data and
-                output an aesthetic infographic based on findings
+            </a>
+          </h3>
+          <div className="project-outline-summary">
+            <h4>Project Outline</h4>
+            <p>
+              Create a news aggregator where the user is able to
+              manipulate headlines from various news sources as data and
+              output an aesthetic infographic based on findings
               </p>
-              <h4>My Role</h4>
-              <p>
-                Develop UX/UI, a from-scratch API, establish
-                database models and communication routes.
+            <h4>My Role</h4>
+            <p>
+              Develop UX/UI, a from-scratch API, establish
+              database models and communication routes.
               </p>
-            </div>
             <div className="project-outline-tools">
+              <h4>Technologies</h4>
               <i className="fab fa-html5" alt="html5_logo" title="html5" />
               <i className="fab fa-css3-alt" alt="css3-alt" title="css3" />
               <i
@@ -40,25 +38,9 @@ export default class NewsFrom extends Component {
                 title="javascript"
               />
               <i className="fab fa-react" alt="react" title="react" />
-              <img
-                src="/assets/images/mLab-logo.jpg"
-                alt="mLab-Logo"
-                title="mLab"
-              />
             </div>
-
-            <a
-              href="https://news-from.herokuapp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="news-from-logo"
-                src="/assets/images/news-from-logo.png"
-                alt="news-from-logo"
-                title="news-from-logo"
-              />
-            </a>
+          </div>
+          <div className="flavor news-from-flavor">
             <ul>
               <li>
                 <i className="far fa-newspaper"></i>

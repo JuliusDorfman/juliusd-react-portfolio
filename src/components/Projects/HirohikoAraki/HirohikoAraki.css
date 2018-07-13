@@ -1,17 +1,13 @@
-
-#jojo-fanpage {
+#hirohiko-araki {
   background: url('/assets/images/jojo_fanpage_bg.png');
+  background-position: right;
   background-size: cover;
   padding: 0.01%;
 }
 
 .rohan-jolyne {
-  position: absolute;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+  position: relative;
+  width: 20%;
 }
 
 .jojo-fanpage-project-outline {

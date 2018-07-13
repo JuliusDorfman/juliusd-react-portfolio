@@ -1,18 +1,7 @@
-
 #liri-node {
   position: relative;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 30px;
-  background: black;
+  padding: 0.01%;
   background-size: 400%;
-}
-
-#liri-node a {
-  flex-direction: column;
-  text-decoration: none;
-  height: fit-content;
 }
 
 #liri-node .project-title {
@@ -24,12 +13,26 @@
   color: yellow;
 }
 
-.liri-flavor {
+.liri-compiled-flavor {
+  display: block;
+  text-align: center;
   text-decoration: none;
   font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
   color: green;
   font-weight: 100;
   animation: blink cubic-bezier(1.0, 0, 0, 1.0) 1000ms infinite;
+}
+
+@media (max-width: 650px) {
+  #liri-node .project-title {
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  .liri-compiled-flavor {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 }
 
 @keyframes blink {
@@ -41,7 +44,7 @@
   }
 }
 
-#liri-node p {
+.liri-bot-flavor p {
   top: 0;
   right: 15%;
   padding: 0 25px;
@@ -52,7 +55,7 @@
   font-weight: 700;
 }
 
-#liri-node ul {
+.liri-bot-flavor ul {
   list-style-type: none;
   top: 0;
   right: 15%;
@@ -64,7 +67,8 @@
   font-weight: 700;
 }
 
-.liri-node-project-outline {
-  border-bottom: 1px solid black;
-  background-color: white;
+.liri-bot-flavor {
+  padding: 1%;
+  background: black;
 }
+

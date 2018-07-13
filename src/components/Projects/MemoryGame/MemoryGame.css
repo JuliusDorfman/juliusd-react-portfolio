@@ -1,0 +1,326 @@
+.memory-game-project-outline {
+  border-bottom: 1px solid black;
+  background-color: white;
+}
+
+#memory-game {
+  padding: 0.01%;
+}
+
+#memory-game .project-title {
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  #memory-game-flavor {
+    margin: 0;
+  }
+}
+
+/* Custom Fighter Animations */
+
+.fighters-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 30%;
+  height: 30%;
+  margin: auto;
+  border: 3px solid black;
+  min-width: 330px;
+  overflow: hidden;
+}
+
+.fighters-bg-overlay {
+  position: absolute;
+  display: inline;
+  opacity: .7;
+  background: white;
+  z-index: 0;
+}
+
+.fighter-row {
+  display: flex;
+  flex: auto;
+  height: 50%;
+  width: 100%;
+}
+
+.fighter-wrapper {
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+  width: 100%;
+  margin: 1px;
+  z-index: 1;
+  background: rgba(225, 225, 225, 0.5);
+  border: 1px solid grey;
+  transition: 2s cubic-bezier(.07, .85, .66, .9);
+}
+
+.fighter-wrapper:hover {
+  display: flex;
+  width: 700px;
+  box-shadow: 0 0 3px 20px white inset;
+  background: url("/assets/images/blue-texture.jpg");
+  background-size: 5000%;
+  background-position: center;
+}
+
+.fighter {
+  justify-content: space-between;
+  width: 75px;
+  height: 75px;
+  transition: 0.5s;
+  opacity: .8;
+}
+
+.fighter:hover {
+  transform: scale(2, 2);
+  opacity: 1;
+}
+
+.bounce-wrapper-ryu {
+  animation: "bounceryu" 3s infinite;
+}
+
+.bounce-wrapper:hover {
+  animation: initial;
+  transform: translate(0, 0);
+  transition: .5s;
+}
+
+@keyframes bounceryu {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(0, -45%);
+    -webkit-animation: ease-in;
+    -o-animation: ease-in;
+    animation: ease-in;
+  }
+  25% {
+    transform: translate(0, 0);
+  }
+  35% {
+    transform: translate(0, -33%);
+    -webkit-animation: ease-in;
+    -o-animation: ease-in;
+    animation: ease-in;
+  }
+  40% {
+    transform: translate(0, 0);
+  }
+  48% {
+    transform: translate(0, -20%);
+    -webkit-animation: ease-in;
+    -o-animation: ease-in;
+    animation: ease-in;
+  }
+  53% {
+    transform: translate(0, 0%);
+  }
+  58% {
+    transform: translate(0, -10%);
+    -webkit-animation: ease-in;
+    -o-animation: ease-in;
+    animation: ease-in;
+  }
+  63% {
+    transform: translate(0, 0);
+  }
+  65% {
+    transform: translate(0, -3%);
+    -webkit-animation: ease-in;
+    -o-animation: ease-in;
+    animation: ease-in;
+  }
+  66% {
+    transform: translate(0, 0);
+  }
+}
+
+.bounce-wrapper-heih {
+  animation: "bounceheih" 4s infinite;
+}
+
+@keyframes bounceheih {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  15% {
+    transform: translate(-40%, -45%);
+    -webkit-animation: ease-in;
+    -o-animation: ease-in;
+    animation: ease-in;
+  }
+  16% {
+    transform: translate(-40%, -40%);
+    -webkit-animation: ease-in;
+    -o-animation: ease-in;
+    animation: ease-in;
+  }
+  17% {
+    transform: translate(-40%, -0%);
+    -webkit-animation: ease-in;
+    -o-animation: ease-in;
+    animation: ease-in;
+  }
+  18% {
+    transform: translate(-45%, -0%);
+    -webkit-animation: ease-in;
+    -o-animation: ease-in;
+    animation: ease-in;
+  }
+  20% {
+    transform: translate(-35%, 0);
+    -webkit-animation: ease-in;
+    -o-animation: ease-in;
+    animation: ease-in;
+  }
+  21% {
+    transform: translate(-35%, -0%);
+    -webkit-animation: ease-in;
+    -o-animation: ease-in;
+    animation: ease-in;
+  }
+  22% {
+    transform: translate(-45%, 0);
+    -webkit-animation: ease-in;
+    -o-animation: ease-in;
+    animation: ease-in;
+  }
+  23% {
+    transform: translate(-40%, -0%);
+    -webkit-animation: ease-in;
+    -o-animation: ease-in;
+    animation: ease-in;
+  }
+}
+
+.bounce-wrapper-zang {
+  animation: "bouncezang" 1.5s infinite;
+}
+
+@keyframes bouncezang {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  5% {
+    transform: translate(-40%, 0);
+    -webkit-animation: ease-in;
+    -o-animation: ease-in;
+    animation: ease-in;
+  }
+  6% {
+    transform: translate(-35%, 0);
+    -webkit-animation: ease-in;
+    -o-animation: ease-in;
+    animation: ease-in;
+  }
+  12% {
+    transform: translate(-33%, 0);
+    -webkit-animation: ease-in;
+    -o-animation: ease-in;
+    animation: ease-in;
+  }
+  13% {
+    transform: translate(-55%, 0);
+    -webkit-animation: ease-in;
+    -o-animation: ease-in;
+    animation: ease-in;
+  }
+}
+
+.bounce-wrapper-serv {
+  animation: "bounceserve" .5s infinite;
+}
+
+@keyframes bounceserve {
+  0% {
+    transform: translate(0, 0);
+  }
+  90% {
+    transform: translate(0, -20%);
+  }
+  100% {
+    transform: translate(0, 0);
+    -webkit-animation: ease-in;
+    -o-animation: ease-in;
+    animation: ease-in;
+  }
+}
+
+.bounce-wrapper-chun {
+  animation: "bouncechun" .75s infinite;
+}
+
+@keyframes bouncechun {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: rotate(-20deg) translate(20px, 0);
+  }
+  20% {
+    transform: translate(0, 0);
+    -webkit-animation: ease-in;
+    -o-animation: ease-in;
+    animation: ease-in;
+  }
+}
+
+.bounce-wrapper-morg {
+  animation: "bouncemorg" 3s infinite;
+}
+
+@keyframes bouncemorg {
+  0% {
+    transform: scaleX(1);
+  }
+  30% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(-1);
+  }
+  80% {
+    transform: scaleX(-1);
+  }
+}
+
+.chunli {
+  transform: scale(.85, 1);
+}
+
+.chunli:hover {
+  transform: scale(1.75, 2);
+}
+
+.zangief {
+  transform: scale(1.6, 1.5) translate(-5px, -5px);
+}
+
+.zangief:hover {
+  transform: scale(2.2, 2.25);
+}
+
+.morrigan {
+  transform: scale(.6, 1) translate(-5px, -3px);
+}
+
+.morrigan:hover {
+  transform: scale(1, 1.75);
+}
+
+.servbot:hover {
+  transform: scale(2, 2) translate(0, -20px);
+}

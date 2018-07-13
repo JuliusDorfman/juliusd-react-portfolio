@@ -51,22 +51,17 @@ export class Homepage extends Component {
   render() {
     return (
       <div className="pages-homepage">
-
         <StyleRoot>
           <Navbar />
         </StyleRoot>
-
-        <div className="container">
-        
-          <StyleRoot>
-            <Jumbotron />
-          </StyleRoot>
-        
+        <StyleRoot>
+          <Jumbotron />
+        </StyleRoot>
+        <div className="projects-container">
           <ProjectsWrapper />
-        
+          <Footer />
         </div>
-        <Footer />
-      </div >
+      </div>
     );
   }
 }

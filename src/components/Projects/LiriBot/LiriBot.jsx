@@ -4,48 +4,43 @@ import "./LiriBot.css";
 export default class LiriBot extends Component {
   render() {
     return (
-      <article className="project-wrapper liri-node-project-outline">
-        <div className="project-card" id="liri-node">
-          <div className="project-outline-content">
-            <h3 className="underline-projects">
-              <a
-                href="https://github.com/JuliusDorfman/liri-node-app"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Liri-Bot
-                <i className="fas fa-link"></i>
-              </a>
-            </h3>
-            <div className="project-outline-summary">
-              <h4>Project Outline</h4>
-              <p>
-                To create a Language Interpretation and Recognition
-                Interface program.
-                  </p>
-              <h4>My Role</h4>
-              <p>
-                Create client interface. Establish communication between
-                Spotify, Twitter, and OMDB APIs.
-                  </p>
-              <div className="project-outline-tools">
-                <i className="fab fa-node"
-                  title="node"
-                />
-                <img
-                  src="/assets/images/express-icon.png"
-                  alt="express-icon"
-                  title="express"
-                />
-              </div>
-            </div>
-
+      <article className="project-card" id="liri-node">
+        <div className="project-outline-content">
+          <h3 className="underline-projects">
             <a
               href="https://github.com/JuliusDorfman/liri-node-app"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="liri-flavor">(Compiled Successfully!)</span>
+              Liri-Bot
+                <i className="fas fa-link"></i>
+            </a>
+          </h3>
+          <div className="project-outline-summary">
+            <h4>Project Outline</h4>
+            <p>
+              To create a Language Interpretation and Recognition
+              Interface program.
+                  </p>
+            <h4>My Role</h4>
+            <p>
+              Create client interface. Establish communication between
+              Spotify, Twitter, and OMDB APIs.
+                  </p>
+            <div className="project-outline-tools">
+              <h4>Technologies</h4>
+              <i className="fab fa-node"
+                title="node"
+              />
+            </div>
+          </div>
+          <div className="liri-bot-flavor">
+            <span className="liri-compiled-flavor">(Compiled Successfully!)</span>
+            <a
+              href="https://github.com/JuliusDorfman/liri-node-app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <h4 className="project-title">Liri-Node-App</h4>
             </a>
             <ul>
@@ -108,7 +103,7 @@ export default class LiriBot extends Component {
             </ul>
           </div>
         </div>
-      </article >
+      </article>
     )
   }
 }

@@ -1,54 +1,25 @@
-
-.philosophy-project-outline {
-  border-bottom: 1px solid black;
-  background-color: white
-}
-
-.philosophy-project-outline {
-  border-bottom: 1px solid black;
-  background-color: white;
-}
-
-
 #philosophy-trivia {
   overflow: hidden;
   background-image: url("../../../assets/images/philo-bg-1.png");
-  padding: 0 100px;
-}
-
-@media (max-width: 690px) {
-  #philosophy-trivia {
-    flex-direction: column;
-  }
-  .quote-wrapper {
-    margin: auto;
-  }
-  .pic-wrapper-area img {
-    display: none;
-  }
+  padding: 0.01%;
 }
 
 #philosophy-trivia a {
   z-index: 2;
-  text-decoration: none;
   height: fit-content;
 }
 
-#philosophy-trivia h4 {
+.phil-title {
   display: flex;
   position: relative;
   margin: 10px;
   justify-content: center;
   align-items: center;
-  color: white;
-  font-family: 'Berkshire Swash', cursive;
-  font-size: 2rem;
-}
-
-.speech-bubble {
-  position: relative;
   background: #00aabb;
+  color: white;
+  font-size: 2rem;
   border-radius: .4em;
+  font-family: 'Berkshire Swash', cursive;
   height: 100px;
   min-width: 200px;
 }
@@ -81,4 +52,22 @@
   letter-spacing: 1px;
   box-shadow: 0 0 10px 10px white;
   padding: 20px;
+}
+
+@media (max-width: 650px) {
+  #philosophy-trivia {
+    flex-direction: column;
+  }
+  .quote-wrapper {
+    margin: auto;
+  }
+  .pic-wrapper-area img {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  #philosophy-trivia-flavor {
+    margin: 0;
+  }
 }

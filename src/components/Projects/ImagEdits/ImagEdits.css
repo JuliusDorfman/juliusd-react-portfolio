@@ -13,7 +13,7 @@
   width: 2000px;
   align-items: center;
   background-color: royalblue;
-  transform: rotate(340deg) translate(-120px, -100px);
+  transform: rotate(340deg) translate(-100px, -50px);
   font-family: 'Pacifico', cursive;
   height: 6rem;
   border-top: 5px solid white;
@@ -21,7 +21,7 @@
   outline: 5px solid royalblue;
 }
 
-.imagedits-banner h3 {
+.imagedits-banner h3 { 
   transform: translateX(-500px);
   color: white;
   text-decoration: underline;

@@ -2,6 +2,16 @@ import React, { Component } from 'react';
 import './NewsFrom.css';
 
 export default class NewsFrom extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchWord: "",
+      highlightedHeadlines: {},
+      didUserSearch: false
+    }
+  }
+
+
   render() {
     return (
       <article className="project-card" id="news-from">
@@ -41,21 +51,21 @@ export default class NewsFrom extends Component {
             </div>
           </div>
           <div className="flavor news-from-flavor">
-            <ul>
+            <ul className="news-headlines">
               <li>
                 <i className="far fa-newspaper"></i>
                 &nbsp;Lost Dog travels 1000 miles to pee on owners carpet!&nbsp;
-                <i className="far fa-newspaper"></i>
+              <i className="far fa-newspaper"></i>
               </li>
               <li>
                 <i className="far fa-newspaper"></i>
                 &nbsp;Missippi's Literacy Program Improves!&nbsp;
-                <i className="far fa-newspaper"></i>
+              <i className="far fa-newspaper"></i>
               </li>
               <li>
                 <i className="far fa-newspaper"></i>
                 &nbsp;Birds all over the world now on Keto free diet!&nbsp;
-                <i className="far fa-newspaper"></i>
+              <i className="far fa-newspaper"></i>
               </li>
             </ul>
           </div>
@@ -65,3 +75,60 @@ export default class NewsFrom extends Component {
   }
 }
 
+
+
+
+
+// Highlight Function Draft
+
+// this.handleSubmit = this.handleSubmit.bind(this);
+// this.handleChange = this.handleChange.bind(this);
+
+
+// handleSubmit(e) {
+//   e.preventDefault();
+//   this.highlightWords(this.state.searchWord);
+//   this.setState({ searchWord: "" });
+//   this.setState({ didUserSearch: true });
+// }
+
+// handleChange(e) {
+//   this.setState({ searchWord: e.target.value });
+// }
+
+// highlightWords(word) {
+//   word = word.toLowerCase();
+//   let newsHeadlines = document.getElementsByClassName('news-headlines')[0].innerText;
+//   newsHeadlines = newsHeadlines.toLowerCase();
+
+//   let renderHeadlines = newsHeadlines.replace(word, highlight)
+//   console.log(renderHeadlines);
+//   this.setState({ highlightedHeadlines: renderHeadlines });
+// }
+
+
+
+
+// {
+//   this.state.didUserSearch
+//     ?
+//     this.state.highlightedHeadlines
+//     :
+//     <ul className="news-headlines">
+//       <li>
+//         <i className="far fa-newspaper"></i>
+//         &nbsp;Lost Dog travels 1000 miles to pee on owners carpet!&nbsp;
+//   <i className="far fa-newspaper"></i>
+//       </li>
+//       <li>
+//         <i className="far fa-newspaper"></i>
+//         &nbsp;Missippi's Literacy Program Improves!&nbsp;
+//   <i className="far fa-newspaper"></i>
+//       </li>
+//       <li>
+//         <i className="far fa-newspaper"></i>
+//         &nbsp;Birds all over the world now on Keto free diet!&nbsp;
+//   <i className="far fa-newspaper"></i>
+//       </li>
+//     </ul>
+// }

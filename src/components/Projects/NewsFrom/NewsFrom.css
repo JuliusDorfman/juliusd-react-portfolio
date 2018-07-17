@@ -8,3 +8,7 @@
 .news-from-flavor {
   background: rgba(255, 255, 255, .7)
 }
+
+.highlight {
+  color: yellow;
+}
